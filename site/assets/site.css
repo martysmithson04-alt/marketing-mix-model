@@ -661,17 +661,6 @@ a {
   font-size: 0.98rem;
 }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(0.85rem);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
-}
-.reveal.in,
-.reveal.is-in {
-  opacity: 1;
-  transform: none;
-}
-
 .better-band {
   background:
     linear-gradient(180deg, #fff 0%, var(--paper-2) 100%);
@@ -967,10 +956,16 @@ input[type="number"] {
 
 .close {
   padding-bottom: clamp(4.5rem, 12vw, 7rem);
+  background:
+    radial-gradient(500px 280px at 50% 100%, rgba(26, 163, 122, 0.08), transparent 60%),
+    var(--paper-2);
 }
 .waitlist {
   display: grid;
   gap: 1rem;
+  padding: 1.35rem 1.25rem;
+  border: 1px solid var(--line);
+  background: #fff;
 }
 .waitlist label {
   display: grid;
@@ -1014,18 +1009,21 @@ input[type="number"] {
 }
 
 .foot {
-  border-top: 1px solid var(--line);
-  padding: 2.25rem 0 2.75rem;
-  background: var(--paper-2);
+  border-top: 1px solid rgba(238, 242, 245, 0.08);
+  padding: 2.5rem 0 2.85rem;
+  background: var(--steel);
+  color: rgba(244, 246, 248, 0.78);
 }
 .foot-grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.15rem;
 }
 .foot-brand {
   font-family: var(--display);
   font-weight: 700;
   letter-spacing: -0.02em;
+  color: #fff;
+  font-size: 1.15rem;
 }
 .foot nav {
   display: flex;
@@ -1033,76 +1031,137 @@ input[type="number"] {
   gap: 0.85rem 1.25rem;
 }
 .foot a {
-  color: var(--mute);
+  color: rgba(244, 246, 248, 0.62);
   text-decoration: none;
 }
 .foot a:hover {
-  color: var(--ink);
+  color: #fff;
   text-decoration: underline;
 }
 .fine {
   margin: 0;
   font-size: 0.85rem;
-  color: var(--mute);
+  color: rgba(244, 246, 248, 0.45);
 }
 
-/* Inner pages */
+/* Inner pages — atmospheric page hero */
 .page-hero {
-  padding: clamp(5.5rem, 12vw, 7.5rem) clamp(1.15rem, 3.5vw, 2rem) 2rem;
+  position: relative;
+  padding: clamp(6rem, 14vw, 8.5rem) clamp(1.15rem, 3.5vw, 2rem) clamp(2.5rem, 5vw, 3.5rem);
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 70% 80% at 90% 0%, rgba(26, 163, 122, 0.18), transparent 55%),
+    radial-gradient(ellipse 50% 60% at 0% 100%, rgba(194, 69, 50, 0.1), transparent 50%),
+    linear-gradient(165deg, #0b0e12 0%, #121820 55%, #1a222c 100%);
+  color: #f4f6f8;
+  border-bottom: 1px solid rgba(238, 242, 245, 0.08);
+}
+.page-hero-inner {
   width: min(var(--max), 100%);
   margin: 0 auto;
 }
 .page-hero .brand-kicker {
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.55rem;
   font-family: var(--display);
   font-weight: 800;
-  font-size: clamp(1.9rem, 4.5vw, 2.75rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(2.4rem, 7vw, 3.75rem);
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+  color: #fff;
 }
 .page-hero h1 {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.85rem;
   font-family: var(--display);
-  font-size: clamp(1.45rem, 3.2vw, 2rem);
+  font-weight: 650;
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
   letter-spacing: -0.03em;
-  line-height: 1.12;
+  line-height: 1.15;
   max-width: 22ch;
+  color: #fff;
 }
 .page-hero p {
   margin: 0;
-  max-width: 48ch;
-  color: var(--mute);
+  max-width: 44ch;
+  color: rgba(244, 246, 248, 0.78);
   font-size: 1.08rem;
 }
+
 .prose {
   width: min(42rem, 100%);
   margin: 0 auto;
-  padding: 0 clamp(1.15rem, 3.5vw, 2rem) clamp(3rem, 8vw, 5rem);
+  padding: clamp(2.5rem, 6vw, 3.5rem) clamp(1.15rem, 3.5vw, 2rem) clamp(3rem, 8vw, 5rem);
 }
 .prose h2 {
-  margin: 2rem 0 0.55rem;
+  margin: 2.25rem 0 0.55rem;
   font-family: var(--display);
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   letter-spacing: -0.025em;
+  color: var(--ink);
+}
+.prose h2:first-child {
+  margin-top: 0;
 }
 .prose p,
 .prose li {
   color: var(--mute);
 }
+.prose ul {
+  padding-left: 1.15rem;
+}
+.prose li + li {
+  margin-top: 0.35rem;
+}
+.prose-cta {
+  margin-top: 2.25rem;
+}
+
 .price-block {
   width: min(var(--max), 100%);
   margin: 0 auto;
-  padding: 1rem clamp(1.15rem, 3.5vw, 2rem) clamp(3rem, 8vw, 5rem);
+  padding: clamp(2rem, 5vw, 3rem) clamp(1.15rem, 3.5vw, 2rem) clamp(3rem, 8vw, 5rem);
+}
+.price-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 820px) {
+  .price-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
 }
 .price-block .plan {
-  max-width: 30rem;
-  padding: 1.5rem 0;
-  border-top: 1px solid var(--line);
+  max-width: none;
+  padding: 1.5rem 1.35rem;
+  border: 1px solid var(--line);
+  background: #fff;
 }
 .price-block .plan-featured {
-  padding: 1.35rem 1.25rem;
-  border: 1px solid rgba(15, 107, 82, 0.28);
-  background: linear-gradient(165deg, rgba(26, 163, 122, 0.08), transparent 60%);
-  max-width: 34rem;
+  border-color: rgba(15, 107, 82, 0.32);
+  background:
+    linear-gradient(165deg, rgba(26, 163, 122, 0.1), transparent 55%),
+    #fff;
+}
+.plan-title {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+.plan-copy {
+  color: var(--mute);
+  margin: 0 0 1rem;
+}
+.plan-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--mute);
+}
+.plan-list li + li {
+  margin-top: 0.3rem;
 }
 .plan-badge {
   margin: 0 0 0.65rem;
@@ -1116,15 +1175,45 @@ input[type="number"] {
 }
 .price-block .amount {
   font-family: var(--display);
-  font-size: 2.6rem;
+  font-size: clamp(2.4rem, 4vw, 2.85rem);
   letter-spacing: -0.04em;
-  margin: 0.35rem 0;
+  margin: 0.35rem 0 0.75rem;
+  line-height: 1;
 }
 .price-block .amount span {
   font-size: 1rem;
   font-weight: 500;
   color: var(--mute);
 }
+.price-foot {
+  margin-top: 2rem;
+  max-width: 40rem;
+}
+.price-foot .btn {
+  margin-bottom: 1rem;
+}
+.price-note {
+  margin: 0;
+  color: var(--mute);
+  font-size: 0.95rem;
+}
+
+.show-frame {
+  width: min(68rem, calc(100% - 2rem));
+  margin: -1.5rem auto 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 24px 60px rgba(11, 14, 18, 0.12);
+}
+.show-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .feature-grid {
   width: min(var(--max), 100%);
   margin: 0 auto;
@@ -1164,17 +1253,6 @@ input[type="number"] {
 }
 .panel {
   padding-top: 0.5rem;
-}
-.show-frame {
-  width: min(68rem, calc(100% - 2rem));
-  margin: 0 auto 2rem;
-  overflow: hidden;
-  border: 1px solid var(--line);
-}
-.show-frame img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .reveal {
