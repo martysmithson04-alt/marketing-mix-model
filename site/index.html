@@ -7,7 +7,7 @@
   <meta name="description" content="Cash MER for Shopify: ad spend out vs till sales in, break-even MER, and one allocation call. No pixels. No path theater." />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <meta name="theme-color" content="#0b0e12" />
+  <meta name="theme-color" content="#e8ecef" />
   <link rel="canonical" href="https://mcflyads.com/" />
   <meta property="og:site_name" content="Mcfly Analytics" />
   <meta property="og:type" content="website" />
@@ -22,47 +22,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/site.css?v=20260722c" />
-  <style>
-    /* Critical: never ship light text on a light hero if main CSS flakes or SW serves stale CSS */
-    body.home .hero-craft {
-      background: #0b0e12 !important;
-      color: #f4f6f8 !important;
-    }
-    body.home .hero-craft .brand-hero,
-    body.home .hero-craft .brand-hero-sub,
-    body.home .hero-craft h1 {
-      color: #ffffff !important;
-    }
-    body.home .hero-craft .lede {
-      color: rgba(244, 246, 248, 0.88) !important;
-    }
-    body.home .hero-craft .btn.ghost {
-      color: #f4f6f8 !important;
-      border-color: rgba(244, 246, 248, 0.45) !important;
-    }
-    body.home .top:not(.scrolled) .brand-name,
-    body.home .top:not(.scrolled) .nav-toggle span {
-      color: #f4f6f8;
-      background-color: #f4f6f8;
-    }
-    body.home .top:not(.scrolled) .brand-name {
-      background: none;
-      color: #f4f6f8 !important;
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/site.css?v=20260722d" />
 </head>
 <body class="home">
   <a class="skip" href="#main">Skip to content</a>
   <div data-chrome></div>
 
   <main id="main">
-    <!-- ONE composition: brand + thesis + CTA + full-bleed cash desk -->
+    <!-- Cash Ledger: brand + thesis + CTA + interactive desk -->
     <section class="hero hero-craft" aria-labelledby="hero-brand">
-      <div class="hero-mesh" aria-hidden="true"></div>
-      <div class="hero-gridline" aria-hidden="true"></div>
-      <div class="hero-grain" aria-hidden="true"></div>
-
       <div class="hero-layout">
         <div class="hero-copy">
           <p class="brand-hero" id="hero-brand">Mcfly <span class="brand-hero-sub">Analytics</span></p>
@@ -74,45 +42,60 @@
           </div>
         </div>
 
-        <div class="desk" aria-hidden="true">
-          <div class="desk-chrome">
-            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-            <span class="desk-title">mcfly · operator</span>
-            <span class="desk-live"><i></i> sample live</span>
+        <div class="desk-tilt">
+          <div class="desk" data-desk aria-label="Sample Mcfly cash desk">
+            <p class="desk-note" aria-hidden="true">Monday number. Matches the till.</p>
+            <div class="desk-chrome">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="desk-title">mcfly · cash desk</span>
+              <span class="desk-live"><i></i> sample</span>
+            </div>
+            <div class="desk-body">
+              <div class="desk-kpis">
+                <div class="kpi">
+                  <span>Spend out</span>
+                  <strong class="num lie-t" data-feed-spend>$63,658</strong>
+                </div>
+                <div class="kpi">
+                  <span>Shopify in</span>
+                  <strong class="num truth-t" data-feed-sales>$221,296</strong>
+                </div>
+                <div class="kpi wide">
+                  <span>Cash MER</span>
+                  <strong class="num mer-t" data-feed-mer data-mer="3.48" data-mer-count>0.00×</strong>
+                  <em data-feed-status>Above break-even 2.86×</em>
+                </div>
+              </div>
+              <div class="desk-chart">
+                <div class="chart-head">
+                  <span>45-day MER</span>
+                  <span class="mono" data-feed-brand>Northline · MTD</span>
+                </div>
+                <svg class="spark" id="spark" viewBox="0 0 320 56" preserveAspectRatio="none" aria-hidden="true"></svg>
+              </div>
+              <div class="desk-mix">
+                <div class="mix-row"><span>Meta</span><div class="track"><b class="m" style="--p:62%"></b></div><span class="mono" data-mix-meta>62%</span></div>
+                <div class="mix-row"><span>Google</span><div class="track"><b class="g" style="--p:28%"></b></div><span class="mono" data-mix-google>28%</span></div>
+                <div class="mix-row"><span>Other</span><div class="track"><b class="o" style="--p:10%"></b></div><span class="mono" data-mix-other>10%</span></div>
+              </div>
+              <div class="desk-rec">
+                <span class="rec-label">Allocation</span>
+                <p id="hero-rec">Shift ~10% Google → Meta for a 7-day test. Meta clears break-even on cash efficiency.</p>
+              </div>
+            </div>
           </div>
-          <div class="desk-body">
-            <div class="desk-kpis">
-              <div class="kpi">
-                <span>Spend out</span>
-                <strong class="num lie-t" data-feed-spend>$63,658</strong>
-              </div>
-              <div class="kpi">
-                <span>Shopify in</span>
-                <strong class="num truth-t" data-feed-sales>$221,296</strong>
-              </div>
-              <div class="kpi wide">
-                <span>Cash MER</span>
-                <strong class="num mer-t" data-feed-mer data-mer="3.48">3.48×</strong>
-                <em data-feed-status>Above break-even 2.86×</em>
-              </div>
-            </div>
-            <div class="desk-chart">
-              <div class="chart-head">
-                <span>45-day MER</span>
-                <span class="mono" data-feed-brand>Northline · MTD</span>
-              </div>
-              <svg class="spark" id="spark" viewBox="0 0 320 56" preserveAspectRatio="none"></svg>
-            </div>
-            <div class="desk-mix">
-              <div class="mix-row"><span>Meta</span><div class="track"><b class="m" style="--p:62%"></b></div><span class="mono" data-mix-meta>62%</span></div>
-              <div class="mix-row"><span>Google</span><div class="track"><b class="g" style="--p:28%"></b></div><span class="mono" data-mix-google>28%</span></div>
-              <div class="mix-row"><span>Other</span><div class="track"><b class="o" style="--p:10%"></b></div><span class="mono" data-mix-other>10%</span></div>
-            </div>
-            <div class="desk-rec">
-              <span class="rec-label">Allocation</span>
-              <p id="hero-rec">Shift ~10% Google → Meta for a 7-day test. Meta clears break-even on cash efficiency.</p>
-            </div>
-          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band formula-band" aria-labelledby="formula-title">
+      <div class="wrap">
+        <p class="eyebrow">The religion</p>
+        <h2 id="formula-title" class="display">One formula. Auditable.</h2>
+        <div class="formula-panel">
+          <p class="formula-line mono">MER = Shopify sales ÷ ad spend</p>
+          <p class="formula-line mono soft">Break-even MER ≈ 1 ÷ contribution margin</p>
+          <p class="formula-note">Operate above break-even. Shift mix to protect it. No path credit in the math.</p>
         </div>
       </div>
     </section>
@@ -123,30 +106,21 @@
         <h2 id="lie-title" class="display">Platform ROAS is a story.<br />Your bank account is not.</h2>
         <p class="lede-soft band-intro">Operators don’t need another model. They need a Monday number that matches the till.</p>
         <div class="lie-grid">
-          <article class="reveal">
+          <article>
+            <p class="proof-n">01</p>
             <h3>Double-counting</h3>
             <p>Meta, Google, and email all take credit for the same order. Sum “driven revenue” and you invent a P&amp;L.</p>
           </article>
-          <article class="reveal">
+          <article>
+            <p class="proof-n">02</p>
             <h3>Path theater</h3>
             <p>Multi-touch invents a neat journey. Real journeys are messy. Optimizing the model is not optimizing cash.</p>
           </article>
-          <article class="reveal">
+          <article>
+            <p class="proof-n">03</p>
             <h3>Science cosplay</h3>
             <p>Pixels, seven attribution windows, MMM branding — packaging on top of the same spend + Shopify pipes.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="band formula-band" aria-labelledby="formula-title">
-      <div class="wrap">
-        <p class="eyebrow">The religion</p>
-        <h2 id="formula-title" class="display">One formula. Auditable.</h2>
-        <div class="formula-panel reveal">
-          <p class="formula-line mono">MER = Shopify sales ÷ ad spend</p>
-          <p class="formula-line mono soft">Break-even MER ≈ 1 ÷ contribution margin</p>
-          <p class="formula-note">Operate above break-even. Shift mix to protect it. No path credit in the math.</p>
         </div>
       </div>
     </section>
@@ -155,22 +129,17 @@
       <div class="wrap">
         <p class="eyebrow">The wedge</p>
         <h2 id="better-title" class="display">A better version of what<br />the suites actually do.</h2>
-        <p class="lede-soft better-lede">Triple Whale, Northbeam, and Polar aren’t sitting on secret formulas. They’re data organization and smooth operator UI. Mcfly keeps that job — and throws out the attribution religion.</p>
+        <p class="lede-soft better-lede">Triple Whale, Northbeam, and Polar mostly organize spend and Shopify into dashboards — then sell path credit as science. Mcfly keeps the useful job and throws out the attribution religion.</p>
         <div class="better-grid">
-          <article class="reveal">
+          <article>
             <p class="better-kicker">They ship</p>
             <h3>Organize everything</h3>
             <p>Connectors, dashboards, pixels, AI chat, passback. Broad cockpit. Numbers still disagree with the till.</p>
           </article>
-          <article class="better-us reveal">
+          <article class="better-us">
             <p class="better-kicker">Mcfly ships</p>
             <h3>Organize the cash facts</h3>
             <p>Spend out. Shopify sales in. Break-even MER. One allocation card you can audit. Monday ritual, not another OS.</p>
-          </article>
-          <article class="reveal">
-            <p class="better-kicker">You keep</p>
-            <h3>Craft without the tax</h3>
-            <p>Same useful instinct — one place to look — at a price that isn’t GMV theater, without training Meta on path credit.</p>
           </article>
         </div>
       </div>
@@ -407,7 +376,7 @@
   </main>
 
   <div data-footer></div>
-  <script src="/assets/chrome.js?v=20260722c"></script>
-  <script src="/assets/app.js?v=20260722c"></script>
+  <script src="/assets/chrome.js?v=20260722d"></script>
+  <script src="/assets/app.js?v=20260722d"></script>
 </body>
 </html>

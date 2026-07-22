@@ -159,15 +159,47 @@
     const d = coords.map((c, i) => (i === 0 ? "M" : "L") + c[0].toFixed(1) + "," + c[1].toFixed(1)).join(" ");
     const last = coords[coords.length - 1];
     svg.innerHTML =
-      '<path d="' +
+      '<path class="spark-path" d="' +
       d +
-      '" fill="none" stroke="rgba(34,160,122,0.95)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>' +
+      '"></path>' +
       '<circle cx="' +
       last[0].toFixed(1) +
       '" cy="' +
       last[1].toFixed(1) +
-      '" r="3.2" fill="#22a07a"></circle>';
+      '" r="3.2" fill="var(--truth)"></circle>';
+    const path = svg.querySelector(".spark-path");
+    if (path && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const len = path.getTotalLength();
+      path.style.setProperty("--len", String(len));
+      // restart draw
+      path.classList.remove("is-draw");
+      void path.getBoundingClientRect();
+      path.classList.add("is-draw");
+    }
   }
+
+  function countUpMer(target) {
+    const el = document.querySelector("[data-mer-count]");
+    if (!el) return;
+    const end = Number(target);
+    if (!Number.isFinite(end)) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      el.textContent = end.toFixed(2) + "×";
+      return;
+    }
+    const start = performance.now();
+    const dur = 1100;
+    const from = 0;
+    const tick = (now) => {
+      const t = Math.min(1, (now - start) / dur);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = (from + (end - from) * eased).toFixed(2) + "×";
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  let merCounted = false;
 
   let brandsData = null;
   let activeBrand = "demo-dtc";
@@ -231,6 +263,14 @@
       el.textContent = Number(periodObj.mer).toFixed(2) + "×";
       el.setAttribute("data-mer", Number(periodObj.mer).toFixed(2));
     });
+    if (!merCounted) {
+      countUpMer(periodObj.mer);
+      merCounted = true;
+    } else {
+      document.querySelectorAll("[data-mer-count]").forEach((el) => {
+        el.textContent = Number(periodObj.mer).toFixed(2) + "×";
+      });
+    }
     if (spendRange) spendRange.value = String(Math.min(200000, Math.max(20000, TOTAL_BUDGET)));
     if (marginRange && periodObj.margin_pct) {
       marginRange.value = String(Math.round(periodObj.margin_pct * 100));
@@ -345,6 +385,10 @@
         el.textContent = Number(feed.mer).toFixed(2) + "×";
         el.setAttribute("data-mer", Number(feed.mer).toFixed(2));
       });
+      if (!merCounted) {
+        countUpMer(feed.mer);
+        merCounted = true;
+      }
       if (spendRange) spendRange.value = String(Math.min(200000, Math.max(20000, TOTAL_BUDGET)));
       if (marginRange && feed.margin_pct) marginRange.value = String(Math.round(feed.margin_pct * 100));
       if (allocRange && feed.channel_mix?.[0]) {
@@ -356,42 +400,30 @@
       updateAllocation();
     })
     .catch(() => {
+      if (!merCounted) {
+        const el = document.querySelector("[data-mer]");
+        countUpMer(Number(el?.getAttribute("data-mer")) || 3.48);
+        merCounted = true;
+      }
       updateClaims();
       updateMargin();
       updateAllocation();
     });
 
-  const merEl = document.querySelector("[data-mer]");
-  if (merEl && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    let t = 0;
-    let base = Number(merEl.getAttribute("data-mer")) || 3.48;
-    const tick = () => {
-      const parsed = parseFloat(merEl.textContent);
-      if (!Number.isNaN(parsed)) base = parsed;
-      t += 0.016;
-      // avoid fighting feed updates — only micro wobble on attribute base
-      const b = Number(merEl.getAttribute("data-mer")) || base;
-      merEl.textContent = (b + Math.sin(t) * 0.015).toFixed(2) + "×";
-      requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-  }
-
-  const photo = document.querySelector("[data-parallax]");
-  if (photo && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    let ticking = false;
-    window.addEventListener(
-      "scroll",
-      () => {
-        if (ticking) return;
-        ticking = true;
-        requestAnimationFrame(() => {
-          photo.style.transform = "translate3d(0," + Math.min(window.scrollY, 800) * 0.28 + "px,0)";
-          ticking = false;
-        });
-      },
-      { passive: true },
-    );
+  // Desk pointer parallax — SITE_CRAFT allow-list #3
+  const desk = document.querySelector("[data-desk]");
+  if (desk && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const maxTilt = 4.5;
+    desk.addEventListener("pointermove", (e) => {
+      const r = desk.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      desk.style.transform =
+        "rotateY(" + (px * maxTilt).toFixed(2) + "deg) rotateX(" + (-py * maxTilt).toFixed(2) + "deg)";
+    });
+    desk.addEventListener("pointerleave", () => {
+      desk.style.transform = "rotateY(0deg) rotateX(0deg)";
+    });
   }
 
   const WAITLIST_EMAIL = "mcflyadsmmm@gmail.com";
@@ -428,25 +460,6 @@
       if (confirm) confirm.hidden = false;
     });
   });
-
-  const reveals = document.querySelectorAll(".band, .instrument, .lie-grid article, .how-rail li");
-  if ("IntersectionObserver" in window) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("reveal", "in");
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12 },
-    );
-    reveals.forEach((el) => {
-      el.classList.add("reveal");
-      io.observe(el);
-    });
-  }
 
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
     const onDownload = /download/i.test(location.pathname);
