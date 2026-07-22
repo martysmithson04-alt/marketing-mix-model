@@ -10,9 +10,9 @@ Goal: charge serious money without becoming Triple Whale. Cash MER + allocation 
 - [x] App feature map page
 - [x] Downloadable PWA calculator (services + demos)
 - [x] Sample warehouse feed wired into hero
-- [x] GitHub Pages workflow
-- [ ] Enable GitHub Pages (repo Settings → Actions) — **human**
-- [ ] Point `mcflyads.com` DNS — **human**
+- [x] GitHub Pages workflow (validate on PRs; deploy on `main`)
+- [ ] Enable GitHub Pages (Settings → Pages → Source: GitHub Actions) — **human** — [SITE_HOSTING.md](./SITE_HOSTING.md)
+- [ ] Point `mcflyads.com` DNS at GitHub — **human** — [SITE_HOSTING.md](./SITE_HOSTING.md)
 
 ## B. Product Truth MVP (ship to design partner)
 
@@ -68,8 +68,8 @@ Goal: charge serious money without becoming Triple Whale. Cash MER + allocation 
 
 | Gate | Why |
 | --- | --- |
-| GitHub Pages enable | API token lacks admin |
-| Cloudflare DNS → Pages | Domain ownership |
+| GitHub Pages enable | Settings → Pages → Actions ([SITE_HOSTING.md](./SITE_HOSTING.md)) |
+| DNS `mcflyads.com` → GitHub | Domain ownership (CF DNS A/CNAME records) |
 | Shopify Partner login | App credentials |
 | Meta / Google developer apps | OAuth + review |
 | Design-partner store access | Real data |

@@ -15,7 +15,7 @@
 | Mobile | Hero not forced full-viewport on small screens; compare table scrolls |
 | 404 | Branded |
 | PWA | SW registers only on `/download`; calculator works |
-| Hosting | Cloudflare Pages (static) — handles traffic |
+| Hosting | GitHub Pages (static) — see [SITE_HOSTING.md](./SITE_HOSTING.md) |
 
 ## Partner Dashboard URLs (use these)
 

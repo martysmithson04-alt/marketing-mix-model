@@ -63,8 +63,5 @@ Distinctive sites win on **structure** (skeleton), not parameter swaps (differen
 
 ## Deploy note
 
-Cloud agents cannot push Cloudflare Pages without `CLOUDFLARE_API_TOKEN`. After merge/pull:
-
-```bash
-npx wrangler pages deploy site --project-name=mcflyads
-```
+**Host:** GitHub Pages (see [`SITE_HOSTING.md`](./SITE_HOSTING.md)).  
+Site changes ship by merging to `main` — CI deploys `/site`. Do not use Wrangler / Cloudflare Pages for the brochure.

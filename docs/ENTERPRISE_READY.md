@@ -29,7 +29,7 @@ Not Triple Whale feature parity. Not App Store ads. It means:
 | **Domain email** | Nice-to-have | After first partner asks |
 | **Sentry / paid monitoring** | After production traffic | Overnight + logs catch first bugs |
 
-**Stay free as long as possible:** Cloudflare Pages (site), GitHub Actions (overnight CI), Neon free Postgres, Fly free allowance, `shopify app dev` tunnel.
+**Stay free as long as possible:** GitHub Pages (site) + Cloudflare free DNS, GitHub Actions (overnight CI), Neon free Postgres, Fly free allowance, `shopify app dev` tunnel.
 
 ---
 

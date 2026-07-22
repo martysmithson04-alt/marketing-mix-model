@@ -116,9 +116,11 @@ Or in **Dev Dashboard → Mcfly Analytics → Versions**:
 - Approve `read_orders`  
 - Open **Mcfly Analytics** → Settings (margin) → Spend → Dashboard
 
-### 9. Optional: branded subdomain
+### 9. Optional: branded subdomain (app only)
 
-In Cloudflare DNS for `mcflyads.com`:
+Marketing site (`mcflyads.com`) → **GitHub Pages** — see [SITE_HOSTING.md](./SITE_HOSTING.md).
+
+App subdomain stays on Fly:
 
 ```text
 CNAME  app  →  mcfly-analytics.fly.dev

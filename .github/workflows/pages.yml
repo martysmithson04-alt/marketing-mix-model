@@ -1,5 +1,6 @@
 name: Deploy site to GitHub Pages
 
+# Canonical marketing host — see docs/SITE_HOSTING.md (not Cloudflare Pages).
 on:
   push:
     branches: [main, "cursor/**"]
@@ -30,12 +31,15 @@ jobs:
           test -f site/assets/site.css
           test -f site/assets/app.js
           test -f site/assets/chrome.js
+          test -f site/CNAME
+          test -f site/.nojekyll
+          grep -q '^mcflyads.com$' site/CNAME
           grep -q "Cash Ledger" site/assets/site.css
           grep -q 'data-mer-count' site/index.html
           grep -q 'data-desk' site/index.html
 
-  # GitHub Pages must be enabled (Actions source). Only deploy from default branch —
-  # feature-branch deploys fail when Pages is unset and fight the shared Pages env.
+  # Deploy only from main (or manual dispatch). enablement: true creates the
+  # Pages site on first successful run if Settings → Pages is still unset.
   deploy:
     if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
     needs: validate
