@@ -3311,3 +3311,38 @@ th,
     margin-left: 0;
   }
 }
+
+
+/* Phase 3/4: proof strip + digest facts (no numbered sequence) */
+.proof-band {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.proof-strip-line {
+  margin: 0;
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--slate-mute);
+}
+.digest-facts {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+.digest-facts li {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+.digest-fact-label {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ledger-green);
+}
