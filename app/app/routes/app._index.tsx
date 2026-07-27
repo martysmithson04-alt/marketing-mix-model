@@ -1,3 +1,4 @@
+import type { AllocationAction } from "@mcfly/mer-core";
 import type {
   ActionFunctionArgs,
   HeadersFunction,
@@ -141,6 +142,74 @@ export default function Dashboard() {
         )}
       </s-section>
 
+      <s-section heading="Traffic mix (clicks vs sessions)">
+        <s-stack direction="block" gap="base">
+          <s-paragraph>
+            <s-text>{metrics.traffic.why}</s-text>
+          </s-paragraph>
+
+          {(metrics.traffic.sessions > 0 ||
+            metrics.traffic.totalPaidLinkClicks > 0) && (
+            <s-stack direction="inline" gap="large">
+              <MetricCard
+                label="Store sessions"
+                value={metrics.traffic.sessions.toLocaleString()}
+                hint="Uploaded for this period"
+              />
+              <MetricCard
+                label="Paid link clicks"
+                value={metrics.traffic.totalPaidLinkClicks.toLocaleString()}
+                hint="Sum of channel uploads"
+              />
+              <MetricCard
+                label="Est. organic sessions"
+                value={metrics.traffic.estimatedOrganicSessions.toLocaleString()}
+                hint={
+                  metrics.traffic.estimatedOrganicShare != null
+                    ? formatPercent(metrics.traffic.estimatedOrganicShare)
+                    : "sessions − paid clicks"
+                }
+                highlight={
+                  metrics.traffic.paidClicksExceedSessions
+                    ? "critical"
+                    : undefined
+                }
+              />
+            </s-stack>
+          )}
+
+          {metrics.traffic.clickShare.length > 0 ? (
+            <s-stack direction="block" gap="base">
+              <s-text tone="neutral">Paid click share (not sale credit)</s-text>
+              {metrics.traffic.clickShare.map((row) => (
+                <s-stack key={row.name} direction="inline" gap="base">
+                  <s-text>{row.name}</s-text>
+                  <s-text>{row.linkClicks.toLocaleString()} clicks</s-text>
+                  <s-text tone="neutral">{formatPercent(row.clickShare)}</s-text>
+                </s-stack>
+              ))}
+            </s-stack>
+          ) : (
+            <s-paragraph>
+              <s-text tone="neutral">
+                No link clicks yet.{" "}
+                <s-link href="/app/traffic">Upload clicks & sessions</s-link>.
+              </s-text>
+            </s-paragraph>
+          )}
+
+          <s-box padding="base" background="subdued" borderRadius="base">
+            <s-stack direction="block" gap="small">
+              {metrics.traffic.assumptions.map((line) => (
+                <s-text key={line} tone="neutral">
+                  {line}
+                </s-text>
+              ))}
+            </s-stack>
+          </s-box>
+        </s-stack>
+      </s-section>
+
       {metrics.allocation && (
         <s-section heading="Allocation recommendation">
           <s-box padding="base" borderWidth="base" borderRadius="base">
@@ -206,7 +275,7 @@ export default function Dashboard() {
   );
 }
 
-function actionLabel(type: string): string {
+function actionLabel(type: AllocationAction["type"]): string {
   switch (type) {
     case "cut":
       return "Cut";
@@ -216,8 +285,10 @@ function actionLabel(type: string): string {
       return "Hold";
     case "watch":
       return "Watch";
-    default:
-      return type;
+    default: {
+      const _exhaustive: never = type;
+      return _exhaustive;
+    }
   }
 }
 
@@ -227,6 +298,8 @@ function channelLabel(channel: string): string {
       return "Meta";
     case "google":
       return "Google";
+    case "other":
+      return "Other";
     default:
       return "Other";
   }

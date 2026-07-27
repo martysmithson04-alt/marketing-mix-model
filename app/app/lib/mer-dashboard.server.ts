@@ -10,8 +10,10 @@ import {
 import {
   suggestAllocation,
   type SuggestAllocationResult,
+  type TrafficDiagnosticsResult,
 } from "@mcfly/mer-core";
 import type { DateRange } from "./periods";
+import { buildTrafficDiagnostics } from "./traffic-repository.server";
 
 const CHANNEL_DISPLAY: Record<SpendChannel, string> = {
   meta: "Meta",
@@ -32,6 +34,7 @@ export interface DashboardMetrics {
   channelMix: ReturnType<typeof channelMix>;
   aboveBreakEven: boolean | null;
   allocation: SuggestAllocationResult | null;
+  traffic: TrafficDiagnosticsResult;
 }
 
 export async function ensureShop(domain: string) {
@@ -114,6 +117,7 @@ export async function buildDashboardMetrics(
   const mer = computeMer(sales.totalSales, totalSpend);
   const breakEvenMer = computeBreakEvenMer(settings.marginPct);
   const mix = channelMix(spends);
+  const traffic = await buildTrafficDiagnostics(shop.id, range);
 
   return {
     period: range,
@@ -134,6 +138,7 @@ export async function buildDashboardMetrics(
       totalSpend,
       breakEvenMer,
     ),
+    traffic,
   };
 }
 

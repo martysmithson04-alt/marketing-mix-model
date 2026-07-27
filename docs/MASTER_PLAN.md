@@ -168,13 +168,14 @@ Is the task about cash MER / spend sync / allocation / anti-attribution?
 - Periods: MTD / QTD / YTD (+ custom if cheap)
 - Total sales, total spend, MER, break-even MER (margin input)
 - Channel mix (Meta + Google + other/manual)
+- **Traffic diagnostics** — manual store sessions + paid link clicks; click share; organic estimate = sessions − Σ paid link clicks (floored; not path attribution)
 - Freshness / recon hints
 - **One** allocation recommendation card (rules-based; no path attribution)
 - Settings: margin %, target MER, connections
 - Privacy / terms; simple Billing + trial
 
 **Out of v1**
-- Pixel / MTA / view-through
+- Pixel / MTA / view-through / “true ROAS from clicks”
 - Creative cockpit / Media Lab / Asana / full Klaviyo
 - SyncWith-level connector catalog
 - TW/Polar feature parity

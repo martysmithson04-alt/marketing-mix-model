@@ -21,6 +21,7 @@ export default function App() {
         <s-link href="/app">Dashboard</s-link>
         <s-link href="/app/allocation">Allocation</s-link>
         <s-link href="/app/spend">Spend</s-link>
+        <s-link href="/app/traffic">Traffic</s-link>
         <s-link href="/app/settings">Settings</s-link>
         <s-link href="/app/connections">Connections</s-link>
       </s-app-nav>

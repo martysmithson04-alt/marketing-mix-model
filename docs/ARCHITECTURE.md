@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | `@mcfly/mer-core` | `packages/mer-core` | Cash MER math + rules-based `suggestAllocation()` (no MTA) |
 | `@mcfly/connectors` | `packages/connectors` | Meta/Google spend client interfaces + `syncShopSpend()` stub |
-| `@mcfly/api-contract` | `packages/api-contract` | Zod schemas + OpenAPI for `/mer`, `/spend`, `/allocation` |
+| `@mcfly/api-contract` | `packages/api-contract` | Zod schemas + OpenAPI for `/mer`, `/spend`, `/allocation`, `/traffic` |
 
 ## Clients (thin)
 
@@ -59,6 +59,7 @@ Allocation uses **cash spend vs total sales** and optional manual `salesContribu
 ## Tests
 
 Allocation unit tests live in `packages/mer-core/tests/allocation.test.ts`.
+Traffic (click share + organic estimate) tests: `packages/mer-core/tests/traffic.test.ts`.
 
 ```bash
 npm install
