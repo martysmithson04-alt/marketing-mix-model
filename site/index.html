@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;600&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/site.css?v=20260728p1" />
+  <link rel="stylesheet" href="/assets/site.css?v=20260728p2" />
 
   <script type="application/ld+json">
   {
@@ -66,182 +66,53 @@
   <div data-chrome></div>
 
   <main id="main">
-    <section class="hero hero-craft" aria-labelledby="hero-brand">
-      <div class="hero-atmosphere" aria-hidden="true">
-        <picture>
-          <source srcset="/assets/hero-atmosphere.webp" type="image/webp" />
-          <img
-            src="/assets/hero-atmosphere.jpg"
-            alt=""
-            width="1920"
-            height="1080"
-            decoding="async"
-            fetchpriority="high"
-          />
-        </picture>
-      </div>
-      <div class="hero-mesh" aria-hidden="true"></div>
-      <div class="hero-gridline" aria-hidden="true"></div>
-      <div class="hero-grain" aria-hidden="true"></div>
+    <section class="hero hero-ledger" aria-labelledby="hero-title">
+      <div class="wrap hero-ledger-inner">
+        <p class="brand-hero" id="hero-brand">
+          <img class="brand-hero-mark" src="/assets/brand/mcfly-m-transparent.png" width="72" height="72" alt="" />
+          Mcfly <span class="brand-hero-sub">Ads</span>
+        </p>
+        <h1 id="hero-title">The one ad number your CFO will sign off on.</h1>
+        <p class="lede">Total ROAS is net Shopify sales divided by ad spend, set against break-even from your margin.</p>
 
-      <div class="hero-layout">
-        <div class="hero-copy">
-          <p class="brand-hero" id="hero-brand">
-            <img class="brand-hero-mark" src="/assets/brand/mcfly-m-transparent.png" width="72" height="72" alt="" />
-            Mcfly <span class="brand-hero-sub">Ads</span>
+        <div class="ledger-card" aria-label="Sample Total ROAS calculation">
+          <p class="ledger-eq mono">
+            <span class="num">$412,380</span> net sales ÷ <span class="num">$118,240</span> spend
           </p>
-          <p class="eyebrow on-dark">Advanced Marketing Data Science</p>
-          <h1>Total ROAS for Shopify: net sales ÷ ad spend</h1>
-          <p class="lede">One number finance already trusts. Confirm margin, paste Meta + Google from Sheets, compare to break-even, then one budget move — about ten minutes after install. Works alongside attribution tools; we don’t ship pixels.</p>
-          <div class="hero-actions">
-            <div class="cta-row">
-              <a class="btn primary solid" data-mcfly-cta="primary" href="#waitlist">Request Partner invite</a>
-              <a class="btn ghost" data-mcfly-cta="secondary" href="/support">App Store Free when listed</a>
-              <a class="btn ghost" href="/product">How it works</a>
+          <div
+            class="ledger-line"
+            role="img"
+            aria-label="Total ROAS 3.49 times, above break-even at 2.86 times"
+          >
+            <div class="ledger-track">
+              <span class="ledger-be-tick" style="left:47.7%" title="Break-even 2.86×"></span>
+              <span class="ledger-marker" style="left:58.2%" data-roas-marker></span>
             </div>
-            <p class="hero-proof">
-              <a href="/demo" style="color:var(--cyan);text-decoration:underline;text-underline-offset:0.18em">Preview the sample desk →</a>
-            </p>
+            <div class="ledger-scale">
+              <span class="ledger-roas-val num">3.49×</span>
+              <span class="ledger-be-val num">2.86× break-even</span>
+              <span class="ledger-status above">Above</span>
+            </div>
           </div>
+          <p class="ledger-caption mono">SAMPLE · 35% margin → break-even ≈ 1 ÷ 0.35</p>
         </div>
 
-        <div class="hero-demo" id="hero-demo">
-          <div id="mcfly-spend-explorer" class="sx-demo sx-demo--desk" data-sample="1" aria-label="Total ROAS explorer — sample desk">
-            <p class="sx-claim" id="hi-scenario" aria-live="polite">
-              <span class="sx-claim__note">Sample desk</span>
-              <span class="sx-claim__sep" aria-hidden="true">·</span>
-              <span>Total ROAS from your sales</span>
-            </p>
-
-            <section class="sx-pace" aria-label="Monthly pacing">
-              <div class="sx-pace__head">
-                <h2 class="sx-pace__title">Monthly pacing</h2>
-                <p class="sx-pace__muted" data-sx-pace-period>Month to date · target 4.00×</p>
-              </div>
-              <div class="sx-pace__grid">
-                <div class="sx-pace__gauge">
-                  <svg
-                    viewBox="0 0 240 130"
-                    width="180"
-                    height="98"
-                    aria-hidden="true"
-                    data-sx-pace-gauge
-                  >
-                    <path
-                      class="sx-pace__gauge-track"
-                      d="M 40 110 A 80 80 0 0 1 200 110"
-                      fill="none"
-                      stroke-width="14"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      class="sx-pace__arc"
-                      data-sx-pace-arc
-                      d="M 40 110 A 80 80 0 0 1 200 110"
-                      fill="none"
-                      stroke="#059669"
-                      stroke-width="14"
-                      stroke-linecap="round"
-                      stroke-dasharray="251.327"
-                      stroke-dashoffset="251.327"
-                    />
-                    <line
-                      class="sx-pace__target-tick"
-                      data-sx-pace-tick
-                      x1="0"
-                      y1="0"
-                      x2="0"
-                      y2="0"
-                      stroke-width="2"
-                      hidden
-                    />
-                  </svg>
-                  <p class="sx-pace__gauge-value" data-sx-eq-me data-sx-pace-mer>4.19×</p>
-                  <p class="sx-pace__gauge-label">Total ROAS</p>
-                  <p class="sx-pace__eq-meta">
-                    <span data-sx-eq-sales>$412,400</span> sales ÷
-                    <span data-sx-eq-spend>$98,500</span> spend
-                    <span class="sx-pace__eq-asof" data-sx-eq-meta> · BE 2.86× · SAMPLE</span>
-                  </p>
-                </div>
-                <div class="sx-pace__right">
-                  <div class="sx-pace__stats">
-                    <div class="sx-pace__stat">
-                      <p class="sx-pace__k">Sales</p>
-                      <p class="sx-pace__v" data-sx-pace-sales>$412,400</p>
-                    </div>
-                    <div class="sx-pace__stat">
-                      <p class="sx-pace__k">Spend</p>
-                      <p class="sx-pace__v" data-sx-pace-spend>$98,500</p>
-                    </div>
-                    <div class="sx-pace__stat">
-                      <p class="sx-pace__k">Days elapsed</p>
-                      <p class="sx-pace__v" data-sx-pace-days>27 / 31 days</p>
-                    </div>
-                    <div class="sx-pace__stat">
-                      <p class="sx-pace__k">Avg daily sales</p>
-                      <p class="sx-pace__v" data-sx-pace-avg-sales>$15,274</p>
-                    </div>
-                    <div class="sx-pace__stat">
-                      <p class="sx-pace__k">Projected period spend</p>
-                      <p class="sx-pace__v" data-sx-pace-proj-spend>$113,093</p>
-                    </div>
-                    <div class="sx-pace__stat">
-                      <p class="sx-pace__k">Daily sales needed</p>
-                      <p class="sx-pace__v" data-sx-pace-daily-need>$9,993</p>
-                    </div>
-                  </div>
-                  <div class="sx-pace__bars">
-                    <div class="sx-pace__bar-row">
-                      <span>Sales vs target pace</span>
-                      <span data-sx-pace-sales-pct>91%</span>
-                    </div>
-                    <div class="sx-pace__track" aria-hidden="true">
-                      <div class="sx-pace__fill" data-sx-pace-sales-fill></div>
-                    </div>
-                    <div class="sx-pace__bar-row">
-                      <span>Period progress</span>
-                      <span data-sx-pace-cal-pct>87%</span>
-                    </div>
-                    <div class="sx-pace__track" aria-hidden="true">
-                      <div class="sx-pace__fill sx-pace__fill--calendar" data-sx-pace-cal-fill></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <div class="sx-demo__controls">
-              <div class="sx-demo__primary">
-                <div class="sx-demo__seg" role="group" aria-label="Explorer range">
-                  <button type="button" class="sx-demo__btn" data-sx-range="14d">14d</button>
-                  <button type="button" class="sx-demo__btn is-on" data-sx-range="90d" aria-current="true">90d</button>
-                  <button type="button" class="sx-demo__btn" data-sx-range="1y">1y</button>
-                </div>
-                <div class="sx-demo__seg" role="group" aria-label="Bucket size">
-                  <button type="button" class="sx-demo__btn" data-sx-gran="Day">Day</button>
-                  <button type="button" class="sx-demo__btn is-on" data-sx-gran="Week" aria-current="true">Week</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="sx-demo__chart-wrap">
-              <div class="sx-demo__chart" data-sx-chart></div>
-              <div class="sx-demo__tip" data-sx-tip hidden role="tooltip"></div>
-            </div>
-            <div class="sx-demo__readout" data-sx-readout aria-live="polite">
-              Select a column · Total ROAS = sales ÷ spend
-            </div>
-
-            <ul class="sx-demo__legend" data-sx-legend aria-label="Chart legend"></ul>
+        <div class="hero-actions">
+          <div class="cta-row">
+            <a class="btn primary solid" data-mcfly-cta="primary" href="#waitlist">See it on your numbers</a>
+            <a class="btn ghost" href="/cash-mer">How the math works</a>
           </div>
+          <p class="hero-proof">
+            <a class="hero-demo-link" href="/demo">Open the interactive sample →</a>
+          </p>
         </div>
       </div>
     </section>
 
     <section class="hero-outro" aria-label="Install path">
       <p class="wrap install-honesty">
-        App Store Free when listed is the public path for Mcfly Analytics (listing in progress — see <a href="/support">Support</a>). Prefer email now? Request a Partner invite below — never type your <span class="mono">.myshopify.com</span> domain on this site.
+        Early access is free. At launch, $79/mo flat per store.
+        <a href="/demo">Try the sample</a> · <a href="/pricing">Pricing</a>
       </p>
     </section>
 
@@ -391,7 +262,7 @@
     </section>
 
     <p class="wrap feel-hero-link">
-      <a href="#hero-demo">Preview the sample desk ↑</a>
+      <a href="/demo">Preview the sample desk ↑</a>
     </p>
 
     <section class="band dark-band" aria-labelledby="contrast-title">
@@ -506,7 +377,6 @@
   <script src="/assets/chrome.js?v=20260728cta"></script>
   <!-- Candidate B waitlist dock (disjoint); loads CSS via script. Keep before app.js for data-waitlist bind. -->
   <script src="/assets/waitlist-dock.js?v=20260728cta"></script>
-  <script src="/assets/spend-explorer-demo.js?v=20260728h"></script>
   <script src="/assets/app.js?v=20260728h"></script>
 <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9af4d468b69443d4b310b2b07f4481cb"}'></script><!-- Cloudflare Pages Analytics --></body>
 </html>

@@ -6,7 +6,7 @@ Source brief: founder teardown of live mcflyads.com (2026-07-28).
 | --- | --- | --- |
 | 0 | Sync live site into `site/` | Done |
 | 1 | Design tokens & type (no layout) | Done |
-| 2 | Hero rebuild + desk → `/demo` | Next |
+| 2 | Hero rebuild + desk → `/demo` | Done |
 | 3 | Copy rewrite (§2.4 laws) | Pending |
 | 4 | Trust layer | Pending |
 | 5 | Structural de-templating | Pending |

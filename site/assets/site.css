@@ -3118,3 +3118,196 @@ th,
   color: var(--paper);
 }
 /* Demo desk remains the dark instrument object (see demo-desk.css) */
+
+
+/* —— Phase 2: static ledger hero (paints without JS) —— */
+.hero-ledger {
+  position: relative;
+  padding: clamp(6.5rem, 14vh, 8.5rem) 0 clamp(3rem, 6vh, 4.5rem);
+  background:
+    linear-gradient(180deg, var(--paper-2) 0%, var(--paper) 55%, var(--paper) 100%);
+  color: var(--ink);
+  overflow: hidden;
+}
+.hero-ledger::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--brass), transparent);
+  opacity: 0.55;
+}
+.hero-ledger-inner {
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  max-width: 46rem;
+}
+.hero-ledger .brand-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0;
+  font-family: var(--display);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-display-strong);
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.hero-ledger .brand-hero-mark {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+}
+.hero-ledger .brand-hero-sub {
+  color: var(--ledger-green);
+  font-weight: var(--weight-display);
+}
+.hero-ledger h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.1rem, 5.5vw, 3.35rem);
+  font-weight: var(--weight-display-strong);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  max-width: 18ch;
+}
+.hero-ledger .lede {
+  margin: 0;
+  max-width: 38rem;
+  font-size: var(--text-md);
+  color: var(--slate-mute);
+}
+.ledger-card {
+  margin-top: 0.5rem;
+  padding: 1.25rem 1.35rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(20, 26, 30, 0.04);
+}
+.ledger-eq {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+.ledger-eq .num {
+  font-weight: 500;
+  color: var(--ink);
+}
+.ledger-line {
+  display: grid;
+  gap: 0.65rem;
+}
+.ledger-track {
+  position: relative;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 1px;
+  margin: 0.85rem 0 0.35rem;
+}
+.ledger-be-tick {
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: 16px;
+  background: var(--brass);
+  transform: translateX(-50%);
+}
+.ledger-marker {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ledger-green);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px var(--ledger-green);
+  transform: translate(-50%, -50%);
+}
+.ledger-scale {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  align-items: baseline;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+.ledger-roas-val {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.ledger-be-val {
+  color: var(--slate-mute);
+}
+.ledger-status {
+  margin-left: auto;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+.ledger-status.above {
+  color: var(--ledger-green);
+}
+.ledger-status.below {
+  color: var(--loss-red);
+}
+.ledger-caption {
+  margin: 0.85rem 0 0;
+  font-size: 0.72rem;
+  color: var(--slate-mute);
+}
+.hero-ledger .hero-actions {
+  margin-top: 0.35rem;
+}
+.hero-ledger .btn.primary.solid {
+  background: var(--ledger-green);
+  color: var(--paper);
+  border-color: var(--ledger-green);
+}
+.hero-ledger .btn.primary.solid:hover {
+  background: var(--ledger-green-2);
+  border-color: var(--ledger-green-2);
+}
+.hero-ledger .btn.ghost {
+  color: var(--ink);
+  border-color: var(--line);
+  background: transparent;
+}
+.hero-ledger .btn.ghost:hover {
+  border-color: var(--brass);
+}
+.hero-demo-link {
+  color: var(--ledger-green);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.hero-outro {
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  padding: 1rem 0 1.25rem;
+}
+.hero-outro .install-honesty {
+  margin: 0;
+  color: var(--slate-mute);
+  font-size: 0.95rem;
+}
+/* Home nav on light hero */
+.home .top:not(.scrolled) .brand,
+.home .top:not(.scrolled) .nav a {
+  color: var(--ink);
+}
+.home .top:not(.scrolled) .nav a:hover {
+  color: var(--ledger-green);
+}
+@media (max-width: 640px) {
+  .hero-ledger h1 {
+    max-width: none;
+  }
+  .ledger-status {
+    margin-left: 0;
+  }
+}
