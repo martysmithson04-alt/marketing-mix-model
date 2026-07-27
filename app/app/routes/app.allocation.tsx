@@ -6,6 +6,7 @@ import { buildDashboardMetrics } from "../lib/mer-dashboard.server";
 import { formatCurrency, formatMer, formatPercent } from "../lib/mer-format";
 import { fetchShopifySales } from "../lib/shopify-sales.server";
 import { PERIOD_PRESETS, resolvePeriod, type PeriodPreset } from "../lib/periods";
+import type { AllocationAction } from "@mcfly/mer-core";
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const { admin, session } = await authenticate.admin(request);
@@ -168,11 +169,41 @@ export default function AllocationPage() {
         </>
       )}
 
+      <s-section heading="Traffic context (optional)">
+        <s-stack direction="block" gap="base">
+          <s-paragraph>
+            <s-text>{metrics.traffic.why}</s-text>
+          </s-paragraph>
+          {metrics.traffic.clickShare.length > 0 ? (
+            <s-stack direction="block" gap="base">
+              {metrics.traffic.clickShare.map((row) => (
+                <s-text key={row.name}>
+                  {row.name}: {row.linkClicks.toLocaleString()} link clicks (
+                  {formatPercent(row.clickShare)} of paid clicks)
+                </s-text>
+              ))}
+              <s-text tone="neutral">
+                Est. organic: {metrics.traffic.estimatedOrganicSessions.toLocaleString()}{" "}
+                sessions (sessions − paid link clicks)
+              </s-text>
+            </s-stack>
+          ) : (
+            <s-paragraph>
+              <s-text tone="neutral">
+                Upload link clicks and sessions on{" "}
+                <s-link href="/app/traffic">Traffic</s-link> to show click share
+                beside allocation — still not path credit.
+              </s-text>
+            </s-paragraph>
+          )}
+        </s-stack>
+      </s-section>
+
       <s-section slot="aside" heading="How this works">
         <s-paragraph>
           Allocation uses overall cash MER vs break-even MER, then ranks channels
           by spend-share efficiency. Cuts prefer weak manual/other spend first.
-          No pixels or path credit.
+          Traffic clicks refine mix context only — no pixels or path credit.
         </s-paragraph>
         <s-paragraph>
           <s-link href={`/app?period=${preset}`}>Back to dashboard</s-link>
@@ -182,7 +213,7 @@ export default function AllocationPage() {
   );
 }
 
-function actionLabel(type: string): string {
+function actionLabel(type: AllocationAction["type"]): string {
   switch (type) {
     case "cut":
       return "Cut";
@@ -192,8 +223,10 @@ function actionLabel(type: string): string {
       return "Hold";
     case "watch":
       return "Watch";
-    default:
-      return type;
+    default: {
+      const _exhaustive: never = type;
+      return _exhaustive;
+    }
   }
 }
 

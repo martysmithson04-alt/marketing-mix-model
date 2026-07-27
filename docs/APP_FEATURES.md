@@ -1,6 +1,7 @@
 # Mcfly Analytics — App feature inventory
 
 Cash MER + break-even MER + rules-based allocation from **spend vs sales**.  
+Optional traffic layer: **paid link-click share** + **organic ≈ sessions − paid clicks**.  
 **Not in product:** pixels, multi-touch attribution (MTA), path credit, or platform ROAS theater.
 
 Status legend: **Shipped** · **Planned** · **Later**
@@ -14,6 +15,7 @@ Status legend: **Shipped** · **Planned** · **Later**
 | **Dashboard** | **Shipped** | Period presets (MTD / QTD / YTD); Shopify sales vs manual ad spend; MER; break-even MER; channel mix; anti-attribution aside |
 | **Allocation (card)** | **Shipped** | One recommendation card on Dashboard via `@mcfly/mer-core` `suggestAllocation`; auditable inputs (sales, spend, MER, break-even, test window) |
 | **Allocation (detail)** | **Shipped** | `/app/allocation` — actions, channel efficiency table, cash-view assumptions |
+| **Traffic (clicks & sessions)** | **Shipped** | `/app/traffic` — manual store sessions + paid link clicks; dashboard click share + organic ≈ sessions − paid clicks (estimate, not attribution) |
 | **Spend** | **Shipped** | Manual Meta / Google / Other spend entry + recent list |
 | **Settings** | **Shipped** | Contribution margin % → break-even MER; target MER |
 | **Connections** | **Shipped (stubs)** | Meta / Google connector UI stubs; OAuth deferred to Phase 2 |
@@ -62,9 +64,10 @@ Status legend: **Shipped** · **Planned** · **Later**
 
 | Route | Feature |
 | --- | --- |
-| `/app` | Dashboard + allocation card |
-| `/app/allocation` | Allocation detail |
+| `/app` | Dashboard + allocation card + traffic mix |
+| `/app/allocation` | Allocation detail + traffic context |
 | `/app/spend` | Manual spend |
+| `/app/traffic` | Sessions + paid link clicks |
 | `/app/settings` | Margin + target MER |
 | `/app/connections` | Connector stubs |
 

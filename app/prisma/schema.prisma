@@ -38,10 +38,12 @@ model Shop {
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
   settings     Settings?
-  spendEntries SpendEntry[]
-  apiTokens    ApiToken[]
-  syncRuns     SyncRun[]
-  merSnapshots MerSnapshot[]
+  spendEntries      SpendEntry[]
+  linkClickEntries  LinkClickEntry[]
+  sessionEntries    SessionEntry[]
+  apiTokens         ApiToken[]
+  syncRuns          SyncRun[]
+  merSnapshots      MerSnapshot[]
 }
 
 model Settings {
@@ -71,6 +73,37 @@ model SpendEntry {
   note        String?
   createdAt   DateTime     @default(now())
   updatedAt   DateTime     @updatedAt
+
+  @@index([shopId, periodStart, periodEnd])
+}
+
+/// Paid link clicks by channel (Ads Manager / CSV). Not path attribution.
+model LinkClickEntry {
+  id          String       @id @default(cuid())
+  shopId      String
+  shop        Shop         @relation(fields: [shopId], references: [id], onDelete: Cascade)
+  channel     SpendChannel
+  clicks      Int
+  periodStart DateTime
+  periodEnd   DateTime
+  note        String?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  @@index([shopId, periodStart, periodEnd])
+}
+
+/// Store sessions for a period (Shopify analytics / GA upload).
+model SessionEntry {
+  id          String   @id @default(cuid())
+  shopId      String
+  shop        Shop     @relation(fields: [shopId], references: [id], onDelete: Cascade)
+  sessions    Int
+  periodStart DateTime
+  periodEnd   DateTime
+  note        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
   @@index([shopId, periodStart, periodEnd])
 }

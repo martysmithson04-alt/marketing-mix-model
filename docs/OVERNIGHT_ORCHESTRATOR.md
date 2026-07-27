@@ -76,7 +76,9 @@ Endpoints (Bearer auth):
 | --- | --- | --- |
 | GET | `/v1/mer?from&to` | Cash MER snapshot |
 | GET | `/v1/allocation?from&to` | Allocation card |
+| GET | `/v1/traffic?from&to` | Click share + organic estimate |
 | POST | `/v1/spend` | Manual spend ingest |
+| POST | `/v1/traffic` | Manual sessions + link clicks |
 
 Header: `X-Mcfly-Shop-Id: your-store.myshopify.com` (when using global token).
 

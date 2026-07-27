@@ -13,3 +13,13 @@ export {
   type SuggestAllocationInput,
   type SuggestAllocationResult,
 } from "./allocation.js";
+
+export {
+  sumLinkClicks,
+  computeClickShare,
+  diagnoseTraffic,
+  type TrafficChannelInput,
+  type ClickShareRow,
+  type TrafficDiagnosticsInput,
+  type TrafficDiagnosticsResult,
+} from "./traffic.js";

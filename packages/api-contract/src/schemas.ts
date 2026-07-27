@@ -78,9 +78,66 @@ export const ErrorResponseSchema = z.object({
   code: z.string().optional(),
 });
 
+export const TrafficQuerySchema = z.object({
+  from: IsoDateString,
+  to: IsoDateString,
+});
+
+export const ClickShareRowSchema = z.object({
+  name: z.string(),
+  linkClicks: z.number().nonnegative(),
+  clickShare: z.number().min(0).max(1),
+});
+
+export const TrafficResponseSchema = z.object({
+  from: IsoDateString,
+  to: IsoDateString,
+  sessions: z.number().nonnegative(),
+  totalPaidLinkClicks: z.number().nonnegative(),
+  estimatedOrganicSessions: z.number().nonnegative(),
+  estimatedOrganicShare: z.number().min(0).max(1).nullable(),
+  estimatedPaidShare: z.number().nonnegative().nullable(),
+  paidClicksExceedSessions: z.boolean(),
+  clickShare: z.array(ClickShareRowSchema),
+  assumptions: z.array(z.string()),
+  why: z.string(),
+});
+
+export const ManualLinkClickEntrySchema = z.object({
+  date: IsoDateString,
+  channel: z.string().min(1),
+  clicks: z.number().int().nonnegative(),
+});
+
+export const ManualSessionEntrySchema = z.object({
+  date: IsoDateString,
+  sessions: z.number().int().nonnegative(),
+});
+
+export const PostTrafficBodySchema = z
+  .object({
+    linkClicks: z.array(ManualLinkClickEntrySchema).optional(),
+    sessions: z.array(ManualSessionEntrySchema).optional(),
+  })
+  .refine(
+    (body) =>
+      (body.linkClicks?.length ?? 0) > 0 || (body.sessions?.length ?? 0) > 0,
+    { message: "Provide at least one linkClicks or sessions entry" },
+  );
+
+export const PostTrafficResponseSchema = z.object({
+  acceptedLinkClicks: z.number().int().nonnegative(),
+  acceptedSessions: z.number().int().nonnegative(),
+  shopId: z.string(),
+});
+
 export type MerQuery = z.infer<typeof MerQuerySchema>;
 export type MerResponse = z.infer<typeof MerResponseSchema>;
 export type PostSpendBody = z.infer<typeof PostSpendBodySchema>;
 export type PostSpendResponse = z.infer<typeof PostSpendResponseSchema>;
 export type AllocationQuery = z.infer<typeof AllocationQuerySchema>;
 export type AllocationResponse = z.infer<typeof AllocationResponseSchema>;
+export type TrafficQuery = z.infer<typeof TrafficQuerySchema>;
+export type TrafficResponse = z.infer<typeof TrafficResponseSchema>;
+export type PostTrafficBody = z.infer<typeof PostTrafficBodySchema>;
+export type PostTrafficResponse = z.infer<typeof PostTrafficResponseSchema>;

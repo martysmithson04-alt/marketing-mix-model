@@ -35,7 +35,7 @@ Goal: charge serious money without becoming Triple Whale. Cash MER + allocation 
 
 ## C. Reliability (required before big ASP)
 
-- [x] `/v1` MER API (`/mer`, `/spend`, `/allocation`)
+- [x] `/v1` MER API (`/mer`, `/spend`, `/allocation`, `/traffic`)
 - [x] Overnight worker + `SyncRun` / `MerSnapshot` tables
 - [x] GitHub Actions nightly orchestrator (`.github/workflows/overnight.yml`)
 - [x] Enterprise Sheets orchestrator (hourly triggers, recon, alerts)
