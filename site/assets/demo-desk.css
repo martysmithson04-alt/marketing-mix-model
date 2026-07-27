@@ -5,27 +5,28 @@
  */
 
 :root {
-  --dd-bg: #e8f2fa;
-  --dd-ink: #0c1929;
-  --dd-ink-soft: #152536;
-  --dd-mute: #5a6f85;
-  --dd-paper: #ffffff;
-  --dd-line: #c5d5e4;
-  --dd-line-soft: #d8e6f0;
-  --dd-accent: #0284c7;
-  --dd-accent-ink: #0369a1;
-  --dd-accent-soft: #e8f4fb;
-  --dd-truth: #047857;
-  --dd-truth-soft: #ecfdf5;
-  --dd-lie: #b91c1c;
-  --dd-lie-soft: #fef2f2;
-  --dd-warn: #b45309;
-  --dd-shadow: 0 1px 2px rgba(12, 25, 41, 0.05), 0 8px 24px rgba(12, 25, 41, 0.06);
+  /* Dark instrument panel on light editorial page */
+  --dd-bg: #141a1e;
+  --dd-ink: #f7f5f0;
+  --dd-ink-soft: #efece5;
+  --dd-mute: #9aa3ab;
+  --dd-paper: #1c2429;
+  --dd-line: rgba(176, 141, 74, 0.28);
+  --dd-line-soft: rgba(247, 245, 240, 0.1);
+  --dd-accent: #b08d4a;
+  --dd-accent-ink: #c4a86a;
+  --dd-accent-soft: rgba(176, 141, 74, 0.16);
+  --dd-truth: #2a7a5c;
+  --dd-truth-soft: rgba(30, 92, 70, 0.22);
+  --dd-lie: #a63a2b;
+  --dd-lie-soft: rgba(166, 58, 43, 0.22);
+  --dd-warn: #b08d4a;
+  --dd-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 12px 32px rgba(0, 0, 0, 0.28);
   --dd-radius: 12px;
   --dd-motion: 160ms;
   --dd-ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --dd-font: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
-  --dd-display: "Fraunces", Georgia, serif;
+  --dd-font: "Instrument Sans", system-ui, sans-serif;
+  --dd-display: "Newsreader", Georgia, serif;
   --dd-meta: #7dd3e8;
   --dd-google: #e8a090;
   --dd-microsoft: #c4d4a8;
@@ -35,14 +36,11 @@
 
 /* —— Page shell (marketing chrome outside desk) —— */
 body.demo-page {
-  background:
-    radial-gradient(ellipse 70% 42% at 88% -4%, rgba(94, 231, 240, 0.1), transparent 55%),
-    radial-gradient(ellipse 48% 32% at 0% 18%, rgba(2, 132, 199, 0.06), transparent 50%),
-    var(--paper-2, #f3f6f9);
+  background: var(--paper, #f7f5f0);
 }
 
 body.demo-page .brand-kicker .ads {
-  color: var(--cyan-deep, #2bb8c4);
+  color: var(--ledger-green, #1e5c46);
 }
 
 body.demo-page .page-hero {

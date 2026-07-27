@@ -1,25 +1,46 @@
 :root {
-  --ink: #0a1221;
-  --ink-2: #121c2e;
-  --navy-2: #0d1728;
-  --mute: #5f6b78;
-  --line: rgba(10, 18, 33, 0.1);
-  --line-dark: rgba(94, 231, 240, 0.16);
-  --paper: #e8eef4;
-  --paper-2: #f2f5f8;
-  --lie: #c24532;
-  --lie-soft: #e8a090;
-  --truth: #0f6b52;
-  --truth-2: #1aa37a;
-  --cyan: #5ee7f0;
-  --cyan-deep: #1ab8c4;
-  --steel: #0a1221;
-  --steel-2: #152036;
+  /* Finance-grade instrument — Phase 1 tokens */
+  --paper: #f7f5f0;
+  --paper-2: #efece5;
+  --ink: #141a1e;
+  --ink-2: #1c2429;
+  --navy-2: #243038;
+  --slate-mute: #5c6670;
+  --mute: var(--slate-mute);
+  --line: rgba(20, 26, 30, 0.12);
+  --line-dark: rgba(176, 141, 74, 0.28);
+  --ledger-green: #1e5c46;
+  --ledger-green-2: #2a7a5c;
+  --loss-red: #a63a2b;
+  --brass: #b08d4a;
+  --brass-soft: #c4a86a;
+  --lie: var(--loss-red);
+  --lie-soft: #d4a59c;
+  --truth: var(--ledger-green);
+  --truth-2: var(--ledger-green-2);
+  /* Compat aliases: cyan retired as brand accent → ledger / brass */
+  --cyan: var(--brass-soft);
+  --cyan-deep: var(--ledger-green);
+  --steel: var(--ink);
+  --steel-2: var(--ink-2);
   --max: 74rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --display: "Bricolage Grotesque", system-ui, sans-serif;
-  --body: "Figtree", system-ui, sans-serif;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "Instrument Sans", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
+  /* 1.25 type scale — two weights per family (400/600 body, 600/700 display) */
+  --text-xs: 0.64rem;
+  --text-sm: 0.8rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.9531rem;
+  --text-2xl: 2.4414rem;
+  --text-3xl: 3.0518rem;
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-display: 600;
+  --weight-display-strong: 700;
 }
 
 *,
@@ -40,8 +61,9 @@ body {
 body {
   margin: 0;
   font-family: var(--body);
+  font-weight: var(--weight-regular);
   color: var(--ink);
-  background: var(--paper-2);
+  background: var(--paper);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
@@ -111,7 +133,7 @@ a {
   max-width: 100vw;
 }
 .top.scrolled {
-  background: rgba(244, 246, 248, 0.92);
+  background: rgba(247, 245, 240, 0.92);
   backdrop-filter: blur(16px);
   border-bottom-color: var(--line);
 }
@@ -539,7 +561,7 @@ a {
   left: 0;
   right: 0;
   height: 2px;
-  background: #5ee7f0;
+  background: var(--ledger-green-2);
   pointer-events: none;
   z-index: 2;
 }
@@ -564,7 +586,7 @@ a {
   text-decoration-thickness: 1.5px;
 }
 .hero .sx-claim .truth {
-  color: #5ee7f0;
+  color: var(--ledger-green-2);
 }
 .hero .sx-claim__sep {
   color: rgba(244, 246, 248, 0.35);
@@ -629,7 +651,7 @@ a {
   color: rgba(244, 246, 248, 0.62);
 }
 .hero .sx-demo__btn.is-on {
-  background: #5ee7f0;
+  background: var(--ledger-green-2);
   color: #0a1221;
 }
 .hero .sx-demo__chart-wrap {
@@ -648,10 +670,10 @@ a {
   fill: rgba(244, 246, 248, 0.55);
 }
 .hero .sx-demo__target {
-  stroke: #5ee7f0;
+  stroke: var(--ledger-green-2);
 }
 .hero .sx-demo__target-lbl {
-  fill: #5ee7f0;
+  fill: var(--ledger-green-2);
 }
 .hero .sx-demo__mer-line {
   stroke: #f4f6f8;
@@ -721,7 +743,7 @@ a {
   left: 0;
   right: 0;
   height: 2px;
-  background: #5ee7f0;
+  background: var(--ledger-green-2);
   pointer-events: none;
   opacity: 0.85;
 }
@@ -776,7 +798,7 @@ a {
 }
 /* Dark range — cyan thumb on frosted track */
 .hero .hero-instruments--band .hi-slider input[type="range"] {
-  accent-color: #5ee7f0;
+  accent-color: var(--ledger-green-2);
   -webkit-appearance: none;
   appearance: none;
   height: 4px;
@@ -790,7 +812,7 @@ a {
   width: 14px;
   height: 14px;
   border-radius: 2px;
-  background: #5ee7f0;
+  background: var(--ledger-green-2);
   border: 1px solid rgba(10, 18, 33, 0.35);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   cursor: pointer;
@@ -799,7 +821,7 @@ a {
   width: 14px;
   height: 14px;
   border-radius: 2px;
-  background: #5ee7f0;
+  background: var(--ledger-green-2);
   border: 1px solid rgba(10, 18, 33, 0.35);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   cursor: pointer;
@@ -872,7 +894,7 @@ a {
 }
 .hi-slider input[type="range"] {
   width: 100%;
-  accent-color: #5ee7f0;
+  accent-color: var(--ledger-green-2);
   margin: 0;
 }
 .hi-meters {
@@ -2685,7 +2707,7 @@ input[type="number"] {
   letter-spacing: -0.015em;
 }
 .lie-more a {
-  color: #5ee7f0;
+  color: var(--ledger-green-2);
   text-decoration: underline;
   text-underline-offset: 0.18em;
   text-decoration-thickness: 1.5px;
@@ -2857,7 +2879,7 @@ input[type="number"] {
   letter-spacing: -0.015em;
 }
 .dark-band .contrast-more a {
-  color: #5ee7f0;
+  color: var(--ledger-green-2);
   text-decoration: underline;
   text-underline-offset: 0.18em;
   text-decoration-thickness: 1.5px;
@@ -3050,3 +3072,49 @@ input[type="number"] {
   gap: 0.85rem 1.25rem;
   align-items: center;
 }
+
+
+/* —— Phase 1: type scale + tabular nums + weight discipline —— */
+h1, h2, h3, .brand-wordmark, .section-title, .display {
+  font-family: var(--display);
+  font-weight: var(--weight-display);
+  letter-spacing: -0.02em;
+}
+h1 { font-size: var(--text-3xl); line-height: 1.1; }
+h2 { font-size: var(--text-2xl); line-height: 1.15; }
+h3 { font-size: var(--text-lg); line-height: 1.25; font-weight: var(--weight-display); }
+.lede, .lede-soft { font-size: var(--text-md); font-weight: var(--weight-regular); }
+strong, b { font-weight: var(--weight-semibold); }
+.mono,
+.num,
+.metric,
+.desk,
+.desk *,
+.hero-demo,
+.hero-demo *,
+.score,
+.table,
+table,
+td,
+th,
+[data-num],
+.be-table,
+.compare-table {
+  font-variant-numeric: tabular-nums;
+}
+.desk .mono,
+.hero-demo .mono,
+.be-table,
+.compare-table td:not(:first-child),
+.num,
+[data-num] {
+  font-family: var(--mono);
+}
+/* Light-first page chrome: dark bands become paper/ink editorial */
+.band-dark,
+.close-band,
+.dark-band {
+  background: var(--ink) !important;
+  color: var(--paper);
+}
+/* Demo desk remains the dark instrument object (see demo-desk.css) */
