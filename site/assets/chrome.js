@@ -20,7 +20,7 @@
     chrome.innerHTML = `
   <header class="top" data-top>
     <a class="brand" href="/" aria-label="Mcfly Ads home">
-      <img class="brand-mark-img" src="/assets/brand/mcfly-m-transparent.png" width="36" height="36" alt="" />
+      <img class="brand-mark-img" src="/assets/brand/mcfly-m.svg" width="36" height="36" alt="" />
       <span class="brand-name">Mcfly <span class="brand-name-sub">Ads</span></span>
     </a>
     <nav class="nav" aria-label="Primary">
@@ -53,7 +53,7 @@
   <footer class="foot">
     <div class="wrap foot-grid">
       <div class="foot-brand">
-        <img src="/assets/brand/mcfly-m-transparent.png" width="28" height="28" alt="" />
+        <img src="/assets/brand/mcfly-m.svg" width="28" height="28" alt="" />
         <span>Mcfly Ads</span>
       </div>
       <nav aria-label="Footer">

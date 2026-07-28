@@ -1,0 +1,7 @@
+site/assets/site.css: raw=71112 gzip≈14292
+site/assets/app.js: raw=19481 gzip≈5513
+site/assets/spend-explorer-demo.js: raw=36397 gzip≈9101
+site/assets/chrome.js: raw=3428 gzip≈1238
+site/assets/waitlist-dock.js: raw=3768 gzip≈1369
+site/assets/cta-config.js: raw=1682 gzip≈728
+site/assets/brand/mcfly-m-transparent.png: raw=105998 gzip≈104954

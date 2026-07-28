@@ -20,3 +20,8 @@ Source brief: founder teardown of live mcflyads.com (2026-07-28).
 - `--cyan` aliased to brass/ledger for compat; hardcoded `#5ee7f0` retinted
 - Demo desk tokens inverted to dark instrument on light page
 - `<strong>` removed from inside `<p>` only (UI labels in lists/tables kept)
+
+
+## Ledger Plan 2 merge
+
+Cool accounting paper, Public Sans, `tokens.css`, fraction hero, SVG monogram. See `docs/LEDGER_REDESIGN.md`.

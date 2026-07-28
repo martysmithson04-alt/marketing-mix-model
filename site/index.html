@@ -8,7 +8,7 @@
   <link rel="icon" href="/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <meta name="theme-color" content="#141a1e" />
+  <meta name="theme-color" content="#14181b" />
   <link rel="canonical" href="https://mcflyads.com/" />
   <meta property="og:site_name" content="Mcfly Ads" />
   <meta property="og:type" content="website" />
@@ -22,8 +22,8 @@
   <meta name="twitter:image" content="https://mcflyads.com/assets/brand/og-cash-mer.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;600&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/site.css?v=20260728p5" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,600;6..72,700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/site.css?v=20260728ledger2" />
 
   <script type="application/ld+json">
   {
@@ -66,36 +66,47 @@
   <div data-chrome></div>
 
   <main id="main">
-    <section class="hero hero-ledger" aria-labelledby="hero-title">
-      <div class="wrap hero-ledger-inner">
+    <section class="hero hero-fraction" aria-labelledby="hero-title">
+      <div class="wrap hero-fraction-inner">
         <p class="brand-hero" id="hero-brand">
-          <img class="brand-hero-mark" src="/assets/brand/mcfly-m-transparent.png" width="72" height="72" alt="" />
+          <img class="brand-hero-mark" src="/assets/brand/mcfly-m.svg" width="48" height="48" alt="" />
           Mcfly <span class="brand-hero-sub">Ads</span>
         </p>
         <h1 id="hero-title">The one ad number your CFO will sign off on.</h1>
-        <p class="lede">Total ROAS is net Shopify sales divided by ad spend, set against break-even from your margin.</p>
+        <p class="lede">Total ROAS is net Shopify sales divided by ad spend, checked against break-even from your margin.</p>
 
-        <div class="ledger-card" aria-label="Sample Total ROAS calculation">
-          <p class="ledger-eq mono">
-            <span class="num">$412,380</span> net sales ÷ <span class="num">$118,240</span> spend
-          </p>
-          <div
-            class="ledger-line"
-            role="img"
-            aria-label="Total ROAS 3.49 times, above break-even at 2.86 times"
-          >
-            <div class="ledger-track">
-              <span class="ledger-be-tick" style="left:47.7%" title="Break-even 2.86×"></span>
-              <span class="ledger-marker" style="left:58.2%" data-roas-marker></span>
-            </div>
-            <div class="ledger-scale">
-              <span class="ledger-roas-val num">3.49×</span>
-              <span class="ledger-be-val num">2.86× break-even</span>
-              <span class="ledger-status above">Above</span>
-            </div>
+        <div class="fraction" id="roas-fraction" data-sales="412380" data-spend="118240" aria-live="polite">
+          <p class="fraction-num display">Net Shopify sales</p>
+          <p class="fraction-num-value data num">$412,380</p>
+          <div class="fraction-rule" aria-hidden="true"></div>
+          <p class="fraction-den display">Ad spend</p>
+          <p class="fraction-den-value data num">$118,240</p>
+          <p class="fraction-eq" aria-hidden="true">=</p>
+          <p class="fraction-quot data num" data-quot>3.49×</p>
+          <div class="fraction-be-track" aria-hidden="true">
+            <span class="fraction-be-line" data-be-line style="left:47.7%"></span>
           </div>
-          <p class="ledger-caption mono">SAMPLE · 35% margin → break-even ≈ 1 ÷ 0.35</p>
+          <p class="fraction-be-label data">
+            break-even <span data-be-val>2.86×</span>
+            <span class="fraction-status above" data-status>Above</span>
+          </p>
         </div>
+
+        <label class="margin-slider">
+          <span class="margin-slider-label">Contribution margin <span class="data num" data-margin-label>35%</span></span>
+          <input
+            type="range"
+            min="15"
+            max="60"
+            value="35"
+            step="1"
+            data-margin-range
+            aria-valuemin="15"
+            aria-valuemax="60"
+            aria-valuenow="35"
+            aria-valuetext="break-even 2.86 times"
+          />
+        </label>
 
         <div class="hero-actions">
           <div class="cta-row">
@@ -128,21 +139,21 @@
         <h2 id="digest-title" class="display">Three inputs. One efficiency number.</h2>
         <p class="lede-soft band-intro">Net sales from Shopify, ad spend you paste from Meta and Google, and break-even from your margin. That is the Monday question finance already understands.</p>
 
-        <div class="digest-read" role="group" aria-label="What feeds Total ROAS">
-          <ul class="digest-facts">
-            <li>
-              <span class="digest-fact-label">Sales</span>
-              <span>Net sales for the period — the till number.</span>
-            </li>
-            <li>
-              <span class="digest-fact-label">Spend</span>
-              <span>What left for ads — paste Meta and Google from Sheets (CSV optional).</span>
-            </li>
-            <li>
-              <span class="digest-fact-label">Break-even</span>
-              <span>About 1 ÷ contribution margin. Above it you can defend the mix.</span>
-            </li>
-          </ul>
+        <div class="digest-fraction" role="group" aria-label="Sales over spend equals Total ROAS">
+          <div class="digest-frac-row">
+            <p class="digest-frac-label">Sales</p>
+            <p class="digest-frac-copy">Net sales for the period — the till number.</p>
+          </div>
+          <div class="digest-frac-rule" aria-hidden="true"></div>
+          <div class="digest-frac-row">
+            <p class="digest-frac-label">Spend</p>
+            <p class="digest-frac-copy">What left for ads — paste Meta and Google from Sheets.</p>
+          </div>
+          <p class="digest-frac-eq" aria-hidden="true">=</p>
+          <div class="digest-frac-row digest-frac-answer">
+            <p class="digest-frac-label">Total ROAS</p>
+            <p class="digest-frac-copy">Compared to break-even from your margin — then one budget move.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -407,6 +418,7 @@
   <script src="/assets/chrome.js?v=20260728p4"></script>
   <!-- Candidate B waitlist dock (disjoint); loads CSS via script. Keep before app.js for data-waitlist bind. -->
   <script src="/assets/waitlist-dock.js?v=20260728cta"></script>
+  <script src="/assets/fraction-hero.js?v=20260728ledger"></script>
   <script src="/assets/app.js?v=20260728h"></script>
 <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9af4d468b69443d4b310b2b07f4481cb"}'></script><!-- Cloudflare Pages Analytics --></body>
 </html>

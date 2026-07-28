@@ -23,8 +23,8 @@
     border: 1px solid rgba(94, 231, 240, 0.35);
     border-right: 0;
     border-radius: 0.65rem 0 0 0.65rem;
-    background: linear-gradient(160deg, #152036 0%, #0a1221 100%);
-    color: #f4f6f8;
+    background: linear-gradient(160deg, var(--ink) 0%, var(--ink) 100%);
+    color: var(--paper-sunk);
     font-family: var(--body);
     font-size: 0.78rem;
     font-weight: 600;
@@ -37,7 +37,7 @@
     width: 0.45rem;
     height: 0.45rem;
     border-radius: 1px;
-    background: #2a7a5c;
+    background: var(--black-ink);
   }
 
   .wl-dock__sheet {
@@ -45,7 +45,7 @@
     position: fixed;
     inset: auto 0 0;
     padding: 0.75rem 1.15rem calc(1.1rem + env(safe-area-inset-bottom, 0px));
-    background: var(--paper-2, #f4f6f8);
+    background: var(--paper-2, var(--paper-sunk));
     border-top: 1px solid var(--line, rgba(10, 18, 33, 0.12));
     background-image:
       linear-gradient(180deg, rgba(21, 32, 54, 0.04), transparent 40%),
@@ -64,12 +64,12 @@
     font-family: var(--display);
     font-size: 1.25rem;
     margin: 0 0 0.25rem;
-    color: var(--ink, #0a1221);
+    color: var(--ink, var(--ink));
   }
 
   .wl-dock__sub {
     margin: 0 0 0.9rem;
-    color: var(--mute, #5a6577);
+    color: var(--mute, var(--ink-2));
     font-size: 0.9rem;
   }
 
@@ -85,7 +85,7 @@
     background: none;
     font: inherit;
     font-weight: 600;
-    color: var(--mute, #5a6577);
+    color: var(--mute, var(--ink-2));
     text-decoration: underline;
     cursor: pointer;
   }
