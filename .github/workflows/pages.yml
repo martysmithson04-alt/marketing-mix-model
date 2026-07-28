@@ -34,9 +34,12 @@ jobs:
           test -f site/CNAME
           test -f site/.nojekyll
           grep -q '^mcflyads.com$' site/CNAME
-          grep -q "Cash Ledger" site/assets/site.css
-          grep -q 'data-mer-count' site/index.html
-          grep -q 'data-desk' site/index.html
+          test -f site/assets/tokens.css
+          grep -q -- '--black-ink' site/assets/tokens.css
+          grep -q 'hero-fraction\|roas-fraction' site/index.html
+          grep -q 'Public Sans\|Public+Sans' site/index.html
+          test -f site/assets/brand/mcfly-m.svg
+          test -f site/assets/fraction-hero.js
 
   # Deploy only from main (or manual dispatch). enablement: true creates the
   # Pages site on first successful run if Settings → Pages is still unset.
