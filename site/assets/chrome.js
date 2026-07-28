@@ -26,9 +26,9 @@
     <nav class="nav" aria-label="Primary">
       <a href="/product" data-nav="product">Product</a>
       <a href="/pricing" data-nav="pricing">Pricing</a>
+      <a href="/cash-mer" data-nav="cash-mer">Why Total ROAS</a>
+      <a href="/security" data-nav="security">Security</a>
       <a href="/demo" data-nav="demo">Demo</a>
-      <a href="${isHome ? "#digest" : "/#digest"}">How it works</a>
-      <a href="/support" data-nav="support">Support</a>
       <a class="nav-cta" data-mcfly-cta="primary" href="${primary.href}">${primary.label}</a>
     </nav>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
@@ -38,8 +38,9 @@
   <div id="mobile-nav" class="mobile-nav" hidden>
     <a href="/product">Product</a>
     <a href="/pricing">Pricing</a>
+    <a href="/cash-mer">Why Total ROAS</a>
+    <a href="/security">Security</a>
     <a href="/demo">Demo</a>
-    <a href="${isHome ? "#digest" : "/#digest"}">How it works</a>
     <a href="/support">Support</a>
     <a data-mcfly-cta="primary" href="${primary.href}">${primary.label}</a>
     <a data-mcfly-cta="secondary" href="${secondary.href}">${secondary.label}</a>
@@ -60,7 +61,8 @@
         <a href="/product#spend-csv">Paste spend</a>
         <a href="/pricing">Pricing</a>
         <a href="/cash-mer">Total ROAS</a>
-        <a href="/demo">Demo desk</a>
+        <a href="/demo">Demo</a>
+        <a href="/security">Security</a>
         <a href="/faq">FAQ</a>
         <a href="/why-pixels-fail">Why pixels fail</a>
         <a href="/vs-attribution-suites">Total ROAS vs suites</a>
@@ -70,7 +72,7 @@
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
       </nav>
-        <p class="fine">© <span data-year></span> Mcfly Ads. Marketing Data Science — Total ROAS = sales ÷ spend.</p>
+        <p class="fine">© <span data-year></span> Mcfly Ads. Marketing Data Science — Finance-grade Total ROAS.</p>
     </div>
   </footer>`;
   }

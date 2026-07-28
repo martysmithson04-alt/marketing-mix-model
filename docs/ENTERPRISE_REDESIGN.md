@@ -8,10 +8,10 @@ Source brief: founder teardown of live mcflyads.com (2026-07-28).
 | 1 | Design tokens & type (no layout) | Done |
 | 2 | Hero rebuild + desk → `/demo` | Done |
 | 3 | Copy rewrite (§2.4 laws) | Done |
-| 4 | Trust layer | Pending |
-| 5 | Structural de-templating | Pending |
-| 6 | Motion & polish | Pending |
-| 7 | QA gates | Pending |
+| 4 | Trust layer | Done |
+| 5 | Structural de-templating | Done |
+| 6 | Motion & polish | Done |
+| 7 | QA gates | Partial — see PR |
 
 ## Phase 1 notes
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security &amp; data — Mcfly Ads</title>
+  <meta name="description" content="What Mcfly accesses on Shopify, what we store, retention, and what we refuse — including no pixels and no resale of merchant data." />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#141a1e" />
+  <link rel="canonical" href="https://mcflyads.com/security" />
+  <meta property="og:site_name" content="Mcfly Ads" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mcflyads.com/security" />
+  <meta property="og:title" content="Security &amp; data — Mcfly Ads" />
+  <meta property="og:description" content="Shopify scopes, storage, retention, no resale, no pixels." />
+  <meta property="og:image" content="https://mcflyads.com/assets/brand/og-cash-mer.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;600&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/site.css?v=20260728p4" />
+</head>
+<body class="legal-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <div data-chrome></div>
+
+  <main id="main">
+    <header class="page-hero">
+      <p class="brand-kicker">Mcfly <span class="ads">Ads</span></p>
+      <h1>Security and data posture</h1>
+      <p class="lede">An honest page for anyone evaluating an app that reads Shopify sales. Published July 28, 2026.</p>
+    </header>
+
+    <article class="wrap narrow prose">
+      <h2>What we access</h2>
+      <ul>
+        <li>Shopify Admin API order totals for periods you view (sales for Total ROAS).</li>
+        <li>Ad spend you paste or upload (Meta, Google, other) — not scraped from ad accounts on day one.</li>
+        <li>Settings you enter: contribution margin, optional target Total ROAS.</li>
+      </ul>
+
+      <h2>What we store</h2>
+      <ul>
+        <li>Shop identity and OAuth session required by Shopify.</li>
+        <li>Spend entries, session/link-click uploads if you use traffic diagnostics, and margin settings.</li>
+        <li>Aggregated MER snapshots for the periods you run — not a customer CRM built from order line items.</li>
+      </ul>
+
+      <h2>Retention</h2>
+      <p>We keep app data while the app is installed. After uninstall or Shopify shop redact webhooks, we delete merchant app data on Shopify’s timelines.</p>
+
+      <h2>What we do not do</h2>
+      <ul>
+        <li>We do not install a marketing pixel or run multi-touch attribution.</li>
+        <li>We do not resell merchant data.</li>
+        <li>We do not train public models on your store’s orders or spend.</li>
+      </ul>
+
+      <h2>Subprocessors</h2>
+      <p>Hosting and database providers for the Shopify app (currently planned: Fly.io application hosting and managed Postgres). The marketing site is static on Cloudflare Pages / GitHub Pages. Email for Partner invites is ordinary inbox mail to mcflyadsmmm@gmail.com.</p>
+
+      <h2>Why “no pixel” is a security feature</h2>
+      <p>Fewer trackers on your storefront means a smaller attack and compliance surface. Total ROAS is computed from Shopify sales and the spend you provide — not from a browser identity graph.</p>
+
+      <p class="prose-cta"><a class="btn primary solid" href="/#waitlist">Request early access</a> <a class="btn ghost" href="/privacy">Privacy policy</a></p>
+    </article>
+  </main>
+
+  <div data-footer></div>
+  <script src="/assets/cta-config.js?v=20260728cta"></script>
+  <script src="/assets/chrome.js?v=20260728p4"></script>
+</body>
+</html>
