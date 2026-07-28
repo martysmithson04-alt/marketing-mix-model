@@ -1,0 +1,35 @@
+---
+description: mcflyads.com design system — hard constraints (Ledger direction)
+alwaysApply: true
+---
+
+# Non-negotiable
+
+1. Every color comes from `site/assets/tokens.css`. Writing a raw hex, `rgb()`, or `hsl()`
+   anywhere except `tokens.css` is a build failure. If you believe a new color is
+   needed, STOP and ask — do not add it.
+2. Every padding, margin, and gap uses a `--s-*` token. No raw `px` for spacing.
+   No new rungs on the ladder.
+3. Every font-size uses a `--t-*` token. No new `clamp()` expressions for type.
+4. Exactly three breakpoints: `--bp-sm` 40rem, `--bp-md` 60rem, `--bp-lg` 80rem.
+   `min-width` only. Never `max-width` for layout breakpoints.
+5. Exactly two radii: `--radius-flat` (0) and `--radius-ctrl` (4px).
+6. Motion uses `--dur-fast|base|slow` and `--ease-std|enter` only.
+   Every animation must have a `prefers-reduced-motion` counterpart.
+7. Zero `!important`. Fix specificity instead.
+8. No `box-shadow` for elevation. Depth comes from `--rule` hairlines and the
+   paper / paper-raised / paper-sunk surface trio.
+9. No gradients. No `backdrop-filter`. No noise, grain, mesh, or grid overlays.
+   These were deliberately removed; re-adding any is a regression.
+10. All numeric content gets `font-variant-numeric: tabular-nums lining-nums`.
+11. Accents are semantic only: `--black-ink` (above break-even) and `--red-ink`
+    (below). Do not invent a third brand accent (no cyan, brass, terracotta).
+
+# Scope discipline
+
+Change only what the current phase specifies. Do not "improve" copy or add
+sections unless the phase asks. Note out-of-scope finds in `docs/TODO.md`.
+
+# When uncertain
+
+Ask. Never invent a design decision to unblock yourself.
