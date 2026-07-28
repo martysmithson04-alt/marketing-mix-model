@@ -1,17 +1,23 @@
 {
-  "name": "Mcfly Analytics",
+  "name": "Mcfly Ads",
   "short_name": "Mcfly",
-  "description": "Cash MER — spend vs sales. Not attribution theater.",
-  "start_url": "/download.html",
+  "description": "Marketing Data Science you can trust — Total ROAS = sales ÷ spend. Not attribution theater.",
+  "start_url": "/download",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#0b0e12",
-  "theme_color": "#0b0e12",
+  "background_color": "#0a1221",
+  "theme_color": "#0a1221",
   "icons": [
     {
-      "src": "/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
       "purpose": "any"
     }
   ]

@@ -4,79 +4,262 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy — Mcfly Analytics</title>
-  <meta name="description" content="Privacy policy for the Mcfly Analytics Shopify app — what we collect, why, and how to request deletion." />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <meta name="theme-color" content="#0b0e12" />
-  <link rel="canonical" href="https://mcflyads.com/privacy.html" />
-  <meta property="og:site_name" content="Mcfly Analytics" />
+  <meta name="description" content="Privacy for Mcfly Analytics (Shopify listing) / Mcfly Ads — order totals, opaque OrderFact / CohortFact for customer lifetime value, spend you enter. No name/email CRM. No pixels." />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#141a1e" />
+  <link rel="canonical" href="https://mcflyads.com/privacy" />
+  <meta property="og:site_name" content="Mcfly Ads" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mcflyads.com/privacy.html" />
+  <meta property="og:url" content="https://mcflyads.com/privacy" />
   <meta property="og:title" content="Privacy — Mcfly Analytics" />
-  <meta property="og:description" content="What Mcfly collects for cash MER — and what we refuse to do." />
-  <meta property="og:image" content="https://mcflyads.com/assets/product-cockpit.jpg" />
+  <meta property="og:description" content="Total ROAS data diet: order totals, opaque OrderFact / CohortFact, spend you enter. No name/email CRM. App Store Free when listed." />
+  <meta property="og:image" content="https://mcflyads.com/assets/brand/og-cash-mer.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy — Mcfly Analytics" />
+  <meta name="twitter:description" content="Order totals + opaque OrderFact / CohortFact + spend you enter. No pixels, no CRM. App Store Free when listed." />
+  <meta name="twitter:image" content="https://mcflyads.com/assets/brand/og-cash-mer.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/site.css?v=20260722d" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,600;6..72,700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/site.css?v=20260728p1" />
+  <style>
+    body.privacy-page {
+      background:
+        radial-gradient(ellipse 70% 45% at 95% -5%, rgba(94, 231, 240, 0.11), transparent 55%),
+        radial-gradient(ellipse 50% 35% at 0% 15%, rgba(26, 163, 122, 0.07), transparent 50%),
+        var(--paper-2);
+    }
+    body.privacy-page .brand-kicker .ads {
+      color: var(--cyan-deep);
+    }
+    body.privacy-page .page-hero h1 {
+      max-width: 20ch;
+    }
+    body.privacy-page .page-hero p {
+      max-width: 48ch;
+    }
+
+    /* Trust strip — the promises this page has to keep */
+    body.privacy-page .trust-strip {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(2, 1fr);
+      width: min(var(--max), 100%);
+      margin: 1.75rem auto 0;
+      padding: 0 clamp(1.15rem, 3.5vw, 2rem);
+    }
+    @media (min-width: 720px) {
+      body.privacy-page .trust-strip {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    body.privacy-page .trust-chip {
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.55);
+      font-size: 0.85rem;
+      line-height: 1.35;
+      color: var(--ink);
+    }
+    body.privacy-page .trust-chip strong {
+      display: block;
+      margin-bottom: 0.2rem;
+      font-family: var(--display);
+      font-size: 0.95rem;
+      letter-spacing: -0.02em;
+    }
+    body.privacy-page .trust-chip span {
+      color: var(--mute);
+    }
+
+    /* Plain-English summary — orientation before the legal detail */
+    body.privacy-page .legal-summary {
+      margin: 0.5rem 0 2rem;
+      padding: clamp(1.35rem, 3.5vw, 1.75rem);
+      border: 1px solid rgba(26, 163, 122, 0.3);
+      background:
+        linear-gradient(160deg, rgba(94, 231, 240, 0.09), transparent 55%),
+        #fff;
+    }
+    body.privacy-page .legal-summary .tag {
+      display: inline-block;
+      margin: 0 0 0.75rem;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--truth);
+    }
+    body.privacy-page .summary-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    body.privacy-page .summary-list li {
+      position: relative;
+      padding: 0.55rem 0 0.55rem 1.35rem;
+      color: var(--ink);
+      border-top: 1px solid var(--line);
+      line-height: 1.45;
+    }
+    body.privacy-page .summary-list li:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    body.privacy-page .summary-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--cyan-deep);
+      font-family: var(--mono);
+    }
+    body.privacy-page .summary-note {
+      margin: 1rem 0 0;
+      font-size: 0.85rem;
+      color: var(--mute);
+    }
+
+    /* Jump nav — full scope of the policy, up front */
+    body.privacy-page .jump-nav {
+      margin: 0 0 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+    }
+    body.privacy-page .jump-nav a {
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      letter-spacing: -0.01em;
+      color: var(--mute);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    body.privacy-page .jump-nav a:hover {
+      color: var(--cyan-deep);
+      border-bottom-color: var(--cyan-deep);
+    }
+    body.privacy-page .prose h2 {
+      scroll-margin-top: 5.5rem;
+    }
+  </style>
 </head>
-<body>
+<body class="privacy-page">
   <a class="skip" href="#main">Skip to content</a>
   <div data-chrome></div>
   <main id="main">
     <header class="page-hero">
-      <p class="brand-kicker">Mcfly Analytics</p>
+      <p class="brand-kicker">Mcfly <span class="ads">Ads</span></p>
       <h1>Privacy policy</h1>
-      <p>Last updated: July 21, 2026. Applies to mcflyads.com and the Mcfly Analytics Shopify app.</p>
+      <p>Last updated: July 28, 2026. We process store and spend data to show Total ROAS — action basis <span class="mono formula-inline">net sales ÷ ad spend</span> (gross order totals may appear as Ads Manager–comparable) — never path attribution.</p>
     </header>
-    <div class="prose">
-      <h2>Who we are</h2>
-      <p>Mcfly Analytics (“Mcfly,” “we”) is operated by Marty Smithson (Utah, United States). Contact: <a href="mailto:mcflyadsmmm@gmail.com">mcflyadsmmm@gmail.com</a>. Support: <a href="/support.html">mcflyads.com/support</a>.</p>
 
-      <h2>What we collect</h2>
+    <div class="trust-strip" role="list">
+      <div class="trust-chip" role="listitem">
+        <strong>Total ROAS data only</strong>
+        <span>Order totals + opaque OrderFact / CohortFact + spend you enter</span>
+      </div>
+      <div class="trust-chip" role="listitem">
+        <strong>Never sold</strong>
+        <span>Merchant and customer data isn't for sale</span>
+      </div>
+      <div class="trust-chip" role="listitem">
+        <strong>No pixels</strong>
+        <span>Not a path-attribution product, by design</span>
+      </div>
+      <div class="trust-chip" role="listitem">
+        <strong>App Store Free when listed</strong>
+        <span>customers/redact clears OrderFacts · shop/redact clears the shop</span>
+      </div>
+    </div>
+
+    <div class="prose">
+      <div class="legal-summary">
+        <p class="tag">Plain-English summary</p>
+        <ul class="summary-list">
+          <li>We read Shopify order totals (<code>read_orders</code>) and classify unique customers as new vs returning using minimal <code>read_customers</code> under Shopify <strong>Protected Customer Data (Level 1)</strong> — opaque customer IDs + <code>numberOfOrders</code> only. We do <strong>not</strong> request Level 2 fields (name, email, phone, or address). That diet powers Total ROAS, break-even, and allocation.</li>
+          <li>We persist opaque <strong>OrderFact</strong> rows (order id, amount, date, opaque customerKey) and <strong>CohortFact</strong> aggregates for customer lifetime value — still no name/email/phone/address CRM.</li>
+          <li>Uninstalling triggers Shopify's <code>shop/redact</code> webhook — we delete your Mcfly shop record, settings, spend, OrderFacts, CohortFacts, and related facts. <code>customers/redact</code> deletes that customer's OrderFacts.</li>
+          <li>Same Total ROAS religion as the product: we measure money against money, not who "won" the click. The Shopify App Store listing name is <strong>Mcfly Analytics</strong> (free while we launch); see <a href="/pricing">Pricing</a> for the later flat ~$79 path via Shopify Billing.</li>
+        </ul>
+        <p class="summary-note">This summary is an orientation, not a substitute — the full policy below governs.</p>
+      </div>
+
+      <nav class="jump-nav" aria-label="Jump to section">
+        <a href="#who-we-are">Who we are</a>
+        <a href="#why-we-process">Why we process data</a>
+        <a href="#what-we-collect">What we collect</a>
+        <a href="#what-we-refuse">What we refuse to do</a>
+        <a href="#gdpr">GDPR / data requests</a>
+        <a href="#retention">Retention</a>
+        <a href="#processors">Processors</a>
+        <a href="#your-rights">Your rights</a>
+        <a href="#governing-law">Governing law</a>
+      </nav>
+
+      <h2 id="who-we-are">Who we are</h2>
+      <p>Mcfly Ads (“Mcfly,” “we”) is operated by Marty Smithson (Utah, United States). Contact: <a href="/cdn-cgi/l/email-protection#bed3ddd8d2c7dfdacdd3d3d3fed9d3dfd7d290ddd1d3"><span class="__cf_email__" data-cfemail="026f61646e7b6366716f6f6f42656f636b6e2c616d6f">[email&#160;protected]</span></a>. Support: <a href="/support">mcflyads.com/support</a>.</p>
+      <p>This policy applies to mcflyads.com and the Shopify app listed as Mcfly Analytics (product brand: Mcfly Ads).</p>
+
+      <h2 id="why-we-process">Why we process data</h2>
+      <p>To run the Total ROAS dashboard, break-even Total ROAS, rules-based allocation, and customer lifetime value cohorts; to provide support and security; and to comply with law and Shopify’s app requirements (including GDPR webhooks). We measure money spent on ads against money Shopify recorded as sales — not who “won” the click.</p>
+
+      <h2 id="what-we-collect">What we collect</h2>
       <ul>
-        <li><strong>Account contact</strong> you give us (name, email, store URL) via waitlist or support.</li>
+        <li><strong>Waitlist / support contact</strong> you give us voluntarily — name, email, and optionally store URL — via the site waitlist (<a href="/#waitlist">mcflyads.com/#waitlist</a>) or email to <a href="/cdn-cgi/l/email-protection#44292722283d252037292929042329252d286a272b29"><span class="__cf_email__" data-cfemail="cea3ada8a2b7afaabda3a3a38ea9a3afa7a2e0ada1a3">[email&#160;protected]</span></a> / <a href="/support">Support</a>. Used only to reply and coordinate installs. Not customer CRM.</li>
         <li><strong>Shopify shop domain</strong> and OAuth session tokens when you install the app.</li>
-        <li><strong>Order / sales totals</strong> for periods you view (Shopify Admin API <code>read_orders</code>) to compute MER.</li>
-        <li><strong>Ad spend you enter</strong> (Meta, Google, other) and settings (margin %, target MER).</li>
-        <li><strong>Technical logs</strong> (IP, user agent, error events) for security and reliability.</li>
+        <li><strong>Staff Session fields from Shopify login</strong> (when the merchant staffer opens the embedded app with an online session): staff <code>email</code>, <code>firstName</code>, <code>lastName</code>, and related Shopify session flags (account owner / collaborator / locale). These identify the Admin user using the app — <strong>not</strong> store customers. We do not use staff email for marketing lists.</li>
+        <li><strong>Order / sales totals and order counts</strong> for periods you view (Shopify Admin API scopes <code>read_orders</code> and, when approved, <code>read_all_orders</code> for deeper history) to compute Total ROAS and AOV.</li>
+        <li><strong>New vs returning customer counts</strong> via minimal scope <code>read_customers</code>: on each order we read only the opaque customer <code>id</code> and <code>numberOfOrders</code> to classify new vs returning. We do not request or store customer name, email, phone, or address, and we do not keep a customer CRM.</li>
+        <li><strong>OrderFact</strong> (persisted): opaque <code>customerKey</code> (Shopify customer GID or guest marker), Shopify order id, order amount, and order created-at / shop-local date — used to build customer lifetime value. No name, email, phone, or address fields.</li>
+        <li><strong>CohortFact</strong> (persisted aggregates): monthly first-order cohort rollups (customer counts and revenue/orders at 30/90/365 days) derived from OrderFacts — still no CRM PII.</li>
+        <li><strong>ComplianceDataExport</strong> (temporary): when Shopify sends <code>customers/data_request</code>, we store a Level-1 opaque order package (order ids, amounts, dates, opaque customerKey — never name/email/phone) so the merchant can download it in Settings. Packages auto-expire after <strong>60 days</strong> and are erased earlier on <code>customers/redact</code>, <code>shop/redact</code>, or uninstall.</li>
+        <li><strong>Ad spend you enter or sync</strong> — Free path: paste from Sheets or CSV / manual entry (ad-spend aggregates only). Optional merchant-chosen pipe tools (e.g. SyncWith, Coupler, Supermetrics, Coefficient) may fill a Mcfly CSV template on the merchant’s side — see Processors. Near-term retention path: optional Meta + Google Ads spend OAuth (feature-flagged; never pixels / path data). Settings: margin %, target Total ROAS. Action Total ROAS uses <strong>net</strong> Shopify sales; gross order totals may be shown as Ads Manager–comparable secondary.</li>
+        <li><strong>Technical logs</strong> (shop domain, topic, counts, IP, user agent, error events) for security and reliability. Compliance webhook logs do not dump order amount packages.</li>
       </ul>
 
-      <h2>What we do not do</h2>
+      <h2 id="what-we-refuse">What we refuse to do</h2>
       <ul>
         <li>We do not sell merchant or customer data.</li>
         <li>We do not run path-attribution pixels as a product.</li>
-        <li>We do not build a customer CRM from your orders — we aggregate sales for MER.</li>
+        <li>We do not build a customer CRM from your orders — no name/email/phone/address directory.</li>
         <li>We do not train public AI models on your store data.</li>
       </ul>
 
-      <h2>Why we process data</h2>
-      <p>To provide the MER dashboard, break-even and allocation features, support, security, and to comply with law and Shopify’s app requirements (including GDPR webhooks).</p>
+      <h2 id="gdpr">Shopify GDPR / data requests</h2>
+      <p>When Shopify sends <code>customers/data_request</code>, <code>customers/redact</code>, or <code>shop/redact</code>, we verify the request HMAC and process them per Shopify’s timelines.</p>
+      <ul>
+        <li><code>customers/data_request</code>: we do not store customer email, name, phone, or address. We store a Level-1 opaque order package (<strong>ComplianceDataExport</strong>: order ids, amounts, dates, opaque customerKey) for merchant fulfillment and acknowledge with HTTP 200. Merchants download packages in-app (Settings). Packages auto-expire after <strong>60 days</strong>, and are erased earlier on <code>customers/redact</code>, <code>shop/redact</code>, or uninstall.</li>
+        <li><code>customers/redact</code>: we delete OrderFact rows for that shop whose opaque customerKey matches the Shopify customer id (or order ids in <code>orders_to_redact</code>), erase that customer’s Level-1 data_request package, and recompute CohortFacts from remaining OrderFacts.</li>
+        <li><code>shop/redact</code> (and uninstall): we delete your Mcfly shop record and cascaded data — settings, spend entries, Total ROAS snapshots, sales-day facts, OrderFacts, CohortFacts, staff sessions (including staff email/name), Level-1 data_request packages, and related rows.</li>
+      </ul>
 
-      <h2>Shopify GDPR / data requests</h2>
-      <p>When Shopify sends <code>customers/data_request</code>, <code>customers/redact</code>, or <code>shop/redact</code>, we process them per Shopify’s timelines. Shop uninstall and <code>shop/redact</code> delete your Mcfly shop record, settings, spend entries, and sessions.</p>
+      <h2 id="retention">Retention</h2>
+      <p>We keep app data while the app is installed. After uninstall / shop redact, we delete merchant app data subject to short backup windows and legal holds. ComplianceDataExport packages from <code>customers/data_request</code> are retained for at most 60 days (then auto-purged), or erased sooner on redact/uninstall. Waitlist/support emails are kept only as long as needed to reply or coordinate an install, then deleted on request.</p>
 
-      <h2>Retention</h2>
-      <p>We keep app data while the app is installed. After uninstall / shop redact, we delete merchant app data subject to short backup windows and legal holds.</p>
+      <h2 id="processors">Processors</h2>
+      <p>We use infrastructure vendors such as Cloudflare (site hosting/CDN), our application host and database provider (Fly.io + managed Postgres when the Shopify app is live), transactional email, and Shopify. They process data only to provide services to us.</p>
+      <p>Merchant-chosen spend pipe tools (not Mcfly processors by default): On the Free path you may optionally use SyncWith, Coupler, Supermetrics, Coefficient, or similar tools you contract and pay for to fill a Mcfly CSV / Sheets template, then import that file into Mcfly. Those tools are your processors under your agreements — Mcfly does not operate them, does not receive their OAuth tokens, and does not claim a “Works with” partnership. Mcfly only receives the ad-spend aggregates you paste or upload.</p>
 
-      <h2>Processors</h2>
-      <p>We use infrastructure vendors such as Cloudflare (site hosting/CDN), our application host and database provider (when the Shopify app is live), email, and Shopify. They process data only to provide services to us.</p>
+      <h2 id="your-rights">Your rights</h2>
+      <p>Depending on your location, you may request access, correction, deletion, or export of personal data. Email <a href="/cdn-cgi/l/email-protection#d2bfb1b4beabb3b6a1bfbfbf92b5bfb3bbbefcb1bdbf"><span class="__cf_email__" data-cfemail="b0ddd3d6dcc9d1d4c3ddddddf0d7ddd1d9dc9ed3dfdd">[email&#160;protected]</span></a>. Merchants can also uninstall the app to stop processing store data through Mcfly.</p>
 
-      <h2>Your rights</h2>
-      <p>Depending on your location, you may request access, correction, deletion, or export of personal data. Email <a href="mailto:mcflyadsmmm@gmail.com">mcflyadsmmm@gmail.com</a>. Merchants can also uninstall the app to stop processing store data through Mcfly.</p>
+      <h2 id="governing-law">Governing law</h2>
+      <p>Privacy disputes relating to this site and app are handled under Utah, USA law, consistent with our <a href="/terms">Terms</a>.</p>
 
-      <h2>Governing law</h2>
-      <p>Privacy disputes relating to this site and app are handled under Utah, USA law, consistent with our <a href="/terms.html">Terms</a>.</p>
-
-      <h2>Children</h2>
+      <h2 id="children">Children</h2>
       <p>The service is for businesses, not directed at children under 16.</p>
 
-      <h2>Changes</h2>
+      <h2 id="changes">Changes</h2>
       <p>We may update this policy. Material changes will be posted here with a new date.</p>
     </div>
   </main>
   <div data-footer></div>
-  <script src="/assets/chrome.js?v=20260722d"></script>
-  <script src="/assets/app.js?v=20260722d"></script>
-</body>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/cta-config.js?v=20260728cta"></script>
+  <script src="/assets/chrome.js?v=20260728cta"></script>
+  <script src="/assets/app.js?v=20260728i"></script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9af4d468b69443d4b310b2b07f4481cb"}'></script><!-- Cloudflare Pages Analytics --></body>
 </html>

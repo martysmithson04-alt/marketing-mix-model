@@ -1,0 +1,103 @@
+/**
+ * Mcfly Ads — Ledger design tokens
+ * Source of truth. No raw hex outside this file.
+ * Direction C: accounting-pad paper, black ink / red ink only.
+ */
+
+:root {
+  /* ——— SURFACE ——— */
+  --paper: #f1f2ee;
+  --paper-raised: #fbfbf9;
+  --paper-sunk: #e7e9e3;
+  --ink: #14181b;
+  --ink-2: #3a4249;
+  --rule: #c9cec5;
+
+  /* ——— SEMANTIC (the only two accents) ——— */
+  --black-ink: #1b5e3f;
+  --red-ink: #a3231c;
+  --black-ink-on-dark: #7fd4a8;
+  --red-ink-on-dark: #f0958c;
+
+  /* ——— TYPE FAMILIES ——— */
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "Public Sans", system-ui, sans-serif;
+  --data: "IBM Plex Mono", ui-monospace, monospace;
+  --mono: var(--data);
+
+  /* ——— SPACING: 4px base ladder ——— */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-24: 6rem;
+  --s-32: 8rem;
+  --s-40: 10rem;
+
+  /* ——— TYPE SCALE: 1.0625rem base, 1.25 ratio ——— */
+  --t-xs: clamp(0.79rem, 0.76rem + 0.13vw, 0.85rem);
+  --t-sm: clamp(0.89rem, 0.85rem + 0.17vw, 0.97rem);
+  --t-base: clamp(1rem, 0.95rem + 0.22vw, 1.13rem);
+  --t-md: clamp(1.13rem, 1.05rem + 0.35vw, 1.35rem);
+  --t-lg: clamp(1.36rem, 1.22rem + 0.6vw, 1.72rem);
+  --t-xl: clamp(1.64rem, 1.4rem + 1.03vw, 2.25rem);
+  --t-2xl: clamp(1.97rem, 1.58rem + 1.68vw, 2.95rem);
+  --t-3xl: clamp(2.37rem, 1.74rem + 2.7vw, 3.87rem);
+  --t-4xl: clamp(2.85rem, 1.85rem + 4.28vw, 5.06rem);
+
+  /* Compat aliases for prior redesign tokens → ledger system */
+  --paper-2: var(--paper-sunk);
+  --slate-mute: var(--ink-2);
+  --mute: var(--ink-2);
+  --line: var(--rule);
+  --line-dark: var(--rule);
+  --ledger-green: var(--black-ink);
+  --ledger-green-2: var(--black-ink);
+  --loss-red: var(--red-ink);
+  --lie: var(--red-ink);
+  --lie-soft: var(--red-ink-on-dark);
+  --truth: var(--black-ink);
+  --truth-2: var(--black-ink-on-dark);
+  --brass: var(--rule);
+  --brass-soft: var(--rule);
+  --cyan: var(--black-ink);
+  --cyan-deep: var(--black-ink);
+  --steel: var(--ink);
+  --steel-2: var(--ink-2);
+  --navy-2: var(--ink);
+  --ink-soft: var(--ink-2);
+  --text-xs: var(--t-xs);
+  --text-sm: var(--t-sm);
+  --text-base: var(--t-base);
+  --text-md: var(--t-md);
+  --text-lg: var(--t-lg);
+  --text-xl: var(--t-xl);
+  --text-2xl: var(--t-2xl);
+  --text-3xl: var(--t-3xl);
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-display: 600;
+  --weight-display-strong: 700;
+
+  /* ——— GEOMETRY ——— */
+  --radius-flat: 0;
+  --radius-ctrl: 4px;
+  --hairline: 1px;
+  --measure: 68ch;
+  --max: 76rem;
+  --bp-sm: 40rem;
+  --bp-md: 60rem;
+  --bp-lg: 80rem;
+
+  /* ——— MOTION ——— */
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+  --ease-std: cubic-bezier(0.2, 0, 0, 1);
+  --ease-enter: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease: var(--ease-enter);
+}
