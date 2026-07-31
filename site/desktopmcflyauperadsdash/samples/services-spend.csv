@@ -1,0 +1,19 @@
+date,channel,amount,currency,note
+2026-06-03,Google,800,USD,search
+2026-06-05,Meta,600,USD,retarget
+2026-06-10,Google,850,USD,
+2026-06-12,Meta,650,USD,
+2026-06-17,Google,900,USD,
+2026-06-19,Meta,700,USD,
+2026-06-24,Google,950,USD,
+2026-06-26,Meta,750,USD,
+2026-07-01,Google,1000,USD,below-BE month
+2026-07-03,Meta,800,USD,
+2026-07-08,Google,1050,USD,
+2026-07-10,Meta,850,USD,
+2026-07-15,Google,1100,USD,
+2026-07-17,Meta,900,USD,
+2026-07-22,Google,1150,USD,
+2026-07-24,Meta,950,USD,
+2026-07-29,Google,1200,USD,
+2026-07-31,Meta,1000,USD,
