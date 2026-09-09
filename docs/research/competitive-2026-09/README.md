@@ -44,6 +44,11 @@ Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Every
 | [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) | Capability × four scores |
 | [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) | CURRENT vs OPTION + call |
 | [`SYNTHESIS.md`](./SYNTHESIS.md) | S1–S7 strategic options |
+| [`S1_PRD_LITE.md`](./S1_PRD_LITE.md) | WAVE E — S1 cash-governor PRD-lite (`RESEARCH_OPTION`, not a ship order) |
+| [`KLEIO_GAP_ANALYSIS.md`](./KLEIO_GAP_ANALYSIS.md) | WAVE E — Kleio public product vs `MCFY_GAP_MATRIX` line-by-line |
+| [`INTEGRATION_MAP.md`](./INTEGRATION_MAP.md) | WAVE E — Meta/Google Ads vs Shopify Finance vs CSV |
+| [`COMPLIANCE_LANDMINES.md`](./COMPLIANCE_LANDMINES.md) | WAVE E — PCD / GDPR / ads policy per RESEARCH_OPTION |
+| [`STRATEGY_KILL_CRITERIA.md`](./STRATEGY_KILL_CRITERIA.md) | WAVE E — S1 stress-test + S2/S3/S5 kill criteria |
 | [`db/`](./db/) | JSONL + `competitive.sqlite` |
 
 Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files.
@@ -97,10 +102,11 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ## Corpus status (this run)
 
-Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
-DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.
+Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder), then **WAVE E** architecture pack (5 files).  
+DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.  
+Kleio is **not** in the Wave A DB; treat `KLEIO_GAP_ANALYSIS.md` as the live card until the DB is rebuilt.
 
-Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
+Recommended read order after this README: `SYNTHESIS.md` → `STRATEGY_KILL_CRITERIA.md` → `S1_PRD_LITE.md` → `KLEIO_GAP_ANALYSIS.md`.
 
 ---
 

@@ -193,6 +193,41 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 
 ---
 
+## 2026-09-09 — WAVE E: S1 architecture stress-test (research only)
+
+**Branch:** `cursor/wave-e-architecture-22c8` off `research/competitive-2026-09`.  
+**No production code. No Fly deploy.**
+
+Inherited: Wave B `VNEXT_OPTION_SCORECARD.md` (other branch) scored S1 **19/25**. This wave specifies S1 hard enough to kill and compares it to live Kleio.
+
+### Live Kleio (2026-09-09)
+
+- Listing: https://apps.shopify.com/kleio — **$29/mo**, 14-day trial, **5.0 / 20**, launched 2025-02-19, Aarhus DK. Works with AppLovin, GoAffPro, Google Ads, Meta Ads, ShipHero. Same “more like this” rail as Mcfly (Clarity / WeTracked / Parkour).
+- Site: https://getkleio.com/ — $29 flat, Attribution **✗ on purpose**, MCP, CM waterfall. Homepage **364 stores / 47.4M+ orders / 1 in 3 Plus** is **VENDOR_CLAIM** (not on the listing). Listing plan also says “1,000,000 orders in database” vs site “unlimited” — **conflict flagged**.
+- Docs LIVE: metrics (Finance Summary reconciliation + tax toggle + order-date vs accounting-date + E(return)); ad integrations (Meta 60-day token **cannot auto-refresh**; Google permission = authenticating user; campaign-name filters + `kleio_allocate_nc_XX`); recommended setup; COGS; MCP `https://app.getkleio.com/api/mcp` (read P&L + **write products**).
+- Visible listing reviews this fetch: Trek Light (left TW, MCP+Claude), EMME ($29 vs TW), Hummii Snacks (daily P&L + MCP scheduled report).
+
+### Official pipes / policy (2026-09-09)
+
+- Shopify PCD: https://shopify.dev/docs/apps/launch/protected-customer-data — orders are Level 1 even without email.
+- Shopify GDPR webhooks: https://shopify.dev/docs/apps/build/compliance/privacy-law-compliance — 30-day action; `shop/redact` at 48h.
+- ShopifyQL sales: `total_sales = net sales + fees + duties + shipping + taxes`. Payouts schema is deposits, **not** till.
+- Mcfly till today: `orders.totalPriceSet` pagination (`app/app/lib/shopify-sales.server.ts`) — no tax mode.
+- Meta Developer Policies §10 Ads: https://developers.facebook.com/devpolicy — **do not mix Meta advertising data with campaigns on different platforms**; aggregate/anonymous; no profiles; isolate advertisers.
+- Google Ads API: developer token + Explorer **2,880** prod ops/day / Basic 15,000 (~5 business days stated) / Standard unlimited (~10 business days + demo if external). Permissible use **Reporting** for S1.
+
+### Research calls this wave (not product)
+
+| Call | Why |
+| --- | --- |
+| Revise S1 to **14–16 / 25**, not 19 | Kleio $29 owns the desk; Meta 60-day reconnect; §10.d sits on the API claim card; Religion-flex 5 was permission, not a moat |
+| S1 Ring 1 = ShopifyQL till + Meta/Google **spend** + CSV + **paste-a-claim** + Monday email + 14-day | API claim card is a counsel gate |
+| Kleio missing from Wave A DB | Do not pretend the 21-competitor sqlite includes them |
+| S2 without a wedge vs Kleio **and** TrueProfit is a late $39 Kleio | Kill S2-K1 |
+| S5 stays dead; S5b = logos only | PCD firehose vs listing hygiene |
+
+---
+
 ## Open questions (do not invent answers)
 
 1. Actual Mcfly listing views / installs / trial starts — Partner Dashboard only. Not in this repo.
@@ -202,6 +237,9 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 5. Polar $400 (own vs page) vs $750 (App Store) vs ~$720 (Talk Shop).
 6. SyncWith Shopify $4.99 vs older `COMPETITORS.md` $25–$150 refresh-tax ladder (likely Workspace vs Shopify SKU split).
 7. World-wide VAT handling — TW 1-star is a live landmine Mcfly must not copy.
+8. Kleio store count / Plus share (site VENDOR_CLAIM vs listing silence).
+9. Whether Meta will treat a combined Meta-claim + Google-claim + Shopify-till card as §10.d “mixing” — **counsel**, not this agent.
+10. Whether live Mcfly Partner Dashboard already has PCD Level 1 approval matching the listing’s “Customers” line.
 
 ---
 
@@ -214,3 +252,5 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 | Rank WTP by **public review volume + price paid**, not by Mcfly theology | Maximize money/love/ease/real problems |
 | Keep religion flexible in this folder | Founder instruction this run |
 | Do not ship pixels/OAuth from this work | Research only |
+| WAVE E specifies S1; does not implement it | Founder amends MASTER_PLAN if ever chosen |
+| Paste-a-claim before API-claim | Meta §10.d unread by Wave B’s Ease 4 |
