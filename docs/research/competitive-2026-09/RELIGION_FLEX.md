@@ -161,6 +161,18 @@
 
 ---
 
+## R13. Anti-attribution as a unique religion (WAVE D)
+
+| | |
+| --- | --- |
+| CURRENT | “No pixels. No path credit.” treated as a category-defining refuse. |
+| OPTION | Admit Kleio already shipped the sermon: $29 flat, 14-day, ad OAuth, P&L, LTV, MCP, 5.0/20, FAQ “attribution ✗ on purpose.” Specialize as offline+governor **or** lose-honestly. |
+| EVIDENCE | https://apps.shopify.com/kleio · https://getkleio.com/ · Trek Light / EMME / Hummii visible reviews. |
+| RISK of denial | You look like a worse Kleio at $10 more with 0 reviews. |
+| RESEARCH CALL | **Acknowledge.** Do not claim you invented anti-attribution. See POSITIONING_WARS posture α/β/γ. |
+
+---
+
 ## Summary table
 
 | ID | Bend? | Call |
@@ -177,6 +189,8 @@
 | R10 AI | Thin later | No credits |
 | R11 Channel | Depends | Don’t do neither |
 | R12 Profit | **Yes if store** | Method = MER, job = money |
+| R13 Kleio cousin | **Yes (acknowledge)** | Anti-attribution is no longer unique. WAVE D: Kleio $29 / 5.0/20 / P&L+OAuth+MCP. Specialize (offline+governor) or lose-honestly. |
 
 The bends that actually raise four scores: **R3, R4-B, R7, R8, R12**.  
-The breaks that look like money and usually kill the company: **R1-A, R2, R5-GMV, R10-A**.
+The breaks that look like money and usually kill the company: **R1-A, R2, R5-GMV, R10-A**.  
+The denial that keeps you at 0 reviews: **pretending Kleio does not exist (R13).**

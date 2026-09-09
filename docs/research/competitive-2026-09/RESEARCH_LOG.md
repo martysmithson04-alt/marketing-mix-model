@@ -214,3 +214,53 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 | Rank WTP by **public review volume + price paid**, not by Mcfly theology | Maximize money/love/ease/real problems |
 | Keep religion flexible in this folder | Founder instruction this run |
 | Do not ship pixels/OAuth from this work | Research only |
+
+---
+
+## 2026-09-09 — WAVE D: merchant psychology + sales (append, no wipe)
+
+**Branch:** `cursor/wave-d-merchant-psych-7e69` off `research/competitive-2026-09`.  
+**Scope:** interview scripts, objections, positioning wars, content/GEO, first-10 playbook. Research only.
+
+### Kleio (missed in Waves A–C; LIVE this wave)
+
+- **Listing:** https://apps.shopify.com/kleio — fetched 2026-09-09
+- **Price:** **$29/month** flat, **14-day** trial, “Everything” plan, unlimited users, 1,000,000 orders in database
+- **Reviews:** **5.0 / 20** · 100% 5★ · 0% 1★
+- **Launched:** February 19, 2025 · Aarhus, DK (Klosterport 9, 4., Aarhus C, 8000)
+- **Hero:** founder-named (“Hey, Mathias here”) + dashboard + ad integrations + P&L + LTV + product analytics
+- **Works with:** AppLoving, GoAffPro, Google Ads, Meta Ads, ShipHero
+- **Adjacency (same pixel rail as Mcfly):** Clarity 4.6/2125 Free · WeTracked 4.8/125 · Parkour 4.9/191 Free
+- **Visible reviews:** Trek Light (US, 5 mo, 2026-08-12) goodbye Triple Whale via MCP+Claude; EMME (US, 8 mo, 2026-08-11) “Better than triplewhale, cheaper… $29”; Hummii Snacks (US, ~2 mo, 2026-04-23) daily P&L + MCP scheduled report
+- **Site:** https://getkleio.com/ — `VENDOR_CLAIM` 364 stores / 47.4M+ orders / “1 in 3 on Shopify Plus” (homepage also flashed 153 stores / 14.7M orders in a search snippet earlier the same day — **do not publish a store count**; counts move and are vendor-claimed)
+- **Religion:** **refuses attribution on purpose.** FAQ: “Attribution pretends to be objective. It isn’t.” Ad OAuth yes (Meta/Google/TikTok/Snap/Pinterest/Microsoft/AppLovin). MCP yes. P&L + LTV + cohorts + inventory yes.
+- **Founder:** @MattiSchroder / Mathias. Reviews name 2-hour calls, Slack, “solo founder.”
+
+**Brutal implication:** Kleio is the product Mcfly’s sermon describes, already shipping, cheaper, reviewed, auto-spend, profit-first. Mcfly’s remaining unique line is **offline/billboard paste + Total ROAS ritual**. That is not enough to win a listing war.
+
+### First-customer public evidence (this wave)
+
+- Triple Whale origin: Hampton 2023-05-31 https://joinhampton.com/blog/from-internal-tool-to-50m-saas-how-triple-whale-got-its-start — internal Madison Braids tool → Twitter DMs → influencer raves → Shaan Puri tweet → agencies ~1/3 revenue `VENDOR_CLAIM`/`FOUNDER_RETELL`
+- NFX 2023-02 https://www.nfx.com/post/product-led-growth-principles-triple-whale — Slack of thousands; “What do you think?”; no paid marketing early
+- Honest Ecommerce / Maxx Blank: pre-sold pixel, MRR $50k → $300k in a month `FOUNDER_RETELL` https://honestecommerce.com/blogs/episodes/bonus-episode-balancing-trends-and-consistency-how-clean-data-drives-success-with-maxx-blank
+- Shopify Community 643974 (1.4k views): first 10 installs = personal outreach, not App Store https://community.shopify.com/t/how-did-you-get-your-first-10-organic-app-installations-in-2026/643974
+- AdsX 2026-07-21 MARKET_REPORT 30/60/90: 20 personal emails/week; first 5 reviews by day 30 https://www.adsx.com/blog/shopify-app-marketing-first-100-installs
+- Review policy: ask neutrally, never incentivize. Official: https://shopify.dev/docs/apps/launch/marketing/manage-app-reviews · practitioner: https://www.bigmoves.marketing/blog/get-more-shopify-app-reviews-without-breaking-shopifys-rules-guide · TSC 2026 crackdown: https://taylorsicard.com/blog/shopify-app-review-policy-2026
+
+### Content / GEO public evidence
+
+- Roundup that already **omits Mcfly** and crowns TrueProfit: https://www.thepricegeek.com/profit-analytics/best-shopify-profit-tracker/ (July 2026; TP 5.0/779 — stale vs our 899)
+- Vendor comparison pages as the converting format: TrueProfit vs TW https://trueprofit.io/comparison/trueprofit-vs-triple-whale · BeProfit vs TW https://beprofit.co/resources/competitors/triple-whale-vs-beprofit/
+- MER vs ROAS explainers (the query merchants actually type): Mako https://makometrics.com/blog/mer-vs-roas-ecommerce-meta-ads · AdsX https://www.adsx.com/blog/blended-roas-vs-platform-roas-reconciliation · Hyros https://hyros.com/updates/blended-roas/
+- Official Shopify AEO/GEO (merchant-side, still the citation mechanic): https://www.shopify.com/blog/aeo-for-ecommerce
+- Native Admin does not ingest ad spend (reconfirmed): Community 134251 · Polar plan table https://www.polaranalytics.com/post/shopify-attribution-models-explained-which-one-should-you-use · Shopify Help marketing performance https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/marketing-performance
+
+### Silence death (live, unchanged)
+
+Mcfly listing still **0.0 / 0 reviews**, launched Sept 7, 2026, $39 / 7-day, pixel-rail adjacency. Two days of existence is not the problem. **Zero outbound, zero named human, zero first-value ritual, zero review ask, zero content URL that an LLM can cite** is the problem. Kleio launched Feb 2025 and has 20 written 5★ plus a homepage of named switches from TW/Lifetimely. That is what a living anti-attribution product looks like.
+
+### Open questions added this wave
+
+8. Exact Kleio store count (153 vs 364 vs 47.4M orders) — vendor-claimed, do not publish.
+9. Whether Mcfly has sent a single design-partner email. Not in this repo. Partner Dashboard only.
+10. Whether live Mcfly already has any install that could legally review (must be installed or ≤45 days post-uninstall).

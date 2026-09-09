@@ -42,6 +42,21 @@ URLs used.
 From OPPORTUNITY_MAP.
 
 ### religion.jsonl
-From RELIGION_FLEX.
+From RELIGION_FLEX. WAVE D added R13 (Kleio cousin).
+
+### interviews.jsonl
+WAVE D — Mom Test questions from INTERVIEW_SCRIPTS.md.
+
+### objections.jsonl
+WAVE D — listing/sales objections from OBJECTIONS.md.
+
+### positioning.jsonl
+WAVE D — win/lose frames from POSITIONING_WARS.md.
+
+### content_topics.jsonl
+WAVE D — converting SEO/GEO topics from CONTENT_GEO.md.
+
+### first_customer_plays.jsonl
+WAVE D — winner plays from FIRST_CUSTOMERS_PLAYBOOK.md.
 
 SQLite: `competitive.sqlite` built by `build_db.py`.

@@ -44,6 +44,11 @@ Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Every
 | [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) | Capability × four scores |
 | [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) | CURRENT vs OPTION + call |
 | [`SYNTHESIS.md`](./SYNTHESIS.md) | S1–S7 strategic options |
+| [`INTERVIEW_SCRIPTS.md`](./INTERVIEW_SCRIPTS.md) | WAVE D — operator / agency / CFO scripts grounded in reviews |
+| [`OBJECTIONS.md`](./OBJECTIONS.md) | WAVE D — listing + sales objection bank |
+| [`POSITIONING_WARS.md`](./POSITIONING_WARS.md) | WAVE D — vs Sheets / TW / TrueProfit / Kleio / native Admin |
+| [`CONTENT_GEO.md`](./CONTENT_GEO.md) | WAVE D — SEO/GEO topics that convert in this niche |
+| [`FIRST_CUSTOMERS_PLAYBOOK.md`](./FIRST_CUSTOMERS_PLAYBOOK.md) | WAVE D — how winners got early reviews; first-10 playbook |
 | [`db/`](./db/) | JSONL + `competitive.sqlite` |
 
 Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files.
@@ -97,10 +102,11 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ## Corpus status (this run)
 
-Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
-DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.
+Delivered: 16 markdown files (Waves A–C) + WAVE D psychology/sales set + `db/` (JSONL, sqlite, builder).  
+DB after WAVE D rebuild: 22 competitors (Kleio added) · 15 problems · 25 review quotes · 73 sources · 22 opportunities · 13 religion · 9 interviews · 13 objections · 8 positioning · 8 content topics · 13 first-customer plays. Rebuild with `python3 db/build_db.py`.
 
-Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
+Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.  
+WAVE D sales/psych order: `POSITIONING_WARS.md` (Kleio) → `OBJECTIONS.md` → `INTERVIEW_SCRIPTS.md` → `FIRST_CUSTOMERS_PLAYBOOK.md` → `CONTENT_GEO.md`.
 
 ---
 

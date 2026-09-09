@@ -91,6 +91,19 @@ Star splits are Shopify UI percentages. Prices are **listing cards**, not quotes
 - **Love:** “trust Metorik more than Meta and Google” (Sadhev)
 - **vs Mcfly:** $25 entry, auto spend, human founder replies
 
+### Kleio Analytics *(WAVE D — missed in Waves A–C)*
+- **Listing:** https://apps.shopify.com/kleio · **Site:** https://getkleio.com/
+- **Launched:** 2025-02-19 · Aarhus, DK (Klosterport 9, 4.)
+- **Price:** **$29/month** flat “Everything” · 14-day trial · unlimited users · 1,000,000 orders in database (listing)
+- **Reviews:** **5.0 / 20** · 100% 5★ · 0% 1★ (LIVE 2026-09-09)
+- **Job:** Dashboard + **ad OAuth** + P&L + LTV + product analytics + inventory + **MCP**. **Refuses attribution on purpose** (site FAQ + comparison table).
+- **Works with:** AppLoving, GoAffPro, Google Ads, Meta Ads, ShipHero (listing). FAQ also lists TikTok, Snap, Pinterest, Microsoft, Klaviyo.
+- **Visible reviews:** Trek Light (US, 5 mo) goodbye Triple Whale via Claude MCP; EMME (US, 8 mo) “better + cheaper than TW, $29”; Hummii Snacks daily P&L + scheduled MCP report.
+- **Love pattern:** founder Mathias / @MattiSchroder on Slack and 2-hour calls (ZEDE, MYYK, Gentleman’s Gazette — site/LetsMetrix).
+- **Site `VENDOR_CLAIM`:** store/order counts moved in the same day (153 vs 364 / 14.7M vs 47.4M). **Do not publish.**
+- **Adjacency:** same Clarity / WeTracked / Parkour rail as Mcfly.
+- **vs Mcfly:** **same religion, cheaper, reviewed, auto-spend, P&L, 14-day.** Mcfly’s remaining wedge is offline/billboard paste + Total ROAS ritual. Closest cousin and primary **positioning** threat. See [`POSITIONING_WARS.md`](./POSITIONING_WARS.md).
+
 ### Margins by Finaloop
 - **Listing:** https://apps.shopify.com/margins
 - **Price:** **Free**
