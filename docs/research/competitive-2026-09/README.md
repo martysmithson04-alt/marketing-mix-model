@@ -44,6 +44,11 @@ Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Every
 | [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) | Capability × four scores |
 | [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) | CURRENT vs OPTION + call |
 | [`SYNTHESIS.md`](./SYNTHESIS.md) | S1–S7 strategic options |
+| [`INTERVIEW_SCRIPTS.md`](./INTERVIEW_SCRIPTS.md) | WAVE D — operator / agency / CFO scripts grounded in reviews |
+| [`OBJECTIONS.md`](./OBJECTIONS.md) | WAVE D — listing + sales objection bank |
+| [`POSITIONING_WARS.md`](./POSITIONING_WARS.md) | WAVE D — vs Sheets / TW / TrueProfit / Kleio / native Admin |
+| [`CONTENT_GEO.md`](./CONTENT_GEO.md) | WAVE D — SEO/GEO topics that convert in this niche |
+| [`FIRST_CUSTOMERS_PLAYBOOK.md`](./FIRST_CUSTOMERS_PLAYBOOK.md) | WAVE D — how winners got early reviews; first-10 playbook |
 | [`db/`](./db/) | JSONL + `competitive.sqlite` |
 
 Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files.
@@ -97,8 +102,9 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ## Corpus status (this run)
 
-Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
-DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.
+Delivered: 16 markdown files (Waves A–C) + WAVE D psychology/sales set + `db/` (JSONL, sqlite, builder).  
+DB counts at Wave C close: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.  
+WAVE D appends Kleio + interview/objection/positioning/content/play rows. Rebuild with `python3 db/build_db.py`.
 
 Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
 
