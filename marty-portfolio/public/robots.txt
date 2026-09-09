@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Set Sitemap to the production origin after Cloudflare Pages is live, e.g.:
+# Sitemap: https://example.pages.dev/sitemap.xml
