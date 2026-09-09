@@ -25,20 +25,28 @@ Religion is **FLEXIBLE here**. Every alternative (pixels, MTA, OAuth, freemium, 
 
 ## How to read this
 
-1. **This README** — map, method, live Mcfly snapshot, ruthless summary.
-2. [`RESEARCH_LOG.md`](./RESEARCH_LOG.md) — dated fetch log, contradictions, open questions.
-3. [`COMPETITOR_CARDS.md`](./COMPETITOR_CARDS.md) — one card per competitor with live App Store / public facts.
-4. [`LISTING_PATTERN_BANK.md`](./LISTING_PATTERN_BANK.md) — what winning listings actually do.
-5. [`LISTING_TEARDOWNS.md`](./LISTING_TEARDOWNS.md) — Mcfly listing vs leaders, line by line.
-6. [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) — capability / love / money / ease / real-problem gaps.
-7. [`SYNTHESIS.md`](./SYNTHESIS.md) — multiple vNext strategic options. Pick later; do not ship from this file.
-8. [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) — CURRENT_RELIGION vs RESEARCH_OPTION with EVIDENCE + RISK.
-9. [`MERCHANT_PROBLEMS.md`](./MERCHANT_PROBLEMS.md) — real issues people pay to solve (ranked).
-10. [`PRICING_PACKAGING.md`](./PRICING_PACKAGING.md) — $39 vs $79 vs freemium vs GMV vs order-tier.
-11. [`WORKFLOWS.md`](./WORKFLOWS.md) — Monday ritual vs daily OS vs P&L vs pixel install.
-12. [`CATEGORY_MAP.md`](./CATEGORY_MAP.md) — where Shopify actually ranks Mcfly.
-13. `teardowns/` — per-app long-form notes.
-14. `db/` — structured JSONL + SQLite for querying.
+Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Everything else is evidence.
+
+| File | What |
+| --- | --- |
+| [`RESEARCH_LOG.md`](./RESEARCH_LOG.md) | Dated fetches, contradictions, open questions |
+| [`APP_STORE_MARKET.md`](./APP_STORE_MARKET.md) | Discovery, reviews, trials, pricing psychology, churn physics |
+| [`PERSONAS.md`](./PERSONAS.md) | Founder, operator, agency, finance, enterprise pod, omni |
+| [`PROBLEM_BANK.md`](./PROBLEM_BANK.md) | 15 problems ranked by public WTP signals |
+| [`MERCHANT_PROBLEMS.md`](./MERCHANT_PROBLEMS.md) | Voice index — their sentences + URLs |
+| [`NICHE_MER.md`](./NICHE_MER.md) | MER / blended ROAS / till vs Ads Manager |
+| [`REVIEW_THEMES.md`](./REVIEW_THEMES.md) | Visible review sample + star histograms |
+| [`ENTERPRISE_WORKFLOWS.md`](./ENTERPRISE_WORKFLOWS.md) | Sheets / TW / Polar / NB / Elevar / A2X / Admin patterns |
+| [`OPPORTUNITY_MAP.md`](./OPPORTUNITY_MAP.md) | vNext opportunities scored + clustered |
+| [`COMPETITOR_CARDS.md`](./COMPETITOR_CARDS.md) | Live cards (20+) |
+| [`LISTING_PATTERN_BANK.md`](./LISTING_PATTERN_BANK.md) | 25 listing patterns |
+| [`LISTING_TEARDOWNS.md`](./LISTING_TEARDOWNS.md) | vs live Mcfly listing |
+| [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) | Capability × four scores |
+| [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) | CURRENT vs OPTION + call |
+| [`SYNTHESIS.md`](./SYNTHESIS.md) | S1–S7 strategic options |
+| [`db/`](./db/) | JSONL + `competitive.sqlite` |
+
+Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files.
 
 ---
 
@@ -87,17 +95,12 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ---
 
-## Corpus files
+## Corpus status (this run)
 
-| File | Density target |
-| --- | --- |
-| RESEARCH_LOG | every fetch, contradiction, and decision |
-| COMPETITOR_CARDS | 20+ cards with live ratings/prices |
-| LISTING_PATTERN_BANK | 25+ observed listing patterns |
-| LISTING_TEARDOWNS | Mcfly vs 8+ leaders |
-| MCFY_GAP_MATRIX | capability × four scores × religion tag |
-| SYNTHESIS | ≥5 mutually exclusive vNext options |
-| db/*.jsonl + db/competitive.sqlite | queryable facts |
+Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
+DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.
+
+Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
 
 ---
 

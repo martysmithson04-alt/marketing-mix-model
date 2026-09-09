@@ -1,0 +1,22 @@
+{"id":"A1_oauth_spend","cluster":"cash_governor","scores":"H/H/H/H","tag":"RELIGION_BEND","name":"Auto spend ingest OAuth"}
+{"id":"A2_claims_vs_cash","cluster":"cash_governor","scores":"H/H/M/H","tag":"STRETCH","name":"Platform claim vs till card"}
+{"id":"A3_finance_defs","cluster":"cash_governor","scores":"M/H/M/H","tag":"STRETCH","name":"Tax/shipping/returns definition"}
+{"id":"A4_dual_clock","cluster":"overlay","scores":"M/M/L/H","tag":"STRETCH","name":"Delivery vs accrual clocks"}
+{"id":"A5_offline_ledger","cluster":"wedge","scores":"L/H/H/M","tag":"FIT_NOW","name":"Offline/billboard/retainer"}
+{"id":"A6_monday_email","cluster":"cash_governor","scores":"M/H/H/M","tag":"STRETCH","name":"Monday Close push"}
+{"id":"B1_assembled_margin","cluster":"profit_lite","scores":"H/H/M/H","tag":"RELIGION_BEND","name":"Contribution from Shopify costs"}
+{"id":"B2_fees_shipping","cluster":"profit_lite","scores":"H/H/M/H","tag":"RELIGION_BEND","name":"Fees + shipping + custom expenses"}
+{"id":"B3_cash_cac","cluster":"profit_lite","scores":"M/H/M/H","tag":"FIT_NOW","name":"Cash CAC / LTV:CAC"}
+{"id":"C1_14_day_trial","cluster":"packaging","scores":"M/M/H/M","tag":"STRETCH","name":"14-day trial"}
+{"id":"C2_freemium","cluster":"packaging","scores":"M/H/H/M","tag":"RELIGION_BEND","name":"Free tier"}
+{"id":"C4_agency_sku","cluster":"agency","scores":"H/H/M/H","tag":"STRETCH","name":"Agency portfolio SKU"}
+{"id":"D1_sheets","cluster":"agency","scores":"M/H/M/H","tag":"STRETCH","name":"Sheets companion"}
+{"id":"E1_partner_pixel","cluster":"hedge","scores":"M/H/H/H","tag":"RELIGION_BEND","name":"Partner pixel not own"}
+{"id":"E2_own_pixel","cluster":"pixel_co","scores":"H/H/L/disputed","tag":"RELIGION_BREAK","name":"Build Mcfly pixel+MTA"}
+{"id":"S1","cluster":"strategy","scores":"H/H/H/H","tag":"RELIGION_BEND","name":"Cash governor vNext"}
+{"id":"S2","cluster":"strategy","scores":"H/H/M/H","tag":"RELIGION_BEND","name":"Profit-lite desk"}
+{"id":"S3","cluster":"strategy","scores":"H/M/M/H","tag":"CURRENT_RELIGION","name":"Agency scoreboard"}
+{"id":"S4","cluster":"strategy","scores":"M/M/M/H","tag":"CURRENT_RELIGION","name":"Suite overlay"}
+{"id":"S5","cluster":"strategy","scores":"H/H/H/disputed","tag":"RELIGION_BREAK","name":"Pixel company"}
+{"id":"S6","cluster":"strategy","scores":"L/L/L/M","tag":"CURRENT_RELIGION","name":"Stay narrow + course"}
+{"id":"S7","cluster":"strategy","scores":"M/H/H/M","tag":"RELIGION_BEND","name":"Free desk paid depth"}

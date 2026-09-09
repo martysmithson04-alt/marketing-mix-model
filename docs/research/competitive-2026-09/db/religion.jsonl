@@ -1,0 +1,12 @@
+{"id":"R1","topic":"pixels","current":"refuse","option":"partner not build","call":"B","bend":true}
+{"id":"R2","topic":"MTA","current":"refuse","option":"ship models","call":"keep refuse","bend":false}
+{"id":"R3","topic":"OAuth spend","current":"live site forbids; MASTER_PLAN Phase 2 plans","option":"spend-only OAuth","call":"do","bend":true}
+{"id":"R4","topic":"freemium","current":"no forever-free; 7-day","option":"14-day or free≤50","call":"14-day now","bend":true}
+{"id":"R5","topic":"price","current":"$39 flat live; $79 repo","option":"GMV or order meter","call":"stay $39 flat","bend":false}
+{"id":"R6","topic":"metric name","current":"MER repo / Total ROAS live","option":"pick one","call":"formula first","bend":true}
+{"id":"R7","topic":"margin","current":"typed %","option":"assembled contribution","call":"assemble + flag","bend":true}
+{"id":"R8","topic":"allocation","current":"sales proportional spend","option":"require inputs or pause tests","call":"A+B","bend":true}
+{"id":"R9","topic":"connector zoo","current":"refuse","option":"40 connectors","call":"keep refuse","bend":false}
+{"id":"R10","topic":"AI OS","current":"none","option":"Moby vs explain-number","call":"thin later no credits","bend":true}
+{"id":"R11","topic":"acquisition","current":"listing live","option":"outbound only","call":"dont do neither","bend":true}
+{"id":"R12","topic":"profit vs MER","current":"not a profit tracker","option":"profit-lite","call":"if App Store then yes","bend":true}

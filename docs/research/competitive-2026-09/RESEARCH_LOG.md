@@ -184,6 +184,15 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 
 ---
 
+## 2026-09-09 — session 5: finance listing + synthesis
+
+- A2X LIVE: https://apps.shopify.com/a2x — **5.0 / 359** (Eightx MARKET_REPORT said 329 — stale). Mini $29 / Basic $45 / Pro $79 / Advanced $115; 30-day trial; Magic summary on; Works with Amazon, NetSuite, PayPal, QuickBooks, Sage, Xero. Rail includes TrueProfit.
+- Northbeam homepage LIVE vendor claims: 1000+ companies; $130B attributed; $25B spend; 2.1T impressions; “37% ROAS / 14% CVR / 20% CAC” for Enterprise customers — **VENDOR_CLAIM**.
+- Margins by Finaloop: https://apps.shopify.com/margins — **Free**, 5.0 / 1 review, “True ROAS… based on profit.”
+- DB built: `db/competitive.sqlite` from JSONL (21 competitors, 22 review quotes, 50 sources, 15 problems).
+
+---
+
 ## Open questions (do not invent answers)
 
 1. Actual Mcfly listing views / installs / trial starts — Partner Dashboard only. Not in this repo.
