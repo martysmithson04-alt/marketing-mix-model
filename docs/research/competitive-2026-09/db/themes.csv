@@ -1,0 +1,15 @@
+id,theme,apps,event_count_this_pass,depth,problem_ids
+T-SPEND,Profit number drops unattributed ad spend,BeProfit|community,4,critical,P-001|P-015
+T-TAX,Tax/VAT definition wrong or unlabeled,TripleWhale|TrueProfit,2,critical,P-002
+T-COGS,Cost basis stale missing or rewritten,TrueProfit|BeProfit|Lifetimely|community,5,critical,P-004|P-005
+T-OVERAGE,Volume GMV or order success tax,TrueProfit|Lifetimely|Polar|TripleWhale|BeProfit|GoProfit,8,critical,P-003
+T-CANCEL,Cannot leave; zombie or annual charges,BeProfit|TripleWhale|TrueProfit,7,high,P-007
+T-SUPPORT,Sale/onboarding != production support,TripleWhale|BeProfit|Analyzify|Lifetimely,10,high,P-008
+T-LOCKIN,History or lifetime plan as prison,TripleWhale|Analyzify|TrueProfit,3,high,P-007
+T-PIXEL,Tracking fix breaks ads or accounts,Analyzify|TripleWhale,4,high,P-009
+T-SHEETS,Spreadsheet status quo that already lies,community|BeProfit|Lifetimely,5,high,P-006|P-011
+T-MULTI,Multi-store Amazon warehouse identity,Polar|BeProfit|Lifetimely|Analyzify,4,high,P-010|P-016
+T-GATE,Cannot try without sales or work email,Polar,3,mid,P-013
+T-AI,Metered AI after the sale,TripleWhale,2,mid,P-014
+T-FEES,Payment fees modeled not Shopify actuals,TrueProfit,1,mid,P-012
+T-MATCH,Shopify day sales != suite day sales,TripleWhale|Northbeam|community,4,critical,P-005|P-015

@@ -18,6 +18,10 @@ TABLES = {
     "sources": "sources.jsonl",
     "opportunities": "opportunities.jsonl",
     "religion": "religion.jsonl",
+    "harvest_listings": "harvest_listings.jsonl",
+    "harvest_threads": "harvest_threads.jsonl",
+    "harvest_docs": "harvest_docs.jsonl",
+    "harvest_sources": "harvest_sources.jsonl",
 }
 
 
@@ -37,7 +41,11 @@ def main() -> None:
     con = sqlite3.connect(DB)
     cur = con.cursor()
     for table, filename in TABLES.items():
-        rows = load_jsonl(ROOT / filename)
+        path = ROOT / filename
+        if not path.exists():
+            print(f"{table}: skipped (missing {filename})")
+            continue
+        rows = load_jsonl(path)
         if not rows:
             continue
         cols = list(rows[0].keys())
