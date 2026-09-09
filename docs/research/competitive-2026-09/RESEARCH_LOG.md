@@ -193,6 +193,16 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 
 ---
 
+## 2026-09-09 — session 6: PRIMARY_SOURCE_HARVEST (append-only)
+
+- **Lane:** ENTERPRISE research support. Coordinates with ENTERPRISE_LANDSCAPE; does **not** rewrite landscape / synthesis / competitor cards.
+- **Deliverable:** [`PRIMARY_SOURCE_HARVEST.md`](../PRIMARY_SOURCE_HARVEST.md) + `db/harvest_*.jsonl`.
+- **Method:** live GET of Shopify listing pages (JSON-LD + visible price/trial/launched), Shopify Community + Reddit (paraphrase + URL), Kleio / TrueProfit / Polar / TW public docs.
+- **Rule:** no card without a URL. Failed fetches stay `confidence=fetch_fail` and are not published as numbers.
+- Fetcher: `db/harvest_primary.py`.
+
+---
+
 ## Open questions (do not invent answers)
 
 1. Actual Mcfly listing views / installs / trial starts — Partner Dashboard only. Not in this repo.

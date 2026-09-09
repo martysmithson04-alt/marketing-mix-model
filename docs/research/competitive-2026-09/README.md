@@ -44,6 +44,7 @@ Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Every
 | [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) | Capability × four scores |
 | [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) | CURRENT vs OPTION + call |
 | [`SYNTHESIS.md`](./SYNTHESIS.md) | S1–S7 strategic options |
+| [`PRIMARY_SOURCE_HARVEST.md`](./PRIMARY_SOURCE_HARVEST.md) | Live App Store cards + community/Reddit + competitor docs (append-only; do not clobber ENTERPRISE_LANDSCAPE) |
 | [`db/`](./db/) | JSONL + `competitive.sqlite` |
 
 Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files.

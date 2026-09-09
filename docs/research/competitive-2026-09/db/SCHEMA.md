@@ -44,4 +44,32 @@ From OPPORTUNITY_MAP.
 ### religion.jsonl
 From RELIGION_FLEX.
 
+### harvest_listings.jsonl
+PRIMARY_SOURCE_HARVEST cards (append-only; does not replace `listings.jsonl`).
+
+| field | type | notes |
+| --- | --- | --- |
+| handle | string | App Store handle |
+| url | string | `https://apps.shopify.com/{handle}` |
+| title | string | listing / JSON-LD name |
+| positioning | string | og:description one-liner |
+| price | string | listing header scan |
+| trial_days | integer? | if listing printed a N-day trial |
+| rating | number? | JSON-LD aggregateRating |
+| review_count | integer? | JSON-LD ratingCount |
+| launched | string? | ISO if “Launched Month D, YYYY” present |
+| adjacent | list | “more like this” handles observed on page |
+| http_status | integer | live fetch |
+| fetched | date | |
+| confidence | string | live\|fetch_fail |
+
+### harvest_threads.jsonl
+Shopify Community + public Reddit. Paraphrase + URL only.
+
+### harvest_docs.jsonl
+Kleio / TrueProfit / Polar / Triple Whale public docs. Claims tagged spend / tax / attribution.
+
+### harvest_sources.jsonl
+URLs used by PRIMARY_SOURCE_HARVEST. Do not clobber `sources.jsonl`.
+
 SQLite: `competitive.sqlite` built by `build_db.py`.
