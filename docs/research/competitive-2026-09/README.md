@@ -95,12 +95,15 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ---
 
-## Corpus status (this run)
+## Corpus status (enterprise landscape, 2026-09-09)
 
-Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
-DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.
+Prior waves (PRs #5–#13) are imported, not wiped. Start with [`MASTER_INDEX.md`](./MASTER_INDEX.md).
 
-Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
+**Read if you have 15 minutes:** [`ENTERPRISE_LANDSCAPE.md`](./ENTERPRISE_LANDSCAPE.md) → [`DECISION_BRIEF.md`](./DECISION_BRIEF.md) → [`NICHE_CANVAS.md`](./NICHE_CANVAS.md).
+
+DB (system of record, after `assemble_enterprise.py`): **106 competitors · 61 problems · 80 quotes · 300 sources**. Schema: [`db/SCHEMA.md`](./db/SCHEMA.md). Bibliography: [`SOURCE_BIBLIOGRAPHY.md`](./SOURCE_BIBLIOGRAPHY.md).
+
+Recommended deeper order: `KLEIO_GAP_ANALYSIS.md` → `S1_PRD_LITE.md` → `STRATEGY_KILL_CRITERIA.md` → `COMPETITIVE_MATRIX.md`.
 
 ---
 
