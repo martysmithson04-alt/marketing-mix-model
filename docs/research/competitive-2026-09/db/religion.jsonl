@@ -10,3 +10,6 @@
 {"id":"R10","topic":"AI OS","current":"none","option":"Moby vs explain-number","call":"thin later no credits","bend":true}
 {"id":"R11","topic":"acquisition","current":"listing live","option":"outbound only","call":"dont do neither","bend":true}
 {"id":"R12","topic":"profit vs MER","current":"not a profit tracker","option":"profit-lite","call":"if App Store then yes","bend":true}
+{"id":"R13","topic":"BFS calendar","current":"do not chase until ~50 paid + 5 reviews","option":"Polaris-embed now; apply after 50/5","call":"gates now official 50+5; rating unpublished; design admin for 4.1.1","bend":true}
+{"id":"R14","topic":"App Store take-rate","current":"WAVE A assumed 15-20% on $39","option":"0% share until $1M + 2.9% processing","call":"use official 2025+ card; stay on Shopify billing","bend":false}
+{"id":"R15","topic":"flat $39 vs Kleio $29 vs Margn twin","current":"$39 flat 7-day","option":"keep flat; 14-day; do not raise; Kleio is the peer","call":"price is not the wedge; 0-review 7-day is the Margn table","bend":true}

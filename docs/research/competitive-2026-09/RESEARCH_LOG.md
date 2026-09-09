@@ -214,3 +214,57 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 | Rank WTP by **public review volume + price paid**, not by Mcfly theology | Maximize money/love/ease/real problems |
 | Keep religion flexible in this folder | Founder instruction this run |
 | Do not ship pixels/OAuth from this work | Research only |
+
+---
+
+## 2026-09-09 — WAVE C: matrix, ladders, topology, policy, autopsies
+
+**Branch:** `cursor/wave-c-competitive-matrix-e09e` (branched from `research/competitive-2026-09`). Append-only. Does not replace PRs #5–#10.
+
+### Method
+
+- Bulk-fetched Shopify listing HTML for ~150 guessed handles. Parser v1 mixed “More like this” review counts — **discarded**. Parser v2 used JSON-LD `aggregateRating` + `#adp-pricing` cards.
+- Official docs re-fetched: BFS overview + requirements, revenue share, manage reviews, App Store requirements, listing categories.
+- Live category: https://apps.shopify.com/categories/store-management-operations-analytics/all (page stated **1,546 apps**).
+
+### WAVE A corrections
+
+| WAVE A claim | WAVE C live |
+| --- | --- |
+| BFS install/review gates unpublished | **Published:** 50 net paid-plan installs + 5 reviews. Rating number still unpublished. https://shopify.dev/docs/apps/launch/built-for-shopify/requirements |
+| 15–20% Shopify share on $39 | Sub-$1M developers: **0%** revenue share from 2025-01-01; **2.9%** processing. https://shopify.dev/docs/apps/launch/distribution/revenue-share |
+| Finaloop “starts at $995” | Listing cards: Start-ups **$245** / Growth **$995** |
+| Report Pundit “not deep-fetched” | 5.0 / **2,026** · Free · $9 / $19 / $35 (Shopify-plan priced) |
+| Klar “recheck price/reviews” | Free to install + external; JSON-LD **0.0 / no ratingCount**; launched 2023-12-24 |
+| Clarity 2,125 / TrueProfit 899 / Polar 116 / TW 91 / Lifetimely 535 / BeProfit 202 | **Re-confirmed** via JSON-LD same day |
+
+### New live objects (selected)
+
+See `COMPETITIVE_MATRIX.md` + `PRICING_LADDERS.md`. Notable: Kleio $29/20★; Margn $39/0★ launched 2026-08-18; Profit Calc $39/67★; Juicy 4.9/76; GoProfit 4.8/90; Littledata $0.35/order / 4.8/140; Daasity $1,899/51★; Attribuly $450/168★; Lebesgue (advertising-insights) 4.9/132; Metrilo 5.0/2 $119+; TikTok 4.8/15,912.
+
+### Handles 404 / no card (not obituaries)
+
+northbeam, hyros, wicked-reports, glew, glew-io, taxomate, matrixify, nabu, recharge, klaviyo, gorgias, analysisgpt, fairview, peaka, whaly, triquetra, redtrack.
+
+### Official policy URLs (LIVE this wave)
+
+- https://shopify.dev/docs/apps/launch/distribution/revenue-share
+- https://shopify.dev/docs/apps/launch/built-for-shopify
+- https://shopify.dev/docs/apps/launch/built-for-shopify/requirements
+- https://shopify.dev/docs/apps/launch/marketing/manage-app-reviews
+- https://shopify.dev/docs/apps/launch/shopify-app-store/app-store-requirements
+- https://shopify.dev/docs/apps/launch/app-store-review/app-listing-categories
+- https://shopify.dev/docs/apps/build/analytics
+- https://www.shopify.com/partners/terms
+- https://help.shopify.com/en/partners/build-integrate/making-apps
+- https://help.shopify.com/en/manual/apps/about-apps
+- https://changelog.shopify.com/posts/benchmark-comparisons-in-analytics-will-be-removed-on-may-19th
+- https://help.shopify.com/en/manual/products/inventory/transitioning-from-stocky
+
+### Open questions added
+
+8. Exact BFS **rating** number (still unpublished).
+9. Glew current App Store handle (if any) post–Everest Group.
+10. Whether Margn / ProfitIQ / TrackProfit have unpublished reviews (trust delay).
+11. Nabu / Taxomate / Matrixify / Klaviyo correct handles — not fetched.
+12. Partner Dashboard Mcfly views/installs — still not in this repo.

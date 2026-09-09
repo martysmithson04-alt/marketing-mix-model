@@ -48,6 +48,18 @@ Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Every
 
 Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files.
 
+### WAVE C append (2026-09-09, this branch)
+
+Index: [`WAVE_C.md`](./WAVE_C.md). Does **not** replace WAVE A/B or PRs #5–#10.
+
+| File | What |
+| --- | --- |
+| [`COMPETITIVE_MATRIX.md`](./COMPETITIVE_MATRIX.md) | 65-row matrix + new cards (profit long tail, suites, pixels, reports, finance, channels) |
+| [`PRICING_LADDERS.md`](./PRICING_LADDERS.md) | Live `#adp-pricing` tables |
+| [`CATEGORY_TOPOLOGY.md`](./CATEGORY_TOPOLOGY.md) | Official 7-category tree vs 1,546-app Analytics aisle |
+| [`PARTNER_POLICY.md`](./PARTNER_POLICY.md) | Revenue share, BFS **50 installs / 5 reviews**, review law |
+| [`FAILURE_AUTOPSIES.md`](./FAILURE_AUTOPSIES.md) | Stocky sunset, Metrilo/Glew/BeProfit/TW/Klar/0-review clones |
+
 ---
 
 ## Method (non-negotiable)
@@ -97,8 +109,9 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ## Corpus status (this run)
 
-Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
-DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.
+WAVE A delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
+WAVE A DB: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.  
+WAVE C appends matrix/policy/autopsy files + additional `competitors.jsonl` / `sources.jsonl` rows. Re-run `db/build_db.py` after pull.
 
 Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
 
