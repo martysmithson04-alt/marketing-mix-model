@@ -25,7 +25,9 @@ Religion is **FLEXIBLE here**. Every alternative (pixels, MTA, OAuth, freemium, 
 
 ## How to read this
 
-Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Everything else is evidence.
+**Newly woken Cursor:** [`GROKBOT_CURSOR_HANDOFF.md`](./GROKBOT_CURSOR_HANDOFF.md) first (full Grok Bot dump). Index: [`MASTER_INDEX.md`](./MASTER_INDEX.md). Standing orders: [`docs/CURSOR_STANDING_ORDERS.md`](../../CURSOR_STANDING_ORDERS.md).
+
+Then [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the S1–S7 menu (pre-Kleio — read Wave E / Decision brief after). Everything else is evidence.
 
 | File | What |
 | --- | --- |
