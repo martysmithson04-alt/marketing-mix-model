@@ -1,0 +1,70 @@
+/**
+ * Marty Smithson portfolio — design tokens.
+ * All colors live here. Spacing, type, breakpoints, radii, and motion
+ * follow the same ladder as the rest of this workspace.
+ */
+
+:root {
+  /* ——— SURFACE ——— */
+  --paper: #f4f1ea;
+  --paper-raised: #fbfaf6;
+  --paper-sunk: #e8e4d8;
+  --ink: #161714;
+  --ink-2: #4a4e45;
+  --rule: #c9c4b6;
+
+  /* ——— SEMANTIC (the only two accents) ——— */
+  --black-ink: #1b5e3f;
+  --red-ink: #a3231c;
+  --black-ink-on-dark: #7fd4a8;
+  --red-ink-on-dark: #f0958c;
+
+  /* ——— TYPE FAMILIES ——— */
+  --display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --data: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* ——— SPACING: 4px base ladder ——— */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-24: 6rem;
+  --s-32: 8rem;
+  --s-40: 10rem;
+
+  /* ——— TYPE SCALE ——— */
+  --t-xs: clamp(0.79rem, 0.76rem + 0.13vw, 0.85rem);
+  --t-sm: clamp(0.89rem, 0.85rem + 0.17vw, 0.97rem);
+  --t-base: clamp(1rem, 0.95rem + 0.22vw, 1.13rem);
+  --t-md: clamp(1.13rem, 1.05rem + 0.35vw, 1.35rem);
+  --t-lg: clamp(1.36rem, 1.22rem + 0.6vw, 1.72rem);
+  --t-xl: clamp(1.64rem, 1.4rem + 1.03vw, 2.25rem);
+  --t-2xl: clamp(1.97rem, 1.58rem + 1.68vw, 2.95rem);
+  --t-3xl: clamp(2.37rem, 1.74rem + 2.7vw, 3.87rem);
+  --t-4xl: clamp(2.85rem, 1.85rem + 4.28vw, 5.06rem);
+
+  /* ——— BREAKPOINTS (min-width only) ——— */
+  --bp-sm: 40rem;
+  --bp-md: 60rem;
+  --bp-lg: 80rem;
+
+  /* ——— RADII ——— */
+  --radius-flat: 0;
+  --radius-ctrl: 4px;
+
+  /* ——— MOTION ——— */
+  --dur-fast: 120ms;
+  --dur-base: 220ms;
+  --dur-slow: 400ms;
+  --ease-std: cubic-bezier(0.2, 0, 0, 1);
+  --ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ——— MEASURE ——— */
+  --measure: 40rem;
+  --page: 72rem;
+}

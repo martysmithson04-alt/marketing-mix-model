@@ -1,0 +1,233 @@
+---
+import Base from "../layouts/Base.astro";
+
+const title = "Marty Smithson — Marketing Analytics & Measurement";
+const description =
+  "Marty Smithson, American Fork, Utah. Marketing analytics and measurement: MMM, attribution, and incrementality. $25M+ ad spend managed.";
+---
+
+<Base title={title} description={description}>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="wrap">
+        <p class="hero-kicker">American Fork, Utah · Open to marketing analytics roles</p>
+        <h1 id="hero-name">Marty Smithson</h1>
+        <p class="hero-role">Marketing Analytics &amp; Measurement</p>
+        <p class="hero-lede">
+          I measure paid media so operators can move budget against incrementality — not platform-reported ROAS.
+          Media mix models, attribution, and incrementality tests for brands that already spend at scale.
+        </p>
+        <dl class="hero-facts">
+          <div>
+            <dt>Career spend</dt>
+            <dd class="num">$25M+ ad spend managed</dd>
+          </div>
+          <div>
+            <dt>Education</dt>
+            <dd>B.S. Statistics, Data Analytics &amp; Digital Marketing — Utah Valley University, May 2025</dd>
+          </div>
+          <div>
+            <dt>Practice</dt>
+            <dd>MMM · attribution · incrementality</dd>
+          </div>
+        </dl>
+        <div class="hero-cta">
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/marty-smithson" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-ghost" href="mailto:martysmithson04@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="band-head">
+          <p class="eyebrow">Experience</p>
+          <h2 id="work-title">Work</h2>
+          <p>Titles and dates follow LinkedIn. Figures are as reported there — not restated or rounded further.</p>
+        </div>
+
+        <div class="cases">
+          <article class="case">
+            <div class="case-meta">
+              <p class="case-org">Black Clover</p>
+              <p class="case-dates num">2025–Present</p>
+            </div>
+            <div>
+              <h3>Business Intelligence &amp; Performance Marketing Leader</h3>
+              <p class="case-body">
+                Lead BI and performance marketing. SQL and Domo ETL into NetSuite. MER dashboards used to find spend leakage and reallocate paid media.
+              </p>
+              <ul class="metrics">
+                <li class="metric">
+                  <span class="metric-value num">~$3.6M+/yr</span>
+                  <span class="metric-label">Ad budget</span>
+                </li>
+                <li class="metric">
+                  <span class="metric-value num up">~50% YoY</span>
+                  <span class="metric-label">Revenue growth</span>
+                </li>
+                <li class="metric">
+                  <span class="metric-value num down">~30%</span>
+                  <span class="metric-label">Spend leakage reduction via MER dashboards</span>
+                </li>
+                <li class="metric">
+                  <span class="metric-value num up">~25%</span>
+                  <span class="metric-label">Blended ROAS lift</span>
+                </li>
+              </ul>
+              <p class="tools"><strong>Stack.</strong> SQL, Domo ETL, NetSuite, MER dashboards.</p>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case-meta">
+              <p class="case-org">Nutricost</p>
+              <p class="case-dates num">2024–2025</p>
+            </div>
+            <div>
+              <h3>Advertising Data Scientist</h3>
+              <p class="case-body">
+                Measurement across Amazon, Google, Meta, and TikTok. Incrementality and multi-touch attribution. Scaled Ketologic and Primaforce paid media from a test budget to a daily run-rate.
+              </p>
+              <ul class="metrics">
+                <li class="metric">
+                  <span class="metric-value num">~$2M/mo</span>
+                  <span class="metric-label">Spend across Amazon, Google, Meta, TikTok</span>
+                </li>
+                <li class="metric">
+                  <span class="metric-value num up">~$50 → $1,000/day</span>
+                  <span class="metric-label">Ketologic / Primaforce daily spend</span>
+                </li>
+              </ul>
+              <p class="tools"><strong>Methods.</strong> Incrementality, MTA.</p>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case-meta">
+              <p class="case-org">McFly Ads</p>
+              <p class="case-dates num">2020–Present</p>
+            </div>
+            <div>
+              <h3>Marketing Analytics Consultant</h3>
+              <p class="case-body">
+                Independent consulting on marketing mix models and attribution. Reporting in Tableau and Domo. LTV and ROI reporting for paid media operators.
+              </p>
+              <p class="tools"><strong>Work.</strong> MMM and attribution consulting · Tableau / Domo · LTV / ROI reporting.</p>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case-meta">
+              <p class="case-org">Independent</p>
+              <p class="case-dates num">2018–Present</p>
+            </div>
+            <div>
+              <h3>Quantitative Options Strategist</h3>
+              <p class="case-body">
+                Independent quantitative work in listed options. Concurrent with analytics roles.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="methods" aria-labelledby="methods-title">
+      <div class="wrap">
+        <div class="band-head">
+          <p class="eyebrow">How the work is done</p>
+          <h2 id="methods-title">Methods</h2>
+          <p>Three measurement layers. Platform ROAS is a starting point, not the close.</p>
+        </div>
+        <div class="methods">
+          <article class="method">
+            <p class="method-index num">01</p>
+            <div>
+              <h3>Media mix modeling</h3>
+              <p>
+                Aggregate spend and outcome series to estimate channel contribution, saturation, and carryover.
+                Used when path data is incomplete or when finance needs a model that can survive a budget review.
+              </p>
+            </div>
+          </article>
+          <article class="method">
+            <p class="method-index num">02</p>
+            <div>
+              <h3>Attribution</h3>
+              <p>
+                Path and last-touch views for operational pacing — with the limit stated up front. Multi-touch
+                attribution sits beside incrementality, not in place of it.
+              </p>
+            </div>
+          </article>
+          <article class="method">
+            <p class="method-index num">03</p>
+            <div>
+              <h3>Incrementality</h3>
+              <p>
+                Geo tests, holdouts, and lift reads that ask what would have happened without the spend.
+                The number that decides whether a channel keeps its budget.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band side" id="project" aria-labelledby="project-title">
+      <div class="wrap">
+        <div class="band-head">
+          <p class="eyebrow">Not an employer · not this site’s purpose</p>
+          <h2 id="project-title">Side project</h2>
+          <p>
+            A Shopify product I built from the consulting practice. It is a side project — recruiters should treat
+            the roles above as the work history.
+          </p>
+        </div>
+        <div class="side-card">
+          <div>
+            <p class="badge">Product side project</p>
+            <h3>Mcfly Analytics</h3>
+            <p>
+              A Shopify app for total ROAS: verified sales against ad spend, break-even from margin, and
+              rules-based allocation. Built as a product, not offered here as a consulting engagement.
+            </p>
+          </div>
+          <a class="btn" href="https://mcflyads.com" rel="noopener noreferrer">mcflyads.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="band-head">
+          <p class="eyebrow">American Fork, Utah</p>
+          <h2 id="contact-title">Contact</h2>
+          <p>Direct lines. No form, no waitlist.</p>
+        </div>
+        <dl class="contact-grid">
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:martysmithson04@gmail.com">martysmithson04@gmail.com</a></dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a class="num" href="tel:+18017170418">801-717-0418</a></dd>
+          </div>
+          <div>
+            <dt>LinkedIn</dt>
+            <dd>
+              <a href="https://www.linkedin.com/in/marty-smithson" rel="noopener noreferrer">linkedin.com/in/marty-smithson</a>
+            </dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>American Fork, Utah</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+</Base>
