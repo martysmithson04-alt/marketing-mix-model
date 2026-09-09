@@ -25,7 +25,7 @@ Religion is **FLEXIBLE here**. Every alternative (pixels, MTA, OAuth, freemium, 
 
 ## How to read this
 
-Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Everything else is evidence.
+If you are **operating this week**, start with [`WAR_ROOM.md`](./WAR_ROOM.md). If you want the strategy menu, start with [`SYNTHESIS.md`](./SYNTHESIS.md). Everything else is evidence.
 
 | File | What |
 | --- | --- |
@@ -44,6 +44,10 @@ Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Every
 | [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) | Capability × four scores |
 | [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) | CURRENT vs OPTION + call |
 | [`SYNTHESIS.md`](./SYNTHESIS.md) | S1–S7 strategic options |
+| [`WAR_ROOM.md`](./WAR_ROOM.md) | Weekly cadence if fighting for money + love |
+| [`COMPETITIVE_THREAT_BOARD.md`](./COMPETITIVE_THREAT_BOARD.md) | Kleio / Margn / TP / Sheets / TW / free Shopify — 30/90/365 |
+| [`UNIT_ECONOMICS_SCENARIOS.md`](./UNIT_ECONOMICS_SCENARIOS.md) | Scenario tables only; 0% then 15% + 2.9% |
+| [`UNANSWERED_QUESTIONS.md`](./UNANSWERED_QUESTIONS.md) | Strategy-changing unknowns + how to learn |
 | [`db/`](./db/) | JSONL + `competitive.sqlite` |
 
 Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files.
@@ -97,10 +101,11 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ## Corpus status (this run)
 
-Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
-DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.
+Delivered: 20 markdown files + `db/` (7 JSONL, sqlite, builder).  
+Session 6 added Kleio + Margn live cards, official 0%/15%+2.9% take-rate, and the four decision-system files.  
+DB counts: 23 competitors · 15 problems · 25 visible review quotes · 58 sources · 22 opportunities · 12 religion rows.
 
-Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
+Recommended read order after this README: `WAR_ROOM.md` → `COMPETITIVE_THREAT_BOARD.md` → `UNIT_ECONOMICS_SCENARIOS.md` → `UNANSWERED_QUESTIONS.md`. Strategy menu remains `SYNTHESIS.md`.
 
 ---
 
