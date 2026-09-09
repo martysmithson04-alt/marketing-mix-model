@@ -193,15 +193,36 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 
 ---
 
+## Enterprise landscape session (2026-09-09, this PR)
+
+Imported unique artifacts from PRs #5–#13 without wipe. Live re-fetch:
+
+- Mcfly listing **WebFetch 200**: still $39 / 7-day / **0.0 (0)** / launched Sept 7 2026 / Total ROAS hero / adjacent Clarity **2127**, WeTracked 125, Parkour 191.
+- Kleio listing **WebFetch 200**: $29 / 14-day / **5.0 (20)** / 100% 5★ / Trek Light, EMME, Hummii visible.
+- TrueProfit listing **WebFetch 200**: from $35 + surcharge / **5.0 (900)** — Wave A had 899.
+- Analytics aisle **WebFetch 200**: still **1,546 apps**; first screen pixels/heatmaps; TrueProfit 900 visible on page.
+- Official: revenue-share, BFS requirements, manage-app-reviews, offer-free-trials, listing categories — all 200.
+- Community 134251 / 657805 / 588628 — 200; “Shopify doesn’t measure spend”; “revenue is native, true net profit has to be assembled”; “TOTAL ad spend not attributed-only”.
+- Kleio / TrueProfit / Lifetimely / Northbeam / Hyros / Measured sites — 200. Northbeam/Hyros still **no public price**.
+- Bulk `apps.shopify.com` crawl: **50 HTTP 429** after ~20 200s. Recorded. Wave C JSON-LD remains source for those handles.
+- Guessed handles (hyros, stape, blotout, godmode, …): **404**. Sales-led sites fetched instead.
+- Reddit HTML: bot challenge (`FETCH_FAILED` this wave).
+- Triple Whale site pricing: one WebFetch **timeout**.
+- Elevar.com/pricing resolved to an unexpected Audiense page — **do not cite**.
+- DB assemble: **106 competitors · 61 problems · 80 quotes · 300 sources**.
+
+---
+
 ## Open questions (do not invent answers)
 
 1. Actual Mcfly listing views / installs / trial starts — Partner Dashboard only. Not in this repo.
-2. Exact Built for Shopify numeric gates (installs/reviews/rating).
-3. Whether live Mcfly app already has LTV + Goals as claimed on the listing (repo `APP_FEATURES.md` still says LTV later).
-4. Northbeam official public price card — homepage does not print dollars.
+2. ~~Exact Built for Shopify numeric gates.~~ **Closed:** 50 net paid-plan installs + 5 reviews ([BFS requirements](https://shopify.dev/docs/apps/launch/built-for-shopify/requirements)). Rating number still unpublished.
+3. Whether live Mcfly app already has LTV + Goals as claimed on the listing (repo `APP_FEATURES.md` still says LTV later). Listing still claims them 2026-09-09.
+4. Northbeam official public price card — homepage does not print dollars. **Reconfirmed this wave.**
 5. Polar $400 (own vs page) vs $750 (App Store) vs ~$720 (Talk Shop).
 6. SyncWith Shopify $4.99 vs older `COMPETITORS.md` $25–$150 refresh-tax ladder (likely Workspace vs Shopify SKU split).
 7. World-wide VAT handling — TW 1-star is a live landmine Mcfly must not copy.
+8. First-party interviews — scripts exist; **zero** completed rows.
 
 ---
 
