@@ -1,7 +1,7 @@
 # Mcfly Analytics — Competitive research corpus (2026-09)
 
 **Status:** RESEARCH ONLY. No production feature shipping.  
-**Branch:** `research/competitive-2026-09`  
+**Branch:** `research/competitive-2026-09-full`  
 **Anchor listing:** [apps.shopify.com/mcfly-analytics-public](https://apps.shopify.com/mcfly-analytics-public)  
 **Marketing site:** [mcflyads.com](https://mcflyads.com)  
 **Research date window:** 2026-09-09 (live fetches). Re-verify prices and review counts before publishing any number on mcflyads.com.
@@ -25,7 +25,9 @@ Religion is **FLEXIBLE here**. Every alternative (pixels, MTA, OAuth, freemium, 
 
 ## How to read this
 
-If you are **operating this week**, start with [`WAR_ROOM.md`](./WAR_ROOM.md). If you want the strategy menu, start with [`SYNTHESIS.md`](./SYNTHESIS.md). Everything else is evidence.
+**Newly woken Cursor:** [`GROKBOT_CURSOR_HANDOFF.md`](./GROKBOT_CURSOR_HANDOFF.md) first (full Grok Bot dump). Index: [`MASTER_INDEX.md`](./MASTER_INDEX.md). Standing orders: [`docs/CURSOR_STANDING_ORDERS.md`](../../CURSOR_STANDING_ORDERS.md).
+
+Then [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the S1–S7 menu (pre-Kleio — read Wave E / Decision brief after). Operating this week: [`WAR_ROOM.md`](./WAR_ROOM.md). Everything else is evidence.
 
 | File | What |
 | --- | --- |
@@ -43,6 +45,8 @@ If you are **operating this week**, start with [`WAR_ROOM.md`](./WAR_ROOM.md). I
 | [`LISTING_TEARDOWNS.md`](./LISTING_TEARDOWNS.md) | vs live Mcfly listing |
 | [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) | Capability × four scores |
 | [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) | CURRENT vs OPTION + call |
+| [`GROKBOT_CURSOR_HANDOFF.md`](./GROKBOT_CURSOR_HANDOFF.md) | **Start here.** Full Grok Bot → Cursor dump |
+| [`MASTER_INDEX.md`](./MASTER_INDEX.md) | Map of the whole corpus |
 | [`SYNTHESIS.md`](./SYNTHESIS.md) | S1–S7 strategic options |
 | [`PRIMARY_SOURCE_HARVEST.md`](./PRIMARY_SOURCE_HARVEST.md) | Live App Store cards + community/Reddit + competitor docs (append-only; do not clobber ENTERPRISE_LANDSCAPE) |
 | [`WAR_ROOM.md`](./WAR_ROOM.md) | Weekly cadence if fighting for money + love |
@@ -102,9 +106,11 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ## Corpus status (enterprise landscape, 2026-09-09)
 
-Prior waves (PRs #5–#13) are imported, not wiped. Start with [`MASTER_INDEX.md`](./MASTER_INDEX.md).  
+**Full bank** on `research/competitive-2026-09-full`. Wake at [`GROKBOT_CURSOR_HANDOFF.md`](./GROKBOT_CURSOR_HANDOFF.md); map at [`MASTER_INDEX.md`](./MASTER_INDEX.md).  
+Prior waves (PRs #5–#13) imported via #16, not wiped.  
 Harvest (PR #14, append-only): [`PRIMARY_SOURCE_HARVEST.md`](./PRIMARY_SOURCE_HARVEST.md) + `db/harvest_*.jsonl` — **214 harvest listings** · 22 harvest threads · 17 harvest docs.  
-Decision systems (PR #15): [`WAR_ROOM.md`](./WAR_ROOM.md) · [`COMPETITIVE_THREAT_BOARD.md`](./COMPETITIVE_THREAT_BOARD.md) · [`UNIT_ECONOMICS_SCENARIOS.md`](./UNIT_ECONOMICS_SCENARIOS.md) · [`UNANSWERED_QUESTIONS.md`](./UNANSWERED_QUESTIONS.md).
+Decision systems (PR #15): [`WAR_ROOM.md`](./WAR_ROOM.md) · [`COMPETITIVE_THREAT_BOARD.md`](./COMPETITIVE_THREAT_BOARD.md) · [`UNIT_ECONOMICS_SCENARIOS.md`](./UNIT_ECONOMICS_SCENARIOS.md) · [`UNANSWERED_QUESTIONS.md`](./UNANSWERED_QUESTIONS.md).  
+Enterprise landscape (PR #16) + GrokBot handoff (PR #17) are on this branch.
 
 **Read if you have 15 minutes:** [`ENTERPRISE_LANDSCAPE.md`](./ENTERPRISE_LANDSCAPE.md) → [`DECISION_BRIEF.md`](./DECISION_BRIEF.md) → [`NICHE_CANVAS.md`](./NICHE_CANVAS.md).
 

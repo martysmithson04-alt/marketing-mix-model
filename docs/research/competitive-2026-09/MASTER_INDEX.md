@@ -1,9 +1,14 @@
 # Master index — how to use this research system
 
 **Output root:** `docs/research/competitive-2026-09/`  
-**Branch this file lives on:** `cursor/enterprise-landscape-0791`  
+**Branch this file lives on:** `research/competitive-2026-09-full`  
 **Base:** `research/competitive-2026-09`  
 **Rule:** do not wipe prior files. This index is the map. The DB is the system of record.
+
+**Wake here first:** [`GROKBOT_CURSOR_HANDOFF.md`](./GROKBOT_CURSOR_HANDOFF.md) — complete Grok Bot → Cursor dump (mission locks, live product state 2026-09-09, PR bank #5–#16, conclusions, Mac steps, human gates, standing orders).  
+**Repo-root pointer:** [`docs/CURSOR_STANDING_ORDERS.md`](../../CURSOR_STANDING_ORDERS.md)
+
+This branch is the **merged research bank**. Unique artifacts from PRs #5–#6 and #8–#17 are on disk here (PR #7 portfolio excluded). Source PRs may still be OPEN on GitHub; do not wipe them.
 
 ---
 
@@ -11,19 +16,20 @@
 
 | You want… | Open |
 | --- | --- |
+| **Everything Grok Bot learned (start here)** | [`GROKBOT_CURSOR_HANDOFF.md`](./GROKBOT_CURSOR_HANDOFF.md) |
 | The whole niche as maps/tables | [`ENTERPRISE_LANDSCAPE.md`](./ENTERPRISE_LANDSCAPE.md) |
 | What to do next week / quarter / kill | [`DECISION_BRIEF.md`](./DECISION_BRIEF.md) |
 | JTBD for operator / agency / CFO | [`NICHE_CANVAS.md`](./NICHE_CANVAS.md) |
 | Every URL we actually fetched | [`SOURCE_BIBLIOGRAPHY.md`](./SOURCE_BIBLIOGRAPHY.md) |
 | Queryable facts | [`db/SCHEMA.md`](./db/SCHEMA.md) → `db/competitive.sqlite` |
 
-Religion tags (`CURRENT_RELIGION` / `RESEARCH_OPTION` / `EVIDENCE` / `RISK`) are defined in [`README.md`](./README.md).
+Religion tags (`CURRENT_RELIGION` / `RESEARCH_OPTION` / `EVIDENCE` / `RISK`) are defined in [`README.md`](./README.md) and restated in the handoff.
 
 ---
 
 ## 1. Pull requests this corpus synthesizes
 
-These PRs are **not all merged**. Their unique artifacts were imported onto this branch without deleting Wave A files.
+These PRs are included on `research/competitive-2026-09-full` (content merge / import). Source PRs may still be OPEN. **Append, do not wipe.**
 
 | PR | Title | Branch | What it added (use these files) |
 | --- | --- | --- | --- |
@@ -35,6 +41,10 @@ These PRs are **not all merged**. Their unique artifacts were imported onto this
 | [#11](https://github.com/martysmithson04-alt/marketing-mix-model/pull/11) | Wave E — S1 vs Kleio, pipes, policy | `cursor/wave-e-architecture-22c8` | [`KLEIO_GAP_ANALYSIS.md`](./KLEIO_GAP_ANALYSIS.md) · [`S1_PRD_LITE.md`](./S1_PRD_LITE.md) · [`INTEGRATION_MAP.md`](./INTEGRATION_MAP.md) · [`COMPLIANCE_LANDMINES.md`](./COMPLIANCE_LANDMINES.md) · [`STRATEGY_KILL_CRITERIA.md`](./STRATEGY_KILL_CRITERIA.md) |
 | [#12](https://github.com/martysmithson04-alt/marketing-mix-model/pull/12) | Wave C — 65-app matrix, pricing, topology, policy, autopsies | `cursor/wave-c-competitive-matrix-e09e` | [`WAVE_C.md`](./WAVE_C.md) · [`COMPETITIVE_MATRIX.md`](./COMPETITIVE_MATRIX.md) · [`PRICING_LADDERS.md`](./PRICING_LADDERS.md) · [`CATEGORY_TOPOLOGY.md`](./CATEGORY_TOPOLOGY.md) · [`PARTNER_POLICY.md`](./PARTNER_POLICY.md) · [`FAILURE_AUTOPSIES.md`](./FAILURE_AUTOPSIES.md) |
 | [#13](https://github.com/martysmithson04-alt/marketing-mix-model/pull/13) | Wave D — merchant psychology + sales | `cursor/wave-d-merchant-psych-7e69` | [`POSITIONING_WARS.md`](./POSITIONING_WARS.md) · [`OBJECTIONS.md`](./OBJECTIONS.md) · [`CONTENT_GEO.md`](./CONTENT_GEO.md) · [`INTERVIEW_SCRIPTS.md`](./INTERVIEW_SCRIPTS.md) · [`FIRST_CUSTOMERS_PLAYBOOK.md`](./FIRST_CUSTOMERS_PLAYBOOK.md) · `db/objections.jsonl` `positioning.jsonl` `content_topics.jsonl` `interviews.jsonl` `first_customer_plays.jsonl` |
+| [#14](https://github.com/martysmithson04-alt/marketing-mix-model/pull/14) | PRIMARY_SOURCE_HARVEST — 214 App Store cards | `cursor/primary-source-harvest-0171` | [`PRIMARY_SOURCE_HARVEST.md`](./PRIMARY_SOURCE_HARVEST.md) · `db/harvest_listings.jsonl` `harvest_threads.jsonl` `harvest_docs.jsonl` `harvest_sources.jsonl` `harvest_primary.py` `render_harvest.py` |
+| [#15](https://github.com/martysmithson04-alt/marketing-mix-model/pull/15) | Decision systems — war room, threats, unit econ | `cursor/decision-systems-463a` | [`WAR_ROOM.md`](./WAR_ROOM.md) · [`COMPETITIVE_THREAT_BOARD.md`](./COMPETITIVE_THREAT_BOARD.md) · [`UNIT_ECONOMICS_SCENARIOS.md`](./UNIT_ECONOMICS_SCENARIOS.md) · [`UNANSWERED_QUESTIONS.md`](./UNANSWERED_QUESTIONS.md) |
+| [#16](https://github.com/martysmithson04-alt/marketing-mix-model/pull/16) | Enterprise landscape — whole niche (+12k) | `cursor/enterprise-landscape-0791` | [`ENTERPRISE_LANDSCAPE.md`](./ENTERPRISE_LANDSCAPE.md) · [`DECISION_BRIEF.md`](./DECISION_BRIEF.md) · [`NICHE_CANVAS.md`](./NICHE_CANVAS.md) · [`SOURCE_BIBLIOGRAPHY.md`](./SOURCE_BIBLIOGRAPHY.md) · `db/assemble_enterprise.py` |
+| [#17](https://github.com/martysmithson04-alt/marketing-mix-model/pull/17) | GrokBot full learning handoff into Cursor | `cursor/grokbot-cursor-handoff-4f0f` | [`GROKBOT_CURSOR_HANDOFF.md`](./GROKBOT_CURSOR_HANDOFF.md) · [`docs/CURSOR_STANDING_ORDERS.md`](../../CURSOR_STANDING_ORDERS.md) · this index (handoff first) |
 
 PR [#7](https://github.com/martysmithson04-alt/marketing-mix-model/pull/7) is a personal portfolio — **not** part of this corpus.
 
@@ -42,7 +52,14 @@ PR [#7](https://github.com/martysmithson04-alt/marketing-mix-model/pull/7) is a 
 
 ## 2. Every research file (this folder)
 
-### Enterprise layer (this PR)
+### Handoff + standing orders (read first)
+
+| File | What it is for |
+| --- | --- |
+| [`GROKBOT_CURSOR_HANDOFF.md`](./GROKBOT_CURSOR_HANDOFF.md) | **Start here.** Full Grok Bot → Cursor learning dump |
+| [`docs/CURSOR_STANDING_ORDERS.md`](../../CURSOR_STANDING_ORDERS.md) | Short standing orders; points at the handoff |
+
+### Enterprise layer (PR #16)
 
 | File | What it is for |
 | --- | --- |
@@ -73,7 +90,7 @@ PR [#7](https://github.com/martysmithson04-alt/marketing-mix-model/pull/7) is a 
 | [`LISTING_TEARDOWNS.md`](./LISTING_TEARDOWNS.md) | vs live Mcfly listing |
 | [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) | Capability × four scores |
 
-### Parallel / later waves (PRs #5–#6, #9–#13)
+### Parallel / later waves (PRs #5–#6, #9–#15)
 
 | File | Wave | What it is for |
 | --- | --- | --- |
@@ -110,6 +127,11 @@ PR [#7](https://github.com/martysmithson04-alt/marketing-mix-model/pull/7) is a 
 | [`CONTENT_GEO.md`](./CONTENT_GEO.md) | #13 | Where merchants already read |
 | [`INTERVIEW_SCRIPTS.md`](./INTERVIEW_SCRIPTS.md) | #13 | What to ask DPs (do this week) |
 | [`FIRST_CUSTOMERS_PLAYBOOK.md`](./FIRST_CUSTOMERS_PLAYBOOK.md) | #13 | Outbound / first-store motion (research) |
+| [`PRIMARY_SOURCE_HARVEST.md`](./PRIMARY_SOURCE_HARVEST.md) | #14 | 214 live listing cards + threads + docs |
+| [`WAR_ROOM.md`](./WAR_ROOM.md) | #15 | Weekly cadence if fighting for money + love |
+| [`COMPETITIVE_THREAT_BOARD.md`](./COMPETITIVE_THREAT_BOARD.md) | #15 | 30/90/365 kill paths |
+| [`UNIT_ECONOMICS_SCENARIOS.md`](./UNIT_ECONOMICS_SCENARIOS.md) | #15 | Scenario tables only. Labeled assumptions |
+| [`UNANSWERED_QUESTIONS.md`](./UNANSWERED_QUESTIONS.md) | #15 | 20 strategy-changing unknowns |
 
 ---
 
@@ -119,13 +141,15 @@ PR [#7](https://github.com/martysmithson04-alt/marketing-mix-model/pull/7) is a 
 | --- | --- |
 | [`db/SCHEMA.md`](./db/SCHEMA.md) | Field dictionary + counts |
 | [`db/build_db.py`](./db/build_db.py) | Rebuilds `competitive.sqlite` from JSONL |
-| [`db/fetch_live.py`](./db/fetch_live.py) | Live URL fetcher (this wave) |
-| [`db/assemble_enterprise.py`](./db/assemble_enterprise.py) | Merges waves + live fetch into JSONL |
-| `db/*.jsonl` | System of record (competitors, problems, quotes, sources, …) |
-| `db/*.csv` | PR #5 review-mining tables (kept; also folded into JSONL) |
+| [`db/fetch_live.py`](./db/fetch_live.py) | Live URL fetcher (PR #16) |
+| [`db/assemble_enterprise.py`](./db/assemble_enterprise.py) | Merges waves + live fetch into JSONL (PR #16) |
+| [`db/harvest_primary.py`](./db/harvest_primary.py) | Primary harvest fetcher (PR #14) |
+| [`db/render_harvest.py`](./db/render_harvest.py) | Renders harvest markdown (PR #14) |
+| `db/*.jsonl` | System of record (competitors, problems, quotes, sources, harvest, …) |
+| `db/*.csv` | PR #5 review-mining tables (kept; also folded into JSONL on #16) |
 | `db/fetch_raw.jsonl` | Raw fetch log (status, excerpt, extracted fields) |
 
-Rebuild:
+Rebuild (already done on this branch; re-run only if JSONL changes):
 
 ```bash
 cd docs/research/competitive-2026-09/db
@@ -150,6 +174,7 @@ Live listing + live site win when they conflict. Founder amends MASTER_PLAN; age
 
 ## 5. Recommended read paths
 
+**Newly woken Cursor / Cloud Agent:** [`GROKBOT_CURSOR_HANDOFF.md`](./GROKBOT_CURSOR_HANDOFF.md) then standing orders.  
 **Founder, decide this week:** Landscape §0 + Decision brief §0–§2 + Kleio gap §0–§1.  
 **Founder, Path A:** S1 PRD-lite + Integration map + Compliance landmines + Kill criteria.  
 **Founder, Path B:** Problem bank + Kleio gap rows 8–9 + Anti-patterns AP1/AP4 + TrueProfit/Lifetimely cards.  
@@ -165,3 +190,5 @@ Live listing + live site win when they conflict. Founder amends MASTER_PLAN; age
 - First-party interview transcripts — scripts exist; rows are placeholders until you run them
 - Northbeam / Hyros / Wicked official price cards — **no listing**; do not invent
 - Any TAM, “X% of merchants,” or Mcfly MRR
+- Admin smoke Result — **blank**; do not invent
+- App Store reviews — **0**; do not invent

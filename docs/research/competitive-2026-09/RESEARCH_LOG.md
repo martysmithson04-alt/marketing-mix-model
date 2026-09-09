@@ -1,7 +1,7 @@
 # Research log — competitive 2026-09
 
 **Mode:** research only. No production shipping.  
-**Branch:** `research/competitive-2026-09`  
+**Branch:** `research/competitive-2026-09-full`  
 **Agent environment:** Cursor Cloud (not founder laptop).
 
 Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPORT` = third-party writeup, not Mcfly-invented, still not gospel. `UNVERIFIED` = do not publish. Star-split percentages on Shopify listings are **rounded by Shopify’s listing UI**, not exact counts.
@@ -293,6 +293,22 @@ TrueProfit surcharge language confirmed: Basic $35 + **$0.30/extra order**, cap 
 | `COMPETITIVE_THREAT_BOARD.md` | Who kills Mcfly in 30 / 90 / 365 days |
 | `UNIT_ECONOMICS_SCENARIOS.md` | Scenario tables only; labeled assumptions |
 | `UNANSWERED_QUESTIONS.md` | Strategy-changing unknowns + how to learn each |
+
+## 2026-09-09 — full-bank merge (`research/competitive-2026-09-full`)
+
+Docs-only merge so Cloud Agent can use one branch if Mac is flaky.
+
+| PR | How it landed on this branch |
+| --- | --- |
+| #8 | Base `research/competitive-2026-09` |
+| #16 | Git merge — enterprise landscape + unique artifacts imported from #5–#13 |
+| #5 #6 #9 #10 #11 #12 #13 | Content via #16 import (not separate merge commits) |
+| #14 | Git merge — harvest JSONL + 214 listing cards; sqlite rebuilt (enterprise + harvest) |
+| #15 | Git merge — war room / threats / unit econ / unanswered; 4 unique source URLs appended |
+| #17 | Git merge — `GROKBOT_CURSOR_HANDOFF.md` + `docs/CURSOR_STANDING_ORDERS.md`; MASTER_INDEX handoff-first |
+| #7 | **Skipped** — personal portfolio, not research |
+
+Conflicts favored enterprise landscape (#16) then handoff (#17). Harvest and decision-system unique files kept.
 
 ---
 
