@@ -161,6 +161,74 @@
 
 ---
 
+## Wave 2 additions (deeper 2026-09-09)
+
+### R13. Competitor peer: Polar vs Kleio
+
+| | |
+| --- | --- |
+| CURRENT | Compete in the mind with TW/Polar/NB |
+| OPTION | Treat **Kleio $29** as the live peer (P&L + ads + refuse MTA + founder replies) |
+| EVIDENCE | Kleio 5.0/20; Trek Light “goodbye TripleWhale”; Mcfly $39/0 reviews/`DEEP_DIVE_FIVE_APPS.md` |
+| RISK | Obsess; still lose on auto-spend |
+| RESEARCH CALL | **Reposition peer set.** Polar is a different buyer (B5). |
+
+### R14. Sales definition / refund clocks
+
+| | |
+| --- | --- |
+| CURRENT | “After returns” / Total Sales underspecified |
+| OPTION | Gross / refunds / net + as-of + refund vs exchange vs credit |
+| EVIDENCE | Community 637409, 301853, 180915; Loop 442; `DEEP_DIVE_RETURNS_LTV_SUBS.md` |
+| RISK | “One formula” marketing |
+| RESEARCH CALL | **Do definitions.** T1/T2. |
+
+### R15. Tax mode
+
+| | |
+| --- | --- |
+| CURRENT | No tax policy in mer-core |
+| OPTION | Visible `tax_mode` (ex-VAT default EU; tax-in US) + subtitle on every number |
+| EVIDENCE | TW 1★ + KB vs docs; r/dropshipping 1s3mx43; Klar prices on net after tax |
+| RISK | Shopify tax swamp; do not claim compliance |
+| RESEARCH CALL | **Do the toggle.** Do not claim GST/VAT filing. |
+
+### R16. First 50 reviews
+
+| | |
+| --- | --- |
+| CURRENT | Serious paid; 7-day; hope |
+| OPTION A | Legal Reviews API after first close + 14-day + named human (Kleio path) |
+| OPTION B | Free/low cap (Report Pundit / Lifetimely path) |
+| OPTION C | Skip store reviews; outbound (Klar path) |
+| EVIDENCE | Official reviews doc + 1.3 changelog 2026-07-06; RP 2026; Klar 0 |
+| RISK A | Still 0 if CSV |
+| RISK B | Uninstall ranking gossip (TSC) |
+| RISK C | Site-only; listing stays dead |
+| RESEARCH CALL | **A now. B if A fails 30 days. C only if App Store is abandoned (R11).** |
+
+### R17. App Store Ads
+
+| | |
+| --- | --- |
+| CURRENT | Unspecified |
+| OPTION | Buy first-price CPC now |
+| EVIDENCE | Official advertising docs; AdsX MARKET_REPORT first-price warning; Mcfly rail = free pixels |
+| RISK | Pay your own bid to send 0-review traffic at 1–2% convert (TSC gossip) into Parkour |
+| RESEARCH CALL | **Wait** until TTV + ≥10 reviews + profit-aisle keywords. |
+
+### R18. New vs returning numerator
+
+| | |
+| --- | --- |
+| CURRENT | Total sales ÷ spend |
+| OPTION | Split new-customer vs subscription/returning (still no MTA) |
+| EVIDENCE | Recharge 3118; Apex first-time North Star; r/PPC 1qgb8mg |
+| RISK | Identity disagreement |
+| RESEARCH CALL | **Later**, for Recharge-class design partners only. |
+
+---
+
 ## Summary table
 
 | ID | Bend? | Call |
@@ -177,6 +245,12 @@
 | R10 AI | Thin later | No credits |
 | R11 Channel | Depends | Don’t do neither |
 | R12 Profit | **Yes if store** | Method = MER, job = money |
+| R13 Peer | Mentally | Kleio, not Polar |
+| R14 Refund defs | **Yes** | Gross/net/as-of |
+| R15 Tax | **Yes** | Toggle, no compliance claim |
+| R16 Reviews | **Yes** | Legal loop A |
+| R17 Ads | No (yet) | Wait |
+| R18 Subs split | Later | Design-partner only |
 
-The bends that actually raise four scores: **R3, R4-B, R7, R8, R12**.  
-The breaks that look like money and usually kill the company: **R1-A, R2, R5-GMV, R10-A**.
+The bends that actually raise four scores: **R3, R4-B, R7, R8, R12, R14, R15, R16-A**.  
+The breaks that look like money and usually kill the company: **R1-A, R2, R5-GMV, R10-A, R17-too-soon**.

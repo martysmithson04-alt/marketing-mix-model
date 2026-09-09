@@ -259,3 +259,23 @@ Answer in-repo later; do not make the agent ship:
 ## 8. One paragraph
 
 Mcfly’s religion is *intellectually* right: platforms over-claim, Admin has no spend, blended sales÷spend is the adult number. Public evidence says the *market* pays and reviews **profit autopilot** and **free pixels**. A paste-only $39 desk with a 7-day trial and zero reviews maximizes none of money, love, ease, or problem-coverage. The least-incoherent vNext is a **cash governor**: auto spend, claims-vs-cash, tax-sane definitions, Monday artifact, optional pixel partner, 14-day trial, flat price, agency later. That bends religion without becoming Triple Whale. Becoming Triple Whale is how a $250-budget founder dies of scope — that part of MASTER_PLAN is still true. Staying a sermon with a CSV box is how the listing dies of silence.
+
+---
+
+## 9. Wave 2 addendum (same day, deeper)
+
+Does **not** replace S1–S7. Adds evidence that changes the **peer set** and the **default definitions**.
+
+1. **Kleio is the live $29 cousin.** 5.0/20, 14-day, P&L + ad connect + MCP, visible “goodbye TripleWhale.” Mcfly $39/0/7-day/paste is a **worse Kleio**, not a worse Polar. See `DEEP_DIVE_FIVE_APPS.md`.
+2. **TW hate in forums is price/bloat/VAT/CS**, not “pixels are theater” (`DEEP_DIVE_FORUMS.md`). Attack those. Kleio already does.
+3. **Buyer ≠ reviewer ≠ budget-mover** (`DEEP_DIVE_BUYERS.md`). App Store copy → founder. Product ease → media buyer. Outbound one-pager → finance. Pick a motion (R11).
+4. **Definitions or 1-stars:** tax mode, refund vs exchange, as-of date, shop currency (`DEEP_DIVE_INTERNATIONAL.md`, `DEEP_DIVE_RETURNS_LTV_SUBS.md`). TW published three VAT stories; Kove 1-starred one of them.
+5. **First 50 reviews:** only legal loop is Reviews API after a real close + named human. App Store Ads are **first-price CPC**, min $5/day, land on the listing, relevance-weighted — **do not buy into the pixel rail at 0 reviews** (`DEEP_DIVE_DISTRIBUTION.md`).
+6. **S1 still recommended** if four scores matter. Wave 2 says S1 must include **R14+R15+R16-A** (defs + tax + legal review ask) or the governor will be 1-starred in the EU on day one.
+7. **Do not clone** Report Pundit (labor), Recharge (take-rate), Loop (ops), Klar (DACH outbound suite). Steal **one mechanic each**: scheduled artifact, new-vs-returning optional split, refund/exchange lines, net-after-tax language.
+
+Updated founder checklist:
+
+- [ ] Is Kleio the competitor we admit in the war room?
+- [ ] May we show gross/refunds/net + tax subtitle without calling it a P&L?
+- [ ] Who is the named human who replies like Mathias / Juan / Nora?

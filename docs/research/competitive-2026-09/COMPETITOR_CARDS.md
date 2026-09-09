@@ -44,9 +44,15 @@ Star splits are Shopify UI percentages. Prices are **listing cards**, not quotes
 - **Mcfly:** same honesty *question*, opposite *ceremony*. Overlay, not replacement.
 
 ### Klar Analytics
-- **Listing:** https://apps.shopify.com/klar-analytics (search hit; full card not deep-fetched)
-- **Job:** MTA + MMM + profit + cohorts + creative + influencer; GDPR / Germany host
-- **Note:** Another “attribution + controlling” European Polar-class. Recheck price/reviews before citing numbers.
+- **Listing:** https://apps.shopify.com/klar-analytics
+- **Site price:** https://getklar.com/pricing — Core **€200**/mo · Core+Attribution **€400**/mo · last-12-mo **net revenue after returns and taxes** · 14-day after setup · monthly or annual
+- **Listing price:** Free to install; **external charges** (same pattern as TW/Polar)
+- **Launched:** 2023-12-24 · Klar Insights GmbH, Munich, DE
+- **Reviews:** **0.0 / 0** on Shopify after ~21 months (OMR 4.8/129 DE is MARKET_REPORT — https://ecom-tools.de/en/klar-review/)
+- **Job:** controlling + optional 1st-party pixel/MTA/MMM; GDPR + EU host + ISO 27001 claimed
+- **Rail:** Clarity / WeTracked / Parkour — **same as Mcfly**
+- **Lesson:** 0 Shopify reviews can be a **strategy** (outbound / DACH) — Mcfly does not have that motion
+- **Deep dive:** `DEEP_DIVE_FIVE_APPS.md` §1 · `DEEP_DIVE_INTERNATIONAL.md`
 
 ---
 
@@ -120,7 +126,14 @@ Star splits are Shopify UI percentages. Prices are **listing cards**, not quotes
 - **vs Mcfly:** they sell the pipe Mcfly tells people to use. 10 reviews = pipe without a religion.
 
 ### Report Pundit
-- **Cited on TrueProfit rail:** 5.0 / **2,026**, free plan — https://apps.shopify.com (full card not deep-fetched this run). Recheck before quoting features.
+- **Listing:** https://apps.shopify.com/report-pundit
+- **Launched:** 2019-08-13 · Estore Automate, Libby, MT
+- **Price:** Free ≤**1,000 lifetime orders** · Basic **$9** · Grow **$19** · Advanced **$35** (tied to Shopify plan) · 14-day
+- **Reviews:** **5.0 / 2,026** · 98% 5★
+- **Job:** 150+ pre-built (sales, **tax**, payout, profit, Markets, POS, inventory) + **humans build the report in chat** + schedule to Sheets/Slack/email
+- **Love:** “tried 3 apps; only they could customize” (Woodshed, 2026-09-03)
+- **Lesson:** free cap + labor-as-product prints reviews. Steal the **Monday artifact**, not 150 report types
+- **Deep dive:** `DEEP_DIVE_FIVE_APPS.md` §2 · `DEEP_DIVE_DISTRIBUTION.md`
 
 ---
 
@@ -187,6 +200,57 @@ Star splits are Shopify UI percentages. Prices are **listing cards**, not quotes
 
 ---
 
+## Wave 2 cards (not in wave 1 depth)
+
+### Kleio Analytics
+- **Listing:** https://apps.shopify.com/kleio · **Site:** https://getkleio.com/
+- **Launched:** 2025-02-19 · Aarhus, DK
+- **Price:** **$29/mo** flat · 14-day · unlimited users · 1,000,000 orders
+- **Reviews:** **5.0 / 20** · 100% 5★
+- **Job:** dashboard + ad connect + P&L + LTV + return rates; founder-named listing; MCP
+- **Love:** Trek Light 2026-08-12 “goodbye TripleWhale”; EMME “better/cheaper than triplewhale”
+- **Religion:** anti-TW-price; skips MTA (`MARKET_REPORT` / site). Closest **$29 cousin** to Mcfly
+- **Rail:** Clarity / WeTracked / Parkour
+- **vs Mcfly:** cheaper, deeper, 20 reviews, auto ads, 14-day. Primary commercial peer in the flat-fee aisle
+- **Deep dive:** `DEEP_DIVE_FIVE_APPS.md` §3
+
+### Recharge Subscriptions
+- **Listing:** https://apps.shopify.com/subscription-payments
+- **Launched:** 2014-10-14 · Santa Monica
+- **Price:** **$25**/mo (first 50 subs) · Starter **$99 + 1.49% + 19¢** · Plus **$499 + 1.34% + 19¢** · **60-day** trial · external charges
+- **Reviews:** **4.8 / 3,118** · 5% 1★
+- **Works with:** Triple Whale, Avalara, Klaviyo, Attentive, …
+- **Job:** portal / dunning / churn / bundles / **retention analytics**
+- **Hate-lite:** reporting learning curve, no automation (Munchkin, 2026-08-07)
+- **Overlap:** LTV wallet Mcfly listing claims; cohort LTV **does not join ad spend** (D2C Times MARKET_REPORT)
+- **Deep dive:** `DEEP_DIVE_FIVE_APPS.md` §4 · `DEEP_DIVE_RETURNS_LTV_SUBS.md`
+
+### Loop Returns & Exchanges
+- **Listing:** https://apps.shopify.com/loop-returns · site https://www.loopreturns.com/pricing/
+- **Launched:** 2021-05-27 · Columbus, OH
+- **Price:** Checkout+ **Free** · Essential **$155** · Advanced **$340**
+- **Reviews:** **4.6 / 442** · 7% 1★ · Magic summary on
+- **Job:** returns/exchanges/credit; “increase LTV”; NetSuite + Global-E + Klaviyo
+- **Why it is an analytics competitor:** exchanges/credit change the cash ads already counted
+- **Deep dive:** `DEEP_DIVE_FIVE_APPS.md` §5
+
+### Repeat Customer Insights
+- **Listing:** https://apps.shopify.com/repeat-customer-insights
+- **Price:** $59 / $99 / $249 · 14-day
+- **Reviews:** **5.0 / 14**
+- **Job:** RFM / cohorts / LTV / channel quality
+- **Lesson:** LTV-only does **not** print review velocity (10-year-old paid app, N=14)
+
+### Taxomate QuickBooks Xero Sync
+- **Listing:** https://apps.shopify.com/xero-taxomate
+- **Price:** $14 / $24 / $44 / $79 by orders · 14-day
+- **Reviews:** **5.0 / 6** on Shopify (site claims more elsewhere — `VENDOR_CLAIM`)
+- **Job:** payout summaries → Xero/QB; tax rates; **EU VAT** language; multi-currency
+- **vs A2X:** cheaper / smaller Shopify N; complementary to Mcfly, not a clone target
+- **Deep dive:** `DEEP_DIVE_INTERNATIONAL.md`
+
+---
+
 ## Native / DIY (not apps, still competitors)
 
 ### Shopify Admin Analytics
@@ -211,10 +275,10 @@ Star splits are Shopify UI percentages. Prices are **listing cards**, not quotes
 - **Refuse:** pixels, path credit
 - **Rail:** Clarity / WeTracked / Parkour
 - **Repo vs live:** $79 and “free design partner” are stale
-- **Primary threats:** TrueProfit (same wallet), Parkour (same rail, free, reviews), Sheets (same job, $0–$5), Margins-by-Finaloop (free profit-ROAS, watch)
+- **Primary threats:** **Kleio $29** (same religion-ish, deeper, 20 reviews), TrueProfit (same wallet), Parkour (same rail, free, reviews), Sheets (same job, $0–$5), Margins-by-Finaloop (free profit-ROAS, watch), Report Pundit (Monday artifact)
 
 ---
 
 ## Card index (for DB)
 
-`mcfly` `triple_whale` `polar` `northbeam` `klar` `trueprofit` `lifetimely` `beprofit` `metorik` `margins_finaloop` `better_reports` `syncwith` `report_pundit` `clarity` `parkour` `wetracked` `analyzify` `elevar` `a2x` `finaloop` `shopify_admin` `sheets_diy`
+`mcfly` `triple_whale` `polar` `northbeam` `klar` `trueprofit` `lifetimely` `beprofit` `metorik` `margins_finaloop` `better_reports` `syncwith` `report_pundit` `clarity` `parkour` `wetracked` `analyzify` `elevar` `a2x` `finaloop` `shopify_admin` `sheets_diy` `kleio` `recharge` `loop_returns` `repeat_customer_insights` `taxomate`

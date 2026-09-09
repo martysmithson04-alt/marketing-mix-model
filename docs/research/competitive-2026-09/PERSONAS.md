@@ -228,3 +228,17 @@ Do not put testimonials on the App Store listing (Shopify req 4.3.7 — https://
 | Buyer | “I can track inside of Meta ad manager and I do not have to use another dashboard.” | WeTracked listing, isella, 2026-09-01 |
 
 That last line is the **strategic threat**: the market’s loved products disappear into Ads Manager or into a profit number. Mcfly insists on being a third desk.
+
+---
+
+## Wave 2 — decision rights
+
+See **`DEEP_DIVE_BUYERS.md`**. Short version:
+
+- **App Store reviewer** = founder-operator (P1).  
+- **Budget mover** = media buyer (P2) or CMO (P5).  
+- **Veto** = finance (P4) on VAT / definitions.  
+- **Agency (P3)** recommends; **client store** pays and reviews.  
+- Some mid-market pods run **TW + Polar** (D2C Times MARKET_REPORT). Mcfly as replacement is cope; Mcfly as overlay is a motion (S4).
+
+Kleio is now the P1 peer. Polar remains the P5 peer. Do not write one listing for both.

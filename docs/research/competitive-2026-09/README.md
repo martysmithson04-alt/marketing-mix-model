@@ -44,9 +44,15 @@ Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Every
 | [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) | Capability × four scores |
 | [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) | CURRENT vs OPTION + call |
 | [`SYNTHESIS.md`](./SYNTHESIS.md) | S1–S7 strategic options |
+| [`DEEP_DIVE_FORUMS.md`](./DEEP_DIVE_FORUMS.md) | **Wave 2.** Community + Reddit: MER, TW hate/love, profit apps, ads vs till |
+| [`DEEP_DIVE_BUYERS.md`](./DEEP_DIVE_BUYERS.md) | **Wave 2.** Agency vs operator vs CFO — decision rights / who buys |
+| [`DEEP_DIVE_FIVE_APPS.md`](./DEEP_DIVE_FIVE_APPS.md) | **Wave 2.** Klar, Report Pundit, Kleio, Recharge, Loop |
+| [`DEEP_DIVE_RETURNS_LTV_SUBS.md`](./DEEP_DIVE_RETURNS_LTV_SUBS.md) | **Wave 2.** Refunds/lag, LTV, subscription overlap |
+| [`DEEP_DIVE_INTERNATIONAL.md`](./DEEP_DIVE_INTERNATIONAL.md) | **Wave 2.** VAT/GST, FX, multi-store trust killers |
+| [`DEEP_DIVE_DISTRIBUTION.md`](./DEEP_DIVE_DISTRIBUTION.md) | **Wave 2.** Honest first-50 reviews + official App Store Ads |
 | [`db/`](./db/) | JSONL + `competitive.sqlite` |
 
-Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files.
+Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files. Wave 2 **appends**; sibling PRs #5 (review mining) and #6 (monetization) are other branches — do not wipe this folder.
 
 ---
 
@@ -97,10 +103,12 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ## Corpus status (this run)
 
-Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
-DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.
+Wave 1: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
+Wave 2 (deeper, 2026-09-09 same day): +6 `DEEP_DIVE_*.md`; cards/religion/problems/opportunities/sources appended; sqlite rebuilt.
 
-Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
+DB after wave 2 rebuild: **27 competitors · 20 problems · 33 visible review quotes · 87 sources · 31 opportunities · 18 religion rows · 11 listing snapshots.**
+
+Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `DEEP_DIVE_FIVE_APPS.md` (Kleio is the $29 cousin) → `DEEP_DIVE_FORUMS.md`.
 
 ---
 

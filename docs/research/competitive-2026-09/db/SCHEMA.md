@@ -45,3 +45,5 @@ From OPPORTUNITY_MAP.
 From RELIGION_FLEX.
 
 SQLite: `competitive.sqlite` built by `build_db.py`.
+
+Wave 2 (2026-09-09) appended competitors `report_pundit` `kleio` `recharge` `loop_returns` `repeat_customer_insights` `taxomate` and deepened `klar`. Rebuild after JSONL edits: `python3 db/build_db.py`.

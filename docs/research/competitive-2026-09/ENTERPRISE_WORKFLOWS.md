@@ -236,3 +236,27 @@ A vNext that respects real clocks:
 | Quarterly | Allocation test window 7/14/28 + optional pause protocol | Heuristic + human | do not pretend MTA |
 
 This is how you **solve many real problems** without becoming Triple Whale.
+
+---
+
+## Wave 2 patterns (append)
+
+### Pattern 11 — Kleio as the TW-defection bicycle
+
+**Public:** https://apps.shopify.com/kleio — $29, 14-day, 5.0/20. Visible reviews name Triple Whale in the goodbye. MCP → Claude daily report (Hummii / Trek Light).
+
+**Workflow `INFERRED`:** cancel TW (or never start) → connect ads → daily P&L pulse → optional Claude pack. **No pixel priesthood in the reviews we saw.**
+
+**Mcfly:** this is the motion Community 588628 asked for. Kleio already shipped it.
+
+### Pattern 12 — Subscription graph + suite
+
+**Public:** Recharge Works-with Triple Whale; 4.8/3,118. Retention analytics inside Recharge; media in TW; finance in A2X.
+
+**Clock:** first order (ads) vs recurrence (not ads this week). Naive MER overstates.
+
+### Pattern 13 — Returns industrial complex
+
+**Public:** Loop 4.6/442 + Community returns threads. Exchange/credit keep GMV; Ads Manager keeps the conversion.
+
+See `DEEP_DIVE_RETURNS_LTV_SUBS.md` and `DEEP_DIVE_BUYERS.md` RACI.

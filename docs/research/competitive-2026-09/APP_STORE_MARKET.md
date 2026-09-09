@@ -254,3 +254,19 @@ TrueProfit at $35 + overage likely **out-earns** Mcfly per successful merchant b
 | BFS later | Repo heuristic | Prep now, apply when gates are actually met |
 
 The App Store will not grant Mcfly a moral exemption because the formula is cleaner. It will grant distribution to **apps people review**.
+
+---
+
+## 12. Wave 2 — ads + first 50 (pointer)
+
+Full official auction / billing / review-API / illegal-vs-legal ask: **`DEEP_DIVE_DISTRIBUTION.md`**.
+
+Headline facts fetched 2026-09-09:
+
+- App Store Ads = **CPC, first-price** (you pay your bid). Min budget **$5/day**. Search + category + homepage slots. Ads **only** open the listing.
+- Relevance can beat a higher bid. Mcfly’s organic rail is **free pixels** — bidding `pixel`/`capi` is how you pay to lose.
+- Reviews API: no ask &lt;24h; 1×/60d; 3×/365d; not mobile; not onboarding.
+- Policy 1.3 (2026-07-06 changelog): incentivized reviews → removal, demotion, delist, Partner death.
+- Report Pundit shows the **honest volume** path (free ≤1000 lifetime + human close → 2,026). Kleio shows the **honest lean** path ($29 + founder replies → 20). Klar shows the **skip the store** path (0 Shopify reviews, OMR in DE).
+
+`RESEARCH_OPTION`: do not buy ads yet. Do the Kleio-path legal ask after a real close. `CURRENT_RELIGION` 7-day + paste makes even the legal ask fail.

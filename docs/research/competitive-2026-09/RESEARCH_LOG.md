@@ -193,6 +193,75 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 
 ---
 
+## 2026-09-09 — session 6: deeper wave (forums, buyers, five apps)
+
+**Branch:** `cursor/deeper-wave-research-740f` off `research/competitive-2026-09`. Append only. Sibling PRs #5 (review mining), #6 (monetization), #8 (this corpus wave 1) left intact.
+
+### Shopify Community (LIVE / re-read)
+
+- https://community.shopify.com/t/anyone-using-clearprofit-for-profit-tracking-thinking-of-switching-from-spreadsheets/588628/3 and `/9` — OP on TW + Sheets at ~$15–20k/mo wants order-level net profit. Replies: TW is a fighter jet for $50k+/mo ads + MTA; bicycle = profit app. Recurring accuracy test: historical COGS lock, **total** (not attributed) spend, order+SKU, export.
+- https://community.shopify.com/t/app-for-p-l-analyse/361631/7 — Lifetimely / BeProfit / TrueProfit / ClearProfit (vendor-adjacent plugs). Same COGS + total-spend test.
+- https://community.shopify.com/t/tracking-app/581032/14 — ProfitLossDash / Bloom / Mantle named. Same test.
+- https://community.shopify.com/t/i-stopped-looking-at-shopify-metrics-one-by-one/653041/5 — TW / Lifetimely / GoProfit recommended as connectors of metrics.
+- https://community.shopify.com/t/returns-metric-in-analytics-is-misleading-should-reflect-actual-returns-not-all-refund-events/637409 — “Returns” ≈ all refund events; poster ~25% vs ~3% physical.
+- https://community.shopify.com/t/need-help-with-shopify-returns-api-and-analytics/587957/2 — return-in-progress no longer hits analytics; completed refund does.
+- https://community.shopify.com/t/anyone-else-notice-that-the-new-returns-system-breaks-all-of-shopify-sales-data/301853/54 — exchanges move daily sales / tax before cash.
+- https://community.shopify.com/t/how-to-handle-orders-returned-to-sender/306065/1 — RTS reship flagged refund-owed.
+- https://community.shopify.com/t/retract-or-modify-conversion-for-google-ads-facebook-when-customer-returns-order/199943 — ads do not auto-retract; Google negative conversions.
+
+### Reddit (PUBLIC_SNIPPET)
+
+- https://www.reddit.com/r/PPC/comments/1ohxwk6/best_triple_whale_alternative/ — Venon / Northbeam / Polar / TrueProfit. Bloat + support.
+- https://www.reddit.com/r/FacebookAds/comments/1c6am9l/any_good_alternatives_to_triple_whale/ — expensive for value; TrueProfit cheaper; vendor replies.
+- https://www.reddit.com/r/triplewhale/comments/1qs7n0s/attribution_app_alternatives/ — “crazy expensive”; B2B+DTC attribution skew; thin thread.
+- https://www.reddit.com/r/dropshipping/comments/1s3mx43/how_do_you_guys_actually_calculate_your_real/ — TrueProfit vs EU VAT; CS can activate VAT (commenter).
+
+### Live listings (new / deep-fetched)
+
+| App | URL | Price | Rating / reviews | Notes |
+| --- | --- | --- | --- | --- |
+| Klar Analytics | https://apps.shopify.com/klar-analytics | Free to install; **external** | 0.0 / **0** | Launched 2023-12-24; Munich; GDPR/EU; same pixel rail as Mcfly |
+| Klar site | https://getklar.com/pricing | Core **€200** / +Attr **€400**; net revenue last 12 mo after returns **and taxes**; 14-day after setup | — | Folio3 $129 MARKET_REPORT stale |
+| Report Pundit | https://apps.shopify.com/report-pundit | Free ≤1000 lifetime; $9/$19/$35 = Shopify plan | **5.0 / 2,026** | Human builds reports; tax/payout/Markets/POS; TrueProfit rail |
+| Kleio | https://apps.shopify.com/kleio | **$29** flat; 14-day; 1M orders | **5.0 / 20** | Launched 2025-02-19; Aarhus; visible 5★ “goodbye TripleWhale”; MCP |
+| Recharge | https://apps.shopify.com/subscription-payments | $25 / $99+1.49% / $499+1.34%; 60-day | **4.8 / 3,118** | Works with TW + Avalara; reporting “not automated” 2026 review |
+| Loop Returns | https://apps.shopify.com/loop-returns | Free Checkout+ / $155 / $340 | **4.6 / 442** · 7% 1★ · Magic on | Exchanges retain GMV ads already counted |
+| Repeat Customer Insights | https://apps.shopify.com/repeat-customer-insights | $59/$99/$249; 14-day | **5.0 / 14** | LTV/cohorts since 2016 — LTV alone does not print reviews |
+| Taxomate | https://apps.shopify.com/xero-taxomate | $14/$24/$44/$79; 14-day | **5.0 / 6** | Payout→Xero/QB; EU VAT language; tiny Shopify N |
+
+### TW VAT contradiction (LIVE)
+
+- KB 2026-07-26: VAT **not** in Sales; add as custom expense — https://kb.triplewhale.com/en/articles/10201911-is-vat-international-sales-tax-included-in-the-sales-metric
+- Docs: Order Revenue / Total Sales **include Taxes** — https://triplewhale.readme.io/docs/order-revenue · https://triplewhale.readme.io/docs/total-sales
+- Listing 1★ Kove (NL) says VAT is in revenue.
+
+### Official App Store Ads (LIVE)
+
+- https://shopify.dev/docs/apps/launch/marketing/advertising — CPC, **first-price** (pay your bid)
+- https://shopify.dev/docs/apps/launch/marketing/advertising/faq — min budget **$5/day**; min bid unpublished; impression-date attribution; refunds **not** in ad revenue; look ~60 days
+- https://shopify.dev/docs/apps/launch/marketing/advertising/ad-billing — 30 days or $100
+- https://shopify.dev/docs/apps/launch/marketing/advertising/create-ads — relevance + bid; $1 default suggestion when no data (AdsX MARKET_REPORT)
+- Reviews API: https://shopify.dev/docs/api/app-home/apis/user-interface-and-interactions/reviews-api — 24h cooldown, 60-day / 3×365, no mobile
+- Policy 1.3 changelog 2026-07-06: https://shopify.dev/changelog/updated-app-store-requirements-13-always-use-honest-and-transparent-review-practices
+
+### MARKET_REPORT (not gospel)
+
+- Eightx TW: decision-support not books — https://eightx.co/blog/compare/reviews/triple-whale-for-ecommerce-review
+- D2C Times Polar vs TW: “TW = media buyer; Polar = CFO+CMO”; some run both — https://d2c-times.com/polar-analytics-vs-triplewhale-in-2026-which-dtc-intelligence-layer-wins/
+- AdsX first-price + illustrative $2/15%/10% funnel — **do not publish as Mcfly** — https://www.adsx.com/blog/shopify-app-store-ads-guide
+- ecom-tools.de Klar: OMR 4.8/129 DE; 0 on Shopify — https://ecom-tools.de/en/klar-review/
+- Kleio site competitor price table **conflicts** with live Lifetimely listing — do not republish
+
+---
+
+## 2026-09-09 — session 7: buyers + returns + international synthesis
+
+Written into `DEEP_DIVE_BUYERS.md`, `DEEP_DIVE_RETURNS_LTV_SUBS.md`, `DEEP_DIVE_INTERNATIONAL.md`, `DEEP_DIVE_DISTRIBUTION.md`. No production shipping.
+
+**New open questions added below.**
+
+---
+
 ## Open questions (do not invent answers)
 
 1. Actual Mcfly listing views / installs / trial starts — Partner Dashboard only. Not in this repo.
@@ -201,7 +270,12 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 4. Northbeam official public price card — homepage does not print dollars.
 5. Polar $400 (own vs page) vs $750 (App Store) vs ~$720 (Talk Shop).
 6. SyncWith Shopify $4.99 vs older `COMPETITORS.md` $25–$150 refresh-tax ladder (likely Workspace vs Shopify SKU split).
-7. World-wide VAT handling — TW 1-star is a live landmine Mcfly must not copy.
+7. World-wide VAT handling — TW 1-star is a live landmine Mcfly must not copy. **Wave 2:** it is a definition problem (KB vs docs vs review), not a mystery. Still no “correct” default for US vs EU.
+8. Kleio multi-store: $29 card says 1,000,000 orders / unlimited users — shops not specified.
+9. Loop Checkout+ volume gate (Loop site vs listing “Free”) — Botapolis says 10k+ annual orders; Loop site table shows 20k+ on some support rows. Do not publish a gate.
+10. Recharge txn rates on Plus “scalable” — listing 1.34%+19¢; third parties still quote 1.0% on older Pro. Live listing wins.
+11. Partner Dashboard CPC / relevance for Mcfly keywords — not in this repo.
+12. Whether Kleio’s “no attribution” is a listing fact or only MARKET_REPORT (Digismoothie / site). Listing itself emphasizes P&L + ads connect, not MTA.
 
 ---
 
