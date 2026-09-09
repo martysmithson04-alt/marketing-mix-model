@@ -294,3 +294,64 @@ An opportunity ships into consideration only if **all** are true:
 **Shopify Admin structurally refuses:** ingesting Meta/Google/billboard spend.
 
 Those three refusals are the only durable wedges visible on 2026-09-09.
+
+---
+
+## Wave 2 opportunities (append)
+
+### A7. Gross / refunds / net + as-of stamp
+
+| | |
+| --- | --- |
+| Scores | Money **M** · Love **H** · Ease **M** · Real **H** |
+| Tag | `STRETCH` |
+| Evidence | Community 637409, 180915; Loop; `DEEP_DIVE_RETURNS_LTV_SUBS.md` |
+| Risk | One-formula marketing |
+
+### A8. Visible tax_mode (ex-VAT / inc-VAT)
+
+| | |
+| --- | --- |
+| Scores | Money **M** · Love **H** (EU) · Ease **M** · Real **H** |
+| Tag | `STRETCH` |
+| Evidence | TW 1★ + KB vs docs; Klar net-after-tax price basis |
+| Risk | Support; no compliance claim |
+
+### A9. Shop-currency lock (refuse FX-silent MER)
+
+| | |
+| --- | --- |
+| Scores | Money **L** · Love **H** · Ease **M** · Real **H** |
+| Tag | `STRETCH` |
+| Evidence | Report Pundit Markets; paste FX `DEEP_DIVE_INTERNATIONAL.md` |
+
+### C5. Reviews API after first computed close
+
+| | |
+| --- | --- |
+| Scores | Money **M** · Love **H** · Ease **H** · Real **M** |
+| Tag | `FIT_NOW` (policy-legal; product must render a number first) |
+| Evidence | Official reviews + Reviews API; Kleio 20 |
+| Risk | Asking on a blank desk |
+
+### C6. App Store Ads (search)
+
+| | |
+| --- | --- |
+| Scores | Money **L now / M later** · Love **n/a** · Ease **H** to buy · Real **n/a** |
+| Tag | `ADJACENT_NO` until TTV + ≥10 reviews |
+| Evidence | Official first-price CPC; min $5/day; `DEEP_DIVE_DISTRIBUTION.md` |
+
+### F7. Become Kleio
+
+| ID | Opportunity | Why money is real | Why Mcfly should pass or steal |
+| --- | --- | --- | --- |
+| F7 | Full $29 P&L + MCP + inventory | Kleio 20×5★ TW defections | **Steal job shape**; do not clone SKU-for-SKU. Already a company. |
+| F8 | Recharge-class subscriptions | 3118 reviews, take-rate | `ADJACENT_NO` — optional new/returning split only |
+| F9 | Loop-class returns ops | 442 reviews | `ADJACENT_NO` — ingest refund/exchange lines only |
+
+**Kleio structurally refuses:** GMV tax, MTA (MARKET_REPORT), credit-metered AI.  
+**Report Pundit structurally refuses:** being a decision religion (they build *your* report).  
+**Klar structurally refuses:** playing the Shopify review game.
+
+Wave 2 durable wedges vs those three: **offline/billboard + claims-vs-cash + tax-sane default + Monday artifact**, still flat.

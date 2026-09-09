@@ -71,6 +71,8 @@
 
 Monday close is the **ritual name** Mcfly gave a weekly blended check. Better Reports made the ritual an **email**. That is the productization gap.
 
+Wave 2: Report Pundit (2,026) is the same ritual at $0–$35. Kleio put the bicycle on the App Store at $29. Community 588628 is the voice. See `DEEP_DIVE_FORUMS.md` and `DEEP_DIVE_FIVE_APPS.md`.
+
 ---
 
 ## 5. Vanity ROAS vs till — the argument, with humility
@@ -130,3 +132,4 @@ Mcfly’s unique noun (billboard) is a **story**, not a query. Keep it in the he
 - Personas: `PERSONAS.md`
 - Workflows: `ENTERPRISE_WORKFLOWS.md`
 - Strategy: `SYNTHESIS.md`
+- Wave 2 forums / buyers / five apps: `DEEP_DIVE_FORUMS.md` · `DEEP_DIVE_BUYERS.md` · `DEEP_DIVE_FIVE_APPS.md`

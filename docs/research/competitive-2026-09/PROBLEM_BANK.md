@@ -271,3 +271,60 @@ If the goal is **maximum money + love + ease + real problems**, the evidence ran
 2. Do not self-build #2; optionally **recommend** a pixel partner so P2 does not bounce.
 3. Use #10 (billboards/retainers) as the **honest differentiator** against OAuth-only profit apps.
 4. Treat #15 (Monday email) as the retention engine that Better Reports already proved with 1,199 reviews.
+
+---
+
+## Wave 2 problems (append)
+
+### 16. “VAT/GST is inside the revenue number I scale on”
+
+| | |
+| --- | --- |
+| **WTP signal** | TW 1★ Kove (NL); r/dropshipping 1s3mx43; Klar prices on **net after tax**; Taxomate EU VAT SKU |
+| **Who** | P4 finance, EU/UK/AU founders |
+| **Mcfly today** | Underspecified |
+| **Tag** | `RESEARCH_OPTION` |
+| **Evidence** | `DEEP_DIVE_INTERNATIONAL.md` · TW KB vs docs |
+| **Four scores** | Money M · Love H (P4) · Ease M · Real **trust-kill** |
+
+### 17. “Refunds, exchanges, and lookback move last month’s sales”
+
+| | |
+| --- | --- |
+| **WTP signal** | Community 637409, 180915, 301853, 199943; Loop 4.6/442 |
+| **Who** | Apparel ops + finance + media |
+| **Mcfly today** | “After returns” on SAMPLE only |
+| **Tag** | `RESEARCH_OPTION` |
+| **Evidence** | `DEEP_DIVE_RETURNS_LTV_SUBS.md` |
+| **Four scores** | Money M · Love H · Ease L · Real H |
+
+### 18. “Subscription LTV and ad CAC live in two apps that do not join”
+
+| | |
+| --- | --- |
+| **WTP signal** | Recharge 4.8/3118; Lifetimely 535; RCI 14 (LTV-only is weak) |
+| **Who** | CPG / replenishment CMO |
+| **Mcfly today** | Listing claims LTV |
+| **Tag** | `CURRENT_RELIGION` claim · `RESEARCH_OPTION` to ship a split |
+| **Evidence** | `DEEP_DIVE_RETURNS_LTV_SUBS.md` |
+| **Four scores** | Money L–M · Love M · Ease L · Real M (subset) |
+
+### 19. “I need a human or an email to close the week, not another login”
+
+| | |
+| --- | --- |
+| **WTP signal** | Report Pundit 5.0/2026; Better Reports 1199; Kleio MCP-into-Claude daily report |
+| **Who** | P1, P3, P4 |
+| **Mcfly today** | Desk you remember |
+| **Tag** | `RESEARCH_OPTION` (same as #15, now with RP evidence) |
+| **Four scores** | Money M · Love H · Ease H · Real H |
+
+### 20. “TW is a fighter jet; I wanted a bicycle”
+
+| | |
+| --- | --- |
+| **WTP signal** | Community 588628; Kleio 20×5★ TW defections; r/PPC 1ohxwk6 |
+| **Who** | P1 at ~$15–50k/mo |
+| **Mcfly today** | Bicycle **without** gears (no auto spend, no P&L) |
+| **Tag** | `CURRENT_RELIGION` wedge · `RESEARCH_OPTION` to actually be the bicycle (Kleio already is) |
+| **Four scores** | Money M · Love H · Ease M · Real H |

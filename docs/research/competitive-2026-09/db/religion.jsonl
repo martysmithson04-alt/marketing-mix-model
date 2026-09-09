@@ -10,3 +10,9 @@
 {"id":"R10","topic":"AI OS","current":"none","option":"Moby vs explain-number","call":"thin later no credits","bend":true}
 {"id":"R11","topic":"acquisition","current":"listing live","option":"outbound only","call":"dont do neither","bend":true}
 {"id":"R12","topic":"profit vs MER","current":"not a profit tracker","option":"profit-lite","call":"if App Store then yes","bend":true}
+{"id":"R13","topic":"peer set","current":"TW/Polar/NB in the war room","option":"Kleio as live $29 peer","call":"reposition","bend":true}
+{"id":"R14","topic":"refund clocks","current":"after returns underspecified","option":"gross/refunds/net + as-of","call":"do","bend":true}
+{"id":"R15","topic":"tax mode","current":"none","option":"visible ex-VAT/inc-VAT toggle","call":"do toggle no compliance claim","bend":true}
+{"id":"R16","topic":"first 50 reviews","current":"serious paid hope","option":"Reviews API after close / free cap / outbound","call":"legal loop A now","bend":true}
+{"id":"R17","topic":"App Store Ads","current":"unspecified","option":"buy first-price CPC now","call":"wait for TTV + reviews + aisle","bend":false}
+{"id":"R18","topic":"new vs returning","current":"total sales numerator","option":"split subscription/returning","call":"later design-partner","bend":true}

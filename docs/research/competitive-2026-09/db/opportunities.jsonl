@@ -20,3 +20,12 @@
 {"id":"S5","cluster":"strategy","scores":"H/H/H/disputed","tag":"RELIGION_BREAK","name":"Pixel company"}
 {"id":"S6","cluster":"strategy","scores":"L/L/L/M","tag":"CURRENT_RELIGION","name":"Stay narrow + course"}
 {"id":"S7","cluster":"strategy","scores":"M/H/H/M","tag":"RELIGION_BEND","name":"Free desk paid depth"}
+{"id":"A7_gross_net_asof","cluster":"cash_governor","scores":"M/H/M/H","tag":"STRETCH","name":"Gross refunds net plus as-of"}
+{"id":"A8_tax_mode","cluster":"cash_governor","scores":"M/H/M/H","tag":"STRETCH","name":"Visible tax_mode"}
+{"id":"A9_shop_fx_lock","cluster":"cash_governor","scores":"L/H/M/H","tag":"STRETCH","name":"Shop-currency lock"}
+{"id":"C5_reviews_api","cluster":"packaging","scores":"M/H/H/M","tag":"FIT_NOW","name":"Reviews API after first close"}
+{"id":"C6_app_store_ads","cluster":"packaging","scores":"L/n/a/H/n/a","tag":"ADJACENT_NO_YET","name":"App Store Ads wait"}
+{"id":"R13_kleio_peer","cluster":"strategy","scores":"H/H/M/H","tag":"CURRENT_RELIGION","name":"Treat Kleio as peer not Polar"}
+{"id":"F7_clone_kleio","cluster":"adjacent","scores":"H/H/M/H","tag":"ADJACENT_NO","name":"Become Kleio SKU-for-SKU"}
+{"id":"F8_recharge","cluster":"adjacent","scores":"H/H/L/M","tag":"ADJACENT_NO","name":"Become Recharge"}
+{"id":"F9_loop","cluster":"adjacent","scores":"H/M/L/H","tag":"ADJACENT_NO","name":"Become Loop"}

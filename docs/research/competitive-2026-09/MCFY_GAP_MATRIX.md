@@ -117,3 +117,19 @@ If the founder wants **religion purity**:
 3. Still must fix listing integrity (LTV claim, mailto, paid-plan wording) and tax definition.
 
 There is no path that maximizes all four scores **and** keeps paste-only + no costs + 7-day + 0-review. That combination scores **L/L/L/M**.
+
+---
+
+## Wave 2 gap addendum
+
+| Capability | Mcfly have | Who has it (live 2026-09-09) | Tag |
+| --- | --- | --- | --- |
+| $29–$39 flat profit + ads + no MTA | No (ROAS only) | **Kleio 5.0/20** | GAP vs cousin |
+| Human/scheduled report close | No | Report Pundit 2026; Better Reports 1199 | RESEARCH_OPTION |
+| Refund vs exchange vs credit lines | No | Loop + Community 637409 | GAP |
+| Shop-currency / Markets | No | Report Pundit Advanced; Polar | GAP |
+| Subscription new vs returning numerator | No | TW/Polar/Recharge/Apex | RESEARCH_OPTION later |
+| Legal Reviews API after first close | No | Official; Kleio founder replies | FIT_NOW |
+| App Store Ads | No | Official first-price CPC | Wait |
+
+Kleio is now the **primary gap** in the $29–$39 aisle. Polar remains a different buyer. See `DEEP_DIVE_FIVE_APPS.md`.
