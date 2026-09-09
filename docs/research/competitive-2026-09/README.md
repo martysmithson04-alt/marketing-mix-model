@@ -25,7 +25,7 @@ Religion is **FLEXIBLE here**. Every alternative (pixels, MTA, OAuth, freemium, 
 
 ## How to read this
 
-Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Everything else is evidence.
+If you are **operating this week**, start with [`WAR_ROOM.md`](./WAR_ROOM.md). If you want the strategy menu, start with [`SYNTHESIS.md`](./SYNTHESIS.md). Everything else is evidence.
 
 | File | What |
 | --- | --- |
@@ -45,6 +45,10 @@ Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Every
 | [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) | CURRENT vs OPTION + call |
 | [`SYNTHESIS.md`](./SYNTHESIS.md) | S1–S7 strategic options |
 | [`PRIMARY_SOURCE_HARVEST.md`](./PRIMARY_SOURCE_HARVEST.md) | Live App Store cards + community/Reddit + competitor docs (append-only; do not clobber ENTERPRISE_LANDSCAPE) |
+| [`WAR_ROOM.md`](./WAR_ROOM.md) | Weekly cadence if fighting for money + love |
+| [`COMPETITIVE_THREAT_BOARD.md`](./COMPETITIVE_THREAT_BOARD.md) | Kleio / Margn / TP / Sheets / TW / free Shopify — 30/90/365 |
+| [`UNIT_ECONOMICS_SCENARIOS.md`](./UNIT_ECONOMICS_SCENARIOS.md) | Scenario tables only; 0% then 15% + 2.9% |
+| [`UNANSWERED_QUESTIONS.md`](./UNANSWERED_QUESTIONS.md) | Strategy-changing unknowns + how to learn |
 | [`db/`](./db/) | JSONL + `competitive.sqlite` |
 
 Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files.
@@ -99,13 +103,14 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 ## Corpus status (enterprise landscape, 2026-09-09)
 
 Prior waves (PRs #5–#13) are imported, not wiped. Start with [`MASTER_INDEX.md`](./MASTER_INDEX.md).  
-Harvest (PR #14, append-only): [`PRIMARY_SOURCE_HARVEST.md`](./PRIMARY_SOURCE_HARVEST.md) + `db/harvest_*.jsonl` — **214 harvest listings** · 22 harvest threads · 17 harvest docs.
+Harvest (PR #14, append-only): [`PRIMARY_SOURCE_HARVEST.md`](./PRIMARY_SOURCE_HARVEST.md) + `db/harvest_*.jsonl` — **214 harvest listings** · 22 harvest threads · 17 harvest docs.  
+Decision systems (PR #15): [`WAR_ROOM.md`](./WAR_ROOM.md) · [`COMPETITIVE_THREAT_BOARD.md`](./COMPETITIVE_THREAT_BOARD.md) · [`UNIT_ECONOMICS_SCENARIOS.md`](./UNIT_ECONOMICS_SCENARIOS.md) · [`UNANSWERED_QUESTIONS.md`](./UNANSWERED_QUESTIONS.md).
 
 **Read if you have 15 minutes:** [`ENTERPRISE_LANDSCAPE.md`](./ENTERPRISE_LANDSCAPE.md) → [`DECISION_BRIEF.md`](./DECISION_BRIEF.md) → [`NICHE_CANVAS.md`](./NICHE_CANVAS.md).
 
-DB (system of record, after `assemble_enterprise.py`): **106 competitors · 61 problems · 80 quotes · 300 sources**. Schema: [`db/SCHEMA.md`](./db/SCHEMA.md). Bibliography: [`SOURCE_BIBLIOGRAPHY.md`](./SOURCE_BIBLIOGRAPHY.md).
+DB (system of record, after `assemble_enterprise.py`): **106 competitors · 61 problems · 80 quotes · 300 sources** (+ 4 session-6 source URLs). Schema: [`db/SCHEMA.md`](./db/SCHEMA.md). Bibliography: [`SOURCE_BIBLIOGRAPHY.md`](./SOURCE_BIBLIOGRAPHY.md).
 
-Recommended deeper order: `KLEIO_GAP_ANALYSIS.md` → `S1_PRD_LITE.md` → `STRATEGY_KILL_CRITERIA.md` → `COMPETITIVE_MATRIX.md`.
+Recommended deeper order: `KLEIO_GAP_ANALYSIS.md` → `S1_PRD_LITE.md` → `STRATEGY_KILL_CRITERIA.md` → `COMPETITIVE_MATRIX.md` → `WAR_ROOM.md`.
 
 ---
 

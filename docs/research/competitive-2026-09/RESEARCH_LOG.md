@@ -222,9 +222,83 @@ Imported unique artifacts from PRs #5–#13 without wipe. Live re-fetch:
 - Price parser note: ignore Shopify chrome “Free to install” / “Free trial.” Mcfly live = **$39/month**, 7-day, 0.0/0. Polar listing still prints a Free card beside **$750/month** Core — do not resolve that conflict here.
 - Sitemap used for discovery only: https://apps.shopify.com/sitemap_apps_en.xml
 
+## 2026-09-09 — session 6: decision-systems lane (new fetches)
+
+**Why this session exists:** founder asked for decision-grade artifacts (war room, threat board, unit-econ scenarios, unanswered questions), not another surface synthesis. Prior corpus missed **Kleio** and treated **Margn** as a BeProfit-rail name only.
+
+### Official Shopify take-rate (LIVE)
+
+- **URL:** https://shopify.dev/docs/apps/launch/distribution/revenue-share
+- **Fetched:** 2026-09-09
+- **Share:** 0% on first **$1,000,000 USD lifetime** gross app revenue earned from **2025-01-01**; **15%** above that. Not an annual reset.
+- **Processing:** “All billing is subject to a **2.9%** processing fee and applicable sales tax. Fees and taxes are charged separately from revenue share.”
+- **Base:** gross sales; **refunds are not deducted** from the share base.
+- **High-volume exception:** $20M+ prior-year App Store earnings **or** $100M+ company revenue → 15% on all (no 0% tier). Mcfly is not in this band.
+- **Registration:** one-time **$19** Partner App Store registration.
+- **Changelog (lifetime vs annual):** https://shopify.dev/changelog/update-to-shopifys-app-developer-revenue-share (2025-04-24).
+- **Implication:** first-million Mcfly net ≈ **97.1%** of list; after-threshold net ≈ **82.1%** if 15% + 2.9% are treated as additive on gross (labeled in `UNIT_ECONOMICS_SCENARIOS.md`). Prior corpus (`APP_STORE_MARKET.md` §10) modeled 15%/20% **without** the 2.9% processing fee — that file is now **incomplete**, not wrong on share.
+
+### Kleio Analytics (LIVE — missing from sessions 1–5)
+
+- **Listing:** https://apps.shopify.com/kleio — **$29/mo** “Everything”; **14-day** trial; unlimited users; 1,000,000 orders in database; **5.0 / 20** reviews (100% 5★); launched **2025-02-19**; Aarhus C, DK.
+- **Works with (listing):** AppLoving, GoAffPro, Google Ads, Meta Ads, ShipHero.
+- **Job on card:** dashboard + P&L + ad-channel acquisition + LTV + product analytics (margins, return rates, AOV, discount).
+- **Adjacency:** **same Clarity / WeTracked / Parkour rail as Mcfly.** Kleio is the paid peer Shopify already files next to Mcfly — and Kleio has reviews.
+- **Site:** https://getkleio.com/ — $29 flat “no matter what”; 14-day trial; **VENDOR_CLAIM** “364 stores / 47.4M+ orders / 1 in 3 on Shopify Plus” (do **not** publish as fact). Comparison table last-checked **2026-08-22** lists Kleio **without attribution on purpose**.
+- **Founder religion (site FAQ):** attribution is subjective storytelling; platforms optimize on their own data; Kleio refuses MTA and sells P&L / contribution / blended CAC / NC ROAS (aMER) instead. This is **Mcfly’s religion with costs and OAuth already shipped**.
+- **Visible reviews (listing + site quotes of App Store reviews):** Trek Light left Triple Whale after MCP+Claude; EMME “Better than triplewhale… $29”; Hummii Snacks daily P&L + MCP; Gentleman’s Gazette accurate variable+fixed costs + refunds on original order; MYYK “single source of truth” after TW/Lifetimely. Named founder Mathias / @MattiSchroder, Slack, two-hour onboarding calls.
+- **Threat read:** Kleio is the **closest substitute** in public evidence — cheaper, deeper, reviewed, same anti-attribution stance. See `COMPETITIVE_THREAT_BOARD.md`.
+
+### Margn — Net Profit Tracker (LIVE — was a name-only mention)
+
+- **Listing:** https://apps.shopify.com/margn-1 — Starter **$19** / Growth **$39** / Pro **$79** (annual −17%); **7-day** trial; **0.0 / 0** reviews; launched **2026-08-18** (Sant'Agata Bolognese, IT).
+- **Hero:** real-time net profit = sales − COGS − fees − refunds − **total** ad spend.
+- **Bullets:** auto-sync Meta/Google/TikTok “**never attributed-only**”; profit calendar; MARGN Score + break-even ROAS + AI insights; data-health checks for missing COGS.
+- **Works with:** Shopify Admin, Google Ads, Meta Ads, TikTok Ads.
+- **Adjacency:** BeProfit (4.5/202), TrackProfit, MarginLens — **profit aisle**, not the pixel rail.
+- **Threat read:** same $39 Growth SKU as Mcfly, more job (costs + auto spend), 20 days older, still 0 reviews. Cohort twin, not an incumbent. If they get the first 20 reviews, they occupy Mcfly’s intended wedge.
+
+### Re-fetches (same day, numbers that moved)
+
+| App | URL | Was (session 1) | Now (session 6) |
+| --- | --- | --- | --- |
+| Mcfly | https://apps.shopify.com/mcfly-analytics-public | $39 / 7-day / 0.0/0 / Sept 7 | **unchanged** (mailto still in bullet 5) |
+| TrueProfit | https://apps.shopify.com/trueprofit | 5.0 / **899** | 5.0 / **900** |
+| Triple Whale | https://apps.shopify.com/triplewhale-1 | 4.1 / 91 · 16% 1★ · Free / $219 / $749 | **unchanged** |
+| SyncWith | https://apps.shopify.com/syncwith | 4.5 / 10 · Free + $4.99 | **unchanged** |
+| Lifetimely | https://apps.shopify.com/lifetimely-lifetime-value-and-profit-analytics | 4.9 / 535 · Free ≤50 | **unchanged** |
+| Clarity (adjacency) | https://apps.shopify.com/microsoft-clarity | 2,125 | **2,127** on Kleio/TW/Lifetimely rails |
+
+TrueProfit surcharge language confirmed: Basic $35 + **$0.30/extra order**, cap $300; 14-day; Works with Meta/Google/TikTok/Bing/X/Pinterest/Snap/Amazon + POD/3PL.
+
+### Native Shopify (Help Center 403 from this cloud; official docs + prior Community)
+
+- Profit reports Help Center 403 again: https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/profit-reports
+- Search snippet + Community 657805 still hold: **Gross profit by product** exists **if Cost per item is filled**. Does **not** ingest Meta/Google/TikTok/billboard spend.
+- Shop Campaigns ROAS only: https://shopify.dev/docs/api/shopifyql/latest/schemas/marketing/shop_campaign_insights (session 3).
+- Community 134251: Admin does not ingest third-party ad spend.
+
+### MARKET_REPORT (do not treat as Mcfly metrics)
+
+- TSC Partner Program 2026: https://taylorsicard.com/blog/shopify-partner-program-2026 — restates 0% / 15% + 2.9%.
+- Week One Labs: https://weekonelabs.com/blog/shopify-app-revenue-benchmarks-2026 — same take-rate table.
+- LetsMetrix Kleio: https://letsmetrix.com/app/kleio/pricing — $29 / 5.0 / 20 (matches live listing).
+- LetsMetrix Margn: https://letsmetrix.com/app/margn-1 — 0 reviews (matches live).
+
+### Decision-systems files added this session
+
+| File | Job |
+| --- | --- |
+| `WAR_ROOM.md` | Weekly operating cadence if fighting for money + love |
+| `COMPETITIVE_THREAT_BOARD.md` | Who kills Mcfly in 30 / 90 / 365 days |
+| `UNIT_ECONOMICS_SCENARIOS.md` | Scenario tables only; labeled assumptions |
+| `UNANSWERED_QUESTIONS.md` | Strategy-changing unknowns + how to learn each |
+
 ---
 
 ## Open questions (do not invent answers)
+
+Canonical list moved to [`UNANSWERED_QUESTIONS.md`](./UNANSWERED_QUESTIONS.md). Residual one-liners:
 
 1. Actual Mcfly listing views / installs / trial starts — Partner Dashboard only. Not in this repo.
 2. ~~Exact Built for Shopify numeric gates.~~ **Closed:** 50 net paid-plan installs + 5 reviews ([BFS requirements](https://shopify.dev/docs/apps/launch/built-for-shopify/requirements)). Rating number still unpublished.
@@ -234,6 +308,8 @@ Imported unique artifacts from PRs #5–#13 without wipe. Live re-fetch:
 6. SyncWith Shopify $4.99 vs older `COMPETITORS.md` $25–$150 refresh-tax ladder (likely Workspace vs Shopify SKU split).
 7. World-wide VAT handling — TW 1-star is a live landmine Mcfly must not copy.
 8. First-party interviews — scripts exist; **zero** completed rows.
+9. Kleio “364 stores” `VENDOR_CLAIM` vs 20 public reviews — unverified.
+10. Whether Mcfly Partner account is registered for the reduced share plan ($19) and whether 2.9% already appears on payouts.
 
 ---
 

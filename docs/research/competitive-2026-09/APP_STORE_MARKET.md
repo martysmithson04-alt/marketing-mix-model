@@ -228,13 +228,22 @@ See `LISTING_TEARDOWNS.md` for line-by-line. Market-level gaps:
 
 ## 10. Money math you *can* do without inventing installs
 
-Shopify take: assume reduced 15% after eligibility, else 20%. On $39:
+**Updated 2026-09-09:** official take is **0% on first $1M lifetime** (from 2025-01-01), then **15%**, plus **2.9% processing on all billing**. Fees are separate from share. https://shopify.dev/docs/apps/launch/distribution/revenue-share
 
-- Gross to Mcfly @20% = **$31.20**/mo/store
-- @15% = **$33.15**
-- First $1M revenue @0% (if eligible) = full $39
+Scenario tables (additive 15%+2.9%, no invented N): [`UNIT_ECONOMICS_SCENARIOS.md`](./UNIT_ECONOMICS_SCENARIOS.md).
 
-To match **one** Polar $750 seat (listing floor, before GMV) you need **~19–24** Mcfly stores depending on share. Polar also has CS costs Mcfly cannot staff at $31 net.
+On $39, **keep-rate**:
+
+- Lifetime ≤ $1M: **$37.87** (2.9% only)
+- After $1M: **$32.02** if 15%+2.9% additive on gross
+
+Older 20% / 15%-only rows below are **incomplete** (they omitted processing):
+
+- Gross to Mcfly @20% only = **$31.20**/mo/store (do not use unless Q8 shows 20%)
+- @15% only = **$33.15** (do not use; missing 2.9%)
+- First $1M @0% **and** ignoring 2.9% = full $39 (wrong; processing still applies)
+
+To match **one** Polar $750 seat (listing floor, before GMV) you need **~19** Mcfly stores at list (750/39). Polar also has CS costs Mcfly cannot staff at **$37.87** net (R0).
 
 TrueProfit at $35 + overage likely **out-earns** Mcfly per successful merchant because meters scale. Mcfly’s brand promise is to **refuse** that. Fine — then volume or agency seats have to do the work.
 

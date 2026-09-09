@@ -52,12 +52,39 @@ Star splits are Shopify UI percentages. Prices are **listing cards**, not quotes
 
 ## Profit / P&L / LTV (the real paid cluster)
 
+### Kleio Analytics
+- **Listing:** https://apps.shopify.com/kleio
+- **Site:** https://getkleio.com/
+- **Launched:** 2025-02-19 · Aarhus C, DK
+- **Listing price:** **$29**/mo Everything · 14-day trial · unlimited users · 1,000,000 orders in database
+- **Reviews:** **5.0 / 20** · 100% 5★
+- **Works with:** AppLoving, GoAffPro, Google Ads, Meta Ads, ShipHero
+- **Job:** Dashboard + P&L + ad acquisition + LTV + product margins/returns; site adds MCP, cohorts, inventory, more ad connectors
+- **Religion:** **Refuses attribution on purpose** (site FAQ). Same anti-MTA stance as Mcfly, with costs + OAuth already shipped.
+- **Adjacency:** Clarity / WeTracked / Parkour — **same rail as Mcfly**
+- **Love:** Named founder Mathias; Trek Light left TW; “set up < 5 mins”
+- **VENDOR_CLAIM (site):** 364 stores / 47.4M+ orders / 1 in 3 Plus — **do not publish**
+- **vs Mcfly:** **$10 cheaper, reviewed, deeper job, same theology.** Primary 90–365 day threat.
+- **Four-score vs Mcfly:** They win money/love/ease/real on public evidence. Mcfly can win only on offline/billboard + claims-vs-cash + Monday artifact — unproven.
+
+### Margn — Net Profit Tracker
+- **Listing:** https://apps.shopify.com/margn-1
+- **Launched:** 2026-08-18 · Sant'Agata Bolognese, IT
+- **Listing price:** Starter **$19** · Growth **$39** · Pro **$79** · annual −17% · 7-day trial
+- **Reviews:** **0.0 / 0**
+- **Works with:** Shopify Admin, Google Ads, Meta Ads, TikTok Ads
+- **Job:** Net profit after COGS, fees, refunds, **total** ad spend; never attributed-only; BE ROAS; missing-COGS flag; profit calendar; “MARGN Score + AI”
+- **Auto-sync:** listed on **Pro $79** — do not assume $19 includes OAuth
+- **Adjacency:** BeProfit / TrackProfit / MarginLens — **profit aisle**
+- **vs Mcfly:** Same $39 Growth SKU, more job, 20 days older, still 0 reviews. Cohort twin. First reviews win the aisle.
+- **Four-score vs Mcfly:** They win real-problem copy and aisle. Love unproven. Money depends on who leaves 0-review first.
+
 ### TP: True Profit Analytics
 - **Listing:** https://apps.shopify.com/trueprofit
 - **Launched:** 2019-07-31 · FIREAPPS JSC, Ho Chi Minh
 - **Price:** Basic **$35** (300 orders, $0.30 extra, cap $300) · Advanced $60 · Ultimate $100 · Enterprise $200 (attribution, unlimited team)
 - **Trial:** 14-day
-- **Reviews:** **5.0 / 899** · 98% 5★ · 1% 1★
+- **Reviews:** **5.0 / 900** · 98% 5★ · 1% 1★ (899 earlier the same day)
 - **Job:** Net profit autopilot + ad spend **sync** + COGS/shipping/fees + LTV + MCP
 - **Works with:** Meta/Google/TikTok/Bing/X/Pinterest/Snap/Amazon + POD/3PL
 - **Love:** shipping-cost accuracy; named support
@@ -211,10 +238,10 @@ Star splits are Shopify UI percentages. Prices are **listing cards**, not quotes
 - **Refuse:** pixels, path credit
 - **Rail:** Clarity / WeTracked / Parkour
 - **Repo vs live:** $79 and “free design partner” are stale
-- **Primary threats:** TrueProfit (same wallet), Parkour (same rail, free, reviews), Sheets (same job, $0–$5), Margins-by-Finaloop (free profit-ROAS, watch)
+- **Primary threats:** **Kleio** (same religion, $29, 20 reviews), **Sheets** (default job), **TrueProfit** (same wallet, 900 reviews), **Margn** (cohort twin at $39), Parkour/Clarity (rail), Admin (good-enough / 365-day ingest risk). Full board: `COMPETITIVE_THREAT_BOARD.md`.
 
 ---
 
 ## Card index (for DB)
 
-`mcfly` `triple_whale` `polar` `northbeam` `klar` `trueprofit` `lifetimely` `beprofit` `metorik` `margins_finaloop` `better_reports` `syncwith` `report_pundit` `clarity` `parkour` `wetracked` `analyzify` `elevar` `a2x` `finaloop` `shopify_admin` `sheets_diy`
+`mcfly` `triple_whale` `polar` `northbeam` `klar` `kleio` `margn` `trueprofit` `lifetimely` `beprofit` `metorik` `margins_finaloop` `better_reports` `syncwith` `report_pundit` `clarity` `parkour` `wetracked` `analyzify` `elevar` `a2x` `finaloop` `shopify_admin` `sheets_diy`
