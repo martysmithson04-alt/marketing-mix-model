@@ -3,6 +3,8 @@
 **Date:** 2026-09-09  
 **This is not a ship order.** It is a menu. MASTER_PLAN stays locked until the founder amends it.
 
+**Wave B scores this menu:** [`VNEXT_OPTION_SCORECARD.md`](./VNEXT_OPTION_SCORECARD.md) (money / love / ease / feasibility / religion-flex). Love, money, onboarding, and 1-star physics: [`LOVE_LOOPS.md`](./LOVE_LOOPS.md) · [`MONEY_MODEL.md`](./MONEY_MODEL.md) · [`ONBOARDING_BATTLE.md`](./ONBOARDING_BATTLE.md) · [`ANTI_PATTERNS.md`](./ANTI_PATTERNS.md).
+
 Four scores everywhere: **money · love · ease · real problems**. Religion is a hypothesis. Evidence is public URLs. No invented install or revenue forecasts.
 
 ---

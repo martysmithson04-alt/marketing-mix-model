@@ -205,6 +205,53 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 
 ---
 
+## 2026-09-09 — session 6: Wave B (money + love thesis)
+
+**Lane:** append-only under this folder. Does not replace Wave A or PR #5 / #6 files.
+
+### Live re-fetches
+
+- Mcfly listing (LIVE): still **$39 / 7-day / 0.0 (0) / launched Sept 7**. Adjacency unchanged: Clarity 4.6/2125 Free · WeTracked 4.8/125 Free-to-install · Parkour 4.9/191 Free. Hero/bullets unchanged (Total ROAS, CSV, LTV/Goals, mailto). https://apps.shopify.com/mcfly-analytics-public
+- Kleio (LIVE, new to this corpus as a full card): https://apps.shopify.com/kleio — **$29** flat, 14-day, 5.0 / **20**, launched 2025-02-19, Aarhus. Unlimited users, 1,000,000 orders in DB. Works with AppLovin, GoAffPro, Google Ads, Meta Ads, ShipHero. Visible 5★: Trek Light left Triple Whale (MCP + Claude); EMME “better/cheaper than triplewhale”; Hummii Snacks “daily pulse on our P&L” + scheduled MCP report. **Same “more like this” rail as Mcfly.** Site: https://getkleio.com/ — “$29/month. Period.”
+- TrueProfit listing scrape this session showed **5.0 / 880** (Wave A: 899). Do not freeze N. Pricing page LIVE: https://trueprofit.io/pricing — $35/60/100/200 + overage caps $300/$500/$700/$1000; no yearly; 5+ stores “special discount.”
+- Lifetimely listing this session: Free ≤50 · **S $79** ≤500 · $149 · $299 + Amazon $75 (Wave A cited S **$49** — **drift**; AMP `useamp.com/pricing.md` 2026-07-30 agrees S $79). Review count on one scrape **460** vs Wave A 535 — do not freeze N.
+- Better Reports: 5.0 / ~1,198; scheduled email + Google Sheets (site + docs).
+
+### Official Shopify (LIVE)
+
+- Revenue share: https://shopify.dev/docs/apps/launch/distribution/revenue-share — **0%** first $1M lifetime gross from 2025-01-01, then **15%**; **2.9%** processing separate; refunds **not** deducted from share base. Wave A `APP_STORE_MARKET.md` still mentions 20% in one line — treat as stale vs this official page.
+- Onboarding: https://shopify.dev/docs/apps/design/user-experience/onboarding — ≤5 steps; necessary info only; dismissible; progress; remove UI after.
+- Uninstall billing: https://help.shopify.com/en/manual/apps/uninstalling-apps — future recurring cancelled; current cycle may bill; external charges survive.
+
+### MARKET_REPORT (not Mcfly metrics)
+
+- TSC onboarding (May 2026): https://taylorsicard.com/blog/shopify-app-onboarding-benchmarks — median 15–20% trial→paid; 60–70% never activate; 72h / 7-day recovery windows.
+- TSC churn-as-symptom: https://taylorsicard.com/blog/shopify-app-churn-symptom-not-problem — ~30% annual “avg” vs <8% “good” (practitioner). Five roots: ICP, non-use, seasonality, plan mismatch, value invisible.
+- TSC 90-day save: https://taylorsicard.com/blog/shopify-app-churn-90-day-save-playbook — 60–70% of churn decided in 90 days; StoreLeads/Craftberry 2.8% monthly install churn / ~6 apps per merchant (third-party).
+- TSC five-number economics: https://taylorsicard.com/blog/shopify-app-economics-one-chart — ARPU cannot rise on a flat fee with no upgrade path.
+- Kompassify onboarding (Aug 2026): https://kompassify.com/blog/shopify-app-onboarding-guide
+- Shopify App Founders activation playbook (Jan 2026): first 10 minutes.
+
+### Anti-pattern fetches
+
+- BeProfit Clear Cosmetics 1★ (2026-03-04; deleted on Shopify 2026-07-18): https://appnavigator.io/app/beprofit-profit-tracker/reviews/2105768
+- BeProfit billing pattern (Price Geek 2026): https://www.thepricegeek.com/profit-analytics/beprofit-review/
+- Platform sunsets: Oberlo 2022; Geolocation 2025-03-24; Linkpop 2025-07-07; Stocky delist 2026-02-02 / shut 2026-08-31; Scripts 2026-06-30.
+
+### Repo vs live (still true)
+
+- Admin app heading **MER Dashboard**; listing **Total ROAS**.
+- CSV / LTV / Goals claimed on listing; `APP_FEATURES.md` marks CSV Planned, LTV later.
+- Connections page = OAuth stubs; live product page = no ad OAuth.
+
+### Open questions added
+
+8. Kleio order of magnitude (20 reviews) vs TrueProfit (~880–899) — is Kleio a durable undercutter or a TW-hangover moment? Do not invent.
+9. Lifetimely listing N and S-tier price drift ($49 vs $79) — re-verify before publishing.
+10. Official 15%+2.9% stacking on Partner invoices — compute from payouts, do not assume 17.9% blended.
+
+---
+
 ## Decision log (research, not product)
 
 | Decision | Why |

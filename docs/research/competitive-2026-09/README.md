@@ -25,7 +25,7 @@ Religion is **FLEXIBLE here**. Every alternative (pixels, MTA, OAuth, freemium, 
 
 ## How to read this
 
-Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Everything else is evidence.
+Start with [`SYNTHESIS.md`](./SYNTHESIS.md) for the decision menu, then [`VNEXT_OPTION_SCORECARD.md`](./VNEXT_OPTION_SCORECARD.md) for five-axis scores. Everything else is evidence.
 
 | File | What |
 | --- | --- |
@@ -44,9 +44,16 @@ Start with [`SYNTHESIS.md`](./SYNTHESIS.md) if you want the decision menu. Every
 | [`MCFY_GAP_MATRIX.md`](./MCFY_GAP_MATRIX.md) | Capability × four scores |
 | [`RELIGION_FLEX.md`](./RELIGION_FLEX.md) | CURRENT vs OPTION + call |
 | [`SYNTHESIS.md`](./SYNTHESIS.md) | S1–S7 strategic options |
+| [`LOVE_LOOPS.md`](./LOVE_LOOPS.md) | **Wave B** — weekly habit / Admin reopen (what actually loops) |
+| [`MONEY_MODEL.md`](./MONEY_MODEL.md) | **Wave B** — ARPU shapes, expansion, churn drivers (public only; no fake math) |
+| [`ONBOARDING_BATTLE.md`](./ONBOARDING_BATTLE.md) | **Wave B** — first 10 minutes winners vs losers |
+| [`ANTI_PATTERNS.md`](./ANTI_PATTERNS.md) | **Wave B** — killed apps / 1-star storms |
+| [`VNEXT_OPTION_SCORECARD.md`](./VNEXT_OPTION_SCORECARD.md) | **Wave B** — S1 + alternates on money/love/ease/feasibility/religion-flex |
 | [`db/`](./db/) | JSONL + `competitive.sqlite` |
 
 Pricing / workflows / category map live inside APP_STORE_MARKET, ENTERPRISE_WORKFLOWS, LISTING_TEARDOWNS rather than duplicate files.
+
+**Sibling lanes (do not delete; merge separately):** PR #5 review mining (`REVIEW_MINING.md` on `cursor/review-mining-6cd7`); PR #6 monetization (`MARKET_STRUCTURE.md`, `MONETIZATION_PATTERNS.md`, `WHITE_SPACE.md` on `cursor/shopify-app-store-research-2b7a`); PR #8 this corpus on `research/competitive-2026-09`. Wave B **appends** files only.
 
 ---
 
@@ -97,10 +104,12 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ## Corpus status (this run)
 
-Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
+Wave A (PR #8): 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
 DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.
 
-Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
+Wave B (this lane): 5 additional memos — love loops, money model, onboarding battle, anti-patterns, vNext scorecard. No production code. No Wave A deletes.
+
+Recommended read order after this README: `SYNTHESIS.md` → `VNEXT_OPTION_SCORECARD.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
 
 ---
 
