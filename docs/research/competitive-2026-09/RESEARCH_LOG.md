@@ -193,7 +193,7 @@ Convention: every fetch is dated. `LIVE` = page retrieved this run. `MARKET_REPO
 
 ---
 
-## Enterprise landscape session (2026-09-09, this PR)
+## Enterprise landscape session (2026-09-09)
 
 Imported unique artifacts from PRs #5–#13 without wipe. Live re-fetch:
 
@@ -210,6 +210,17 @@ Imported unique artifacts from PRs #5–#13 without wipe. Live re-fetch:
 - Triple Whale site pricing: one WebFetch **timeout**.
 - Elevar.com/pricing resolved to an unexpected Audiense page — **do not cite**.
 - DB assemble: **106 competitors · 61 problems · 80 quotes · 300 sources**.
+
+## 2026-09-09 — session 6: PRIMARY_SOURCE_HARVEST (append-only)
+
+- **Lane:** ENTERPRISE research support. Coordinates with ENTERPRISE_LANDSCAPE; does **not** rewrite landscape / synthesis / competitor cards.
+- **Deliverable:** [`PRIMARY_SOURCE_HARVEST.md`](./PRIMARY_SOURCE_HARVEST.md) + `db/harvest_*.jsonl`.
+- **Method:** live GET of Shopify listing pages (JSON-LD + visible price/trial/launched), Shopify Community + Reddit (paraphrase + URL), Kleio / TrueProfit / Polar / TW public docs.
+- **Rule:** no card without a URL. Failed fetches stay `confidence=fetch_fail` and are not published as numbers.
+- Fetcher: `db/harvest_primary.py` + `db/render_harvest.py`.
+- **Live yield:** **214** listing cards · **9** Community threads (HTTP 200) · **13** Reddit rows (`public_snippet` — HTML/JSON 403 from this cloud) · **17** competitor-doc claims · **253** harvest source URLs.
+- Price parser note: ignore Shopify chrome “Free to install” / “Free trial.” Mcfly live = **$39/month**, 7-day, 0.0/0. Polar listing still prints a Free card beside **$750/month** Core — do not resolve that conflict here.
+- Sitemap used for discovery only: https://apps.shopify.com/sitemap_apps_en.xml
 
 ---
 
