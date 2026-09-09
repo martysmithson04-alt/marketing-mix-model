@@ -45,3 +45,5 @@ From OPPORTUNITY_MAP.
 From RELIGION_FLEX.
 
 SQLite: `competitive.sqlite` built by `build_db.py`.
+
+WAVE C (2026-09-09): `kind` also includes `ads_channel`. Competitor rows appended for the profit long tail, reports, pixels, suites, finance, official channels. Rebuild after pull: `python3 db/build_db.py`.

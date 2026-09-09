@@ -180,3 +180,39 @@
 
 The bends that actually raise four scores: **R3, R4-B, R7, R8, R12**.  
 The breaks that look like money and usually kill the company: **R1-A, R2, R5-GMV, R10-A**.
+
+---
+
+## WAVE C deltas (2026-09-09)
+
+New evidence, not a rewrite of R1–R12. Details: `PARTNER_POLICY.md`, `PRICING_LADDERS.md`, `FAILURE_AUTOPSIES.md`.
+
+### R13. Built for Shopify calendar
+
+| | |
+| --- | --- |
+| CURRENT | Repo heuristic: do not chase BFS until ~50 paid + 5 reviews |
+| OPTION | Same sequence, but **design the embedded app to Polaris now** |
+| EVIDENCE | Official §1.2.1 / 1.2.2 now **print** 50 net paid-plan installs + 5 reviews. Rating number still unpublished. 4.1.1 rejects black admin backgrounds / non-Polaris primaries. https://shopify.dev/docs/apps/launch/built-for-shopify/requirements |
+| RISK | Applying this week fails 1.2.1/1.2.2. Ignoring 4.1.1 fails later even with 50/5. |
+| RESEARCH CALL | **Keep the 50/5 wait. Bend the admin UI, not the marketing site.** |
+
+### R14. App Store take-rate
+
+| | |
+| --- | --- |
+| CURRENT (WAVE A) | 15–20% of $39 ≈ $31–$33 net |
+| OPTION | Official 2025+ card: **0% share on first $1M** + **2.9% processing** |
+| EVIDENCE | https://shopify.dev/docs/apps/launch/distribution/revenue-share |
+| RISK | High-earner carve-out ($20M prior year or $100M company) does not apply to Mcfly. Off-platform billing is still banned (requirements 1.2). |
+| RESEARCH CALL | **Stay on Shopify billing.** Recalc unit economics with 2.9%, not 15%. |
+
+### R15. $39 vs Kleio $29 vs Margn twin
+
+| | |
+| --- | --- |
+| CURRENT | $39 flat, 7-day, anti-GMV |
+| OPTION | Keep flat; **14-day**; do not raise; treat **Kleio $29/20★** as the peer, **Margn $39/0★** as the warning |
+| EVIDENCE | Live cards 2026-09-09. Profit Calc already lists $39 with 67 reviews. Margn launched 2026-08-18 with Mcfly’s price+trial and still 0 reviews. |
+| RISK | Cutting to $29 without TTV just matches Kleio with 0 reviews. Raising to $79 is still suicide. |
+| RESEARCH CALL | **R5 stands (stay flat, no GMV). R4-B stands (14-day). Price is not the wedge.** |
