@@ -66,8 +66,8 @@ Mcfly’s locked job sits in the third column: **money out vs Shopify in, break-
 
 Shopify’s native profit reports need **Cost per item** and still stop at **gross** profit. They do not automatically fold **ad spend, app subscriptions, shipping variance, processor fees, refunds** into one net view. Shopify staff and merchants say this in public:
 
-- Shopify Community thread [Understanding profit tracking for Shopify stores](https://community.shopify.com/t/understanding-profit-tracking-for-shopify-stores/657805) (2026): merchants ask for an app that combines COGS, shipping, transaction fees, ads, returns; Shopify’s reply is that **Cost per item** powers product profit, but **other expenses remain outside** the native picture.
-- [Shopify Help / reporting docs](https://help.shopify.com/en/manual/reports-and-analytics) (structure): profit reports are COGS-based; ad platforms are not a native join. (Do not invent a “30–50% gap” — that figure appears in **vendor blogs**, e.g. [Godmode, 2026](https://www.trygodmode.com/blog/shopify-real-profit-2026-dashboard-lies), and is **not** used here as fact.)
+- Shopify Community thread [Understanding profit tracking for Shopify stores](https://community.shopify.com/t/understanding-profit-tracking-for-shopify-stores/657805) (2026): merchants ask for an app that combines COGS, shipping, transaction fees, ads, returns; replies in-thread (including Shopify-side guidance quoted there) say **Cost per item** powers product profit, but **other expenses remain outside** the native picture.
+- Do not invent a “30–50% gap” between dashboard and bank. That figure appears in **vendor blogs**, e.g. [Godmode, 2026](https://www.trygodmode.com/blog/shopify-real-profit-2026-dashboard-lies), and is **not** used here as fact.
 
 App Store **search** for “true profit” (fetched 2026-09-09) returns a **long** list: True Profit (899 reviews), BeProfit (202), Lebesgue, Profitario, Margeny, Meyoo, etc. The **keyword** is crowded. The **religion** is not:
 
@@ -212,7 +212,7 @@ Until then, the underserved problem is not “more analytics.” It is **a cash 
 
 - [App listing categories](https://shopify.dev/docs/apps/launch/app-store-review/app-listing-categories)
 - [App Store requirements §4.3](https://shopify.dev/docs/apps/launch/shopify-app-store/app-store-requirements)
-- [Shopify Community — profit tracking](https://community.shopify.com/t/understanding-profit-tracking-for-shopify-stores/657805)
+- [Shopify Community — profit tracking](https://community.shopify.com/t/understanding-profit-tracking-for-shopify-stores/657805) (Help Center finance-report URLs returned 403 to this agent; do not treat unfetched Help pages as cited)
 - [BFS analytics pixel thread](https://community.shopify.dev/t/bfs-analytics-app-30-active-installs-have-connected-pixels/19356)
 
 ### Live App Store / vendors (2026-09-09)
