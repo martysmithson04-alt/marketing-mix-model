@@ -18,6 +18,11 @@ TABLES = {
     "sources": "sources.jsonl",
     "opportunities": "opportunities.jsonl",
     "religion": "religion.jsonl",
+    "interviews": "interviews.jsonl",
+    "objections": "objections.jsonl",
+    "positioning": "positioning.jsonl",
+    "content_topics": "content_topics.jsonl",
+    "first_customer_plays": "first_customer_plays.jsonl",
 }
 
 

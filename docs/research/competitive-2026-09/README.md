@@ -103,10 +103,10 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 ## Corpus status (this run)
 
 Delivered: 16 markdown files (Waves A–C) + WAVE D psychology/sales set + `db/` (JSONL, sqlite, builder).  
-DB counts at Wave C close: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.  
-WAVE D appends Kleio + interview/objection/positioning/content/play rows. Rebuild with `python3 db/build_db.py`.
+DB after WAVE D rebuild: 22 competitors (Kleio added) · 15 problems · 25 review quotes · 73 sources · 22 opportunities · 13 religion · 9 interviews · 13 objections · 8 positioning · 8 content topics · 13 first-customer plays. Rebuild with `python3 db/build_db.py`.
 
-Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
+Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.  
+WAVE D sales/psych order: `POSITIONING_WARS.md` (Kleio) → `OBJECTIONS.md` → `INTERVIEW_SCRIPTS.md` → `FIRST_CUSTOMERS_PLAYBOOK.md` → `CONTENT_GEO.md`.
 
 ---
 
