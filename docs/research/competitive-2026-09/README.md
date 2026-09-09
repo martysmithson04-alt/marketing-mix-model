@@ -98,8 +98,8 @@ Fetched from [https://apps.shopify.com/mcfly-analytics-public](https://apps.shop
 
 ## Corpus status (this run)
 
-Delivered: 16 markdown files + `db/` (7 JSONL, sqlite, builder).  
-DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows.
+Delivered: 16 markdown files + `PRIMARY_SOURCE_HARVEST.md` + `db/` (7 JSONL + 4 harvest JSONL, sqlite, builder).  
+DB counts: 21 competitors · 15 problems · 22 visible review quotes · 50 sources · 22 opportunities · 12 religion rows · **214 harvest listings** · 22 harvest threads · 17 harvest docs.
 
 Recommended read order after this README: `SYNTHESIS.md` → `RELIGION_FLEX.md` → `PROBLEM_BANK.md`.
 

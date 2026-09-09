@@ -522,10 +522,15 @@ def parse_trial(page: str) -> int | None:
 
 
 def parse_price(page: str) -> str:
-    # Prefer the first explicit monthly plan, then Free.
+    # Prefer explicit monthly plans. Do not treat "Free trial" as a free SKU.
     prices = re.findall(r"\$[0-9]+(?:\.[0-9]+)?(?:/month|/mo)?", page)
-    free = bool(re.search(r"\bFree(?: to install| Forever)?\b", page))
-    # Dedup preserving order
+    # Shopify chrome says "Free to install" / "Free trial" on almost every paid app.
+    # Only treat as a free SKU when a plan is actually free.
+    free = bool(re.search(r"Free Forever|Forever Free(?: Plan)?", page, re.I))
+    if re.search(r">\s*Free\s*<", page) and not re.search(r">\s*Free trial", page, re.I):
+        # A pricing-card title that is exactly "Free" (Lifetimely / TW / Clarity).
+        free = True
+    # Dedup preserving order; drop bare $0.xx surcharge crumbs if monthly exists
     seen: list[str] = []
     for p in prices:
         if p not in seen:
