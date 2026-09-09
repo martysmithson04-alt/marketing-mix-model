@@ -1,0 +1,17 @@
+id,pain_short,who_hurt,who_benefits_from_status_quo,jtbd,mcfly_fit,research_option,anti_pattern,priority,theme_ids,evidence_ids
+P-001,Profit tile drops unattributed ad spend,merchant|finance,media_buyer|vendor,Week close uses ALL ad cash vs ALL Shopify sales,CURRENT_RELIGION,false,Smarter spend that drops PMax,1,T-SPEND,R-BP-001|R-COM-001
+P-002,VAT silently in or out of revenue,finance|eu_merchant,media_buyer,Accountant-ready ex-VAT definition,CURRENT_RELIGION_if_labeled,true,One unlabeled formula for US+NL,2,T-TAX,R-TW-001|R-TP-001
+P-003,Success tax on orders/GMV/growth,founder|finance,vendor_finance,Flat knowable desk fee,CURRENT_RELIGION,false,Per-order surcharge with a cap,2,T-OVERAGE,R-TP-002|R-TP-003|R-LT-001|R-PO-001
+P-004,COGS/variant cost basis rots,merchant|finance,none,Tuesday supplier change does not rewrite Monday,RESEARCH_OPTION,true,Support-only recost; silent averages,3,T-COGS,R-TP-001|R-BP-002|R-COM-001
+P-005,Upsell/edit/return breaks period sales,merchant|finance,suite_vendor,Exportable recon of edits and refunds,CURRENT_RELIGION_if_proven,true,Unauditable second revenue definition,3,T-MATCH|T-COGS,R-LT-002|R-TW-DOC-001
+P-006,Spreadsheet incumbent; suites overkill,solo_merchant,suite_vendor,Replace the sheet without buying an OS,CURRENT_RELIGION,false,TW feature parity for this band,1,T-SHEETS,R-COM-001|R-BP-003|R-KL-001
+P-007,Uninstall is not cancel; history hostage,merchant|ap,vendor_finance,Leave in one uninstall plus export,CURRENT_RELIGION,false,Side-channel auto-bill trials,2,T-CANCEL|T-LOCKIN,R-BP-004|R-BP-005|R-TW-002|R-TP-004|R-TW-003
+P-008,Onboarding theater then silence,all,sales,In-hours human who can change a number,ops_not_feature,false,Named-hero support as reliability,2,T-SUPPORT,R-TW-004|R-G2-001|R-BP-006|R-LT-001|R-AZ-001
+P-009,Tracking fix can nuke ads,founder,pixel_vendor,See over-claim without installing a priest,CURRENT_RELIGION_for_pain,true,Ship GTM/CAPI,5,T-PIXEL,R-AZ-002|R-AZ-003|R-TW-005|R-AZ-004
+P-010,Multi-store/Amazon/warehouse identity,multi_brand|agency,vendor_finance,One desk many storefronts one stock,RESEARCH_OPTION,true,Per-shop GMV stack,4,T-MULTI,R-PO-001|R-AZ-004|R-LT-003|R-BP-007
+P-011,LTV/CAC payback analysts fail to build,growth|finance,consulting,Know which promo destroys LTV,RESEARCH_OPTION,true,Black-box predictive LTV,4,T-SHEETS,R-LT-004|R-LT-005
+P-012,Payment fees modeled not pulled,finance,none,Fees on desk equal payout fees,CURRENT_RELIGION_via_margin,true,Clever fee model,3,T-FEES,R-TP-005
+P-013,Sales-call / work-email gate,lean_merchant,enterprise_sales,Self-serve trial then optional sales,CURRENT_RELIGION,false,Talk-to-sales-only MER,3,T-GATE,R-PO-002|R-PO-003|R-PO-004
+P-014,AI metered after contract,mid_tier_merchant,vendor_finance,Desk answers money without a paid bot,CURRENT_RELIGION,true,Token packs,5,T-AI,R-TW-001|R-TW-006
+P-015,Four scoreboards; meeting becomes theology,founder,attribution_vendors,Stop hosting the argument; till wins,CURRENT_RELIGION,true,Seventh attribution model,1,T-MATCH,R-TW-DOC-001|R-NB-DOC-001|R-G2-002|R-COM-001
+P-016,Agency rollup vs N licenses,agency,vendor_finance,Monday desk across a roster,RESEARCH_OPTION,true,Partner program because product is too hard,4,T-MULTI,R-G2-002|R-AZ-004|R-BP-007
