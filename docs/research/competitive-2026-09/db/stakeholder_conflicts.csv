@@ -1,0 +1,9 @@
+id,topic,merchant_want,agency_want,finance_want,media_want,review_grounding,mcfly_pick
+C1,Spend definition,Total ad cash,Attributed if it makes the deck,Total ad cash,Platform / attributed,R-BP-001|R-COM-001,merchant+finance
+C2,VAT,Confused until burned,Ignore if US roster,Ex-VAT + collection,Gross if it lifts ROAS,R-TW-001|R-TP-001,finance (labeled modes)
+C3,Cadence,Weekly cash,Live client dashboard,Month close,Intraday MER,Eightx Lifetimely|R-COM-001,weekly till not intraday theater
+C4,Switching,Fear history loss,Fear 20-account rebuild,Fear two books,Fear lookback loss,R-TW-003|R-TP-003,export not hostage
+C5,Licensing,One brain,Roster not GMV-x-N,Flat,Will pay if bids move,R-AZ-004|R-PO-001,one brain
+C6,Support,Human on Friday,Client SLA,Close-week recon,Pixel fire,R-TW-004|R-G2-001|R-LT-001,small surface no credit bot
+C7,Pixel vs cash,Till,Priest they can resell,Payout,CAPI feed,R-AZ-002|R-AZ-003,claims-vs-cash tile only
+C8,Success tax,Do not punish a good year,Pass-through or eat,Predictable SaaS,Ok if it scales bids,R-TP-002|R-LT-001|R-PO-001,flat fee
